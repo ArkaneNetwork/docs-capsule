@@ -6,7 +6,7 @@ description: Signs arbitrary data using a specific wallet.
 
 {% api-method method="post" host="https://api.arkane.network" path="/api/signatures" %}
 {% api-method-summary %}
-Transfer a non-fungible token
+Sign a message
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -20,36 +20,20 @@ Transfer a non-fungible token
 Contains the signature request
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="signatureRequest.type" type="string" required=true %}
-NFT Token contract address
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="pincode" type="string" required=true %}
-PIN related to the wallet ID
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="type" type="string" required=true %}
-NFT\_TRANSFER
+Signature type. \(MESSAGE or EIP712\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="data" type="string" required=true %}
+The data to sign
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="walletId" type="string" required=true %}
 Id of the wallet that will initiate the tx
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="to" type="string" required=true %}
-Destination Address \(can be a blockchain address or email address\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="secretType" type="string" required=true %}
-On which blockchain the tx will be executed
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="value" type="integer" required=true %}
-Amount you want to transfer
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="transactionRequest" type="object" required=true %}
-transactionRequest object
+{% api-method-parameter name="pincode" type="string" required=true %}
+PIN related to the wallet ID
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -60,8 +44,14 @@ transactionRequest object
 
 {% endapi-method-response-example-description %}
 
-```
-
+```java
+{
+  "type" : "HEX_SIGNATURE",
+  "r" : "0xb91467e570a6466aa9e9876cbcd013baba02900b8979d43fe208a4a4f339f5fd",
+  "s" : "0x6007e74cd82e037b800186422fc2da167c747ef045e5d18a5f5d4300f8e1a029",
+  "v" : "0x1c",
+  "signature" : "0xb91467e570a6466aa9e9876cbcd013baba02900b8979d43fe208a4a4f339f5fd6007e74cd82e037b800186422fc2da167c747ef045e5d18a5f5d4300f8e1a0291c"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -69,7 +59,7 @@ transactionRequest object
 {% endapi-method %}
 
 {% hint style="info" %}
-🧙 The destination of a token transfer is not limited to a blockchain address, we also support **email addresses**.
+🧙 The signatures endpoint supports the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) standard, Ethereum typed structured data hashing and signing. This EIP aims to improve the usability of off-chain message signing for use on-chain.
 {% endhint %}
 
 ## Example 
@@ -82,7 +72,7 @@ POST : https://api.arkane.network/api/signatures
 
 #### Request Body
 
-```javascript
+```java
 {
     "pincode" : "1234",
     "signatureRequest" : 
@@ -97,7 +87,7 @@ POST : https://api.arkane.network/api/signatures
 
 #### Response
 
-```javascript
+```java
 {
   "type" : "HEX_SIGNATURE",
   "r" : "0xb91467e570a6466aa9e9876cbcd013baba02900b8979d43fe208a4a4f339f5fd",

@@ -21,8 +21,7 @@
 * [Transfer a fungible token](custody-wallets/transfer-a-fungible-token.md)
 * [Transfer a non-fungible token](custody-wallets/transfer-a-non-fungible-token.md)
 * [Sign a message](custody-wallets/wip-sign-a-message.md)
-* [WIP: Sign an EIP712 message](custody-wallets/wip-sign-an-eip712-message.md)
-* [WIP: Call a contract](custody-wallets/wip-call-a-contract.md)
+* [Call a contract](custody-wallets/wip-call-a-contract.md)
 * [WIP: Get Tx status](custody-wallets/wip-get-tx-status.md)
 
 ---
