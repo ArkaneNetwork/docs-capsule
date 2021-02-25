@@ -34,7 +34,3 @@ description: This object describes the properties of an NFT contract
 
 ## Function Reference
 
-{% page-ref page="../reference/getnonfungibles.md" %}
-
-
-

@@ -20,7 +20,7 @@
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `tokenAddress` | `String` | Address of the token |
-| `rawBalance` | `String` | Raw token balance  |
+| `rawBalance` | `String` | Raw token balance |
 | `balance` | `Number` | Normalized token balance |
 | `type` | `String` | The type of token, which depends on the specific blockchain |
 | `transferable` | `Boolean` | Indicates whether or not the token can be transferred |

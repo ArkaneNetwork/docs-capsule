@@ -40,7 +40,3 @@ description: This page describes an NFT
 
 ## Function Reference
 
-{% page-ref page="../reference/getnonfungibles.md" %}
-
-
-

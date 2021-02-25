@@ -15,7 +15,7 @@
 | Parameter | Required | Type | Description |
 | :--- | :--- | :--- | :--- |
 | `walletId` | `True` | `String` | ID of the wallet one wants to sign with. |
-| `secretType` | `True` | [`SecretType`](secrettype.md) | Chain the transaction will be executed on. |
+| `secretType` | `True` | [`SecretType`](secrettype-1.md) | Chain the transaction will be executed on. |
 | `data` | `True` | `String` | Address of the token |
 
 ## Example
@@ -29,8 +29,4 @@
 ```
 
 ## Function Types
-
-{% page-ref page="../reference/signmessage.md" %}
-
-
 

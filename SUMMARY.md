@@ -40,28 +40,25 @@
   * [SecretType](capsule-advanced/object-reference/secrettype.md)
   * [WalletType](capsule-advanced/object-reference/wallettype.md)
   * [ImportWalletType](capsule-advanced/object-reference/importwallettype.md)
-  * [SecretType](capsule-advanced/object-reference/secrettype.md)
+  * [SecretType](capsule-advanced/object-reference/secrettype-1.md)
   * [Wallet](capsule-advanced/object-reference/wallet.md)
   * [WalletBalance](capsule-advanced/object-reference/walletbalance.md)
   * [TokenBalance](capsule-advanced/object-reference/tokenbalance.md)
   * [TransferRequestDto](capsule-advanced/object-reference/transferrequestdto.md)
-  * [TokenTransferRequestDto](capsule-advanced/object-reference/wip-tokentransferrequestdto.md)
-  * [NftTransferRequestDto](capsule-advanced/object-reference/wip-nfttransferrequestdto.md)
-  * [GasTransferRequestDto](capsule-advanced/object-reference/wip-gastransferrequestdto.md)
-  * [ContractExecutionDto](capsule-advanced/object-reference/wip-contractexecutiondto.md)
+  * [TokenTransferRequestDto](capsule-advanced/object-reference/tokentransferrequestdto.md)
+  * [NftTransferRequestDto](capsule-advanced/object-reference/nfttransferrequestdto.md)
+  * [GasTransferRequestDto](capsule-advanced/object-reference/gastransferrequestdto.md)
+  * [ContractExecutionDto](capsule-advanced/object-reference/contractexecutiondto.md)
   * [MessageSignRequestDto](capsule-advanced/object-reference/messagesignrequestdto.md)
   * [Eip712SignRequestDto](capsule-advanced/object-reference/eip712signrequestdto.md)
-  * [TxStatusResult](capsule-advanced/object-reference/wip-txstatusresult.md)
+  * [TxStatusResult](capsule-advanced/object-reference/txstatusresult.md)
   * [NFT](capsule-advanced/object-reference/nft.md)
   * [NFTContract](capsule-advanced/object-reference/nftcontract.md)
   * [Trait](capsule-advanced/object-reference/trait.md)
   * [WalletItems](capsule-advanced/object-reference/walletitems.md)
 
-
 ## 🌊Deep dive
 
----
-
-* [Environments & networks](environments-and-networks.md)
-* [NFT Attributes](nft-attributes.md)
+* [Environments & networks](deep-dive/environments-and-networks.md)
+* [NFT Attributes](deep-dive/nft-attributes.md)
 
