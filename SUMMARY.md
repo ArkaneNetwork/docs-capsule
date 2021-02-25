@@ -40,6 +40,23 @@
   * [SecretType](capsule-advanced/object-reference/secrettype.md)
   * [WalletType](capsule-advanced/object-reference/wallettype.md)
   * [ImportWalletType](capsule-advanced/object-reference/importwallettype.md)
+  * [SecretType](widget-advanced/object-type-reference/secrettype.md)
+  * [Wallet](widget-advanced/object-type-reference/wallet.md)
+  * [WalletBalance](widget-advanced/object-type-reference/walletbalance.md)
+  * [TokenBalance](widget-advanced/object-type-reference/tokenbalance.md)
+  * [TransferRequestDto](widget-advanced/object-type-reference/transferrequestdto.md)
+  * [TokenTransferRequestDto](widget-advanced/object-type-reference/wip-tokentransferrequestdto.md)
+  * [NftTransferRequestDto](widget-advanced/object-type-reference/wip-nfttransferrequestdto.md)
+  * [GasTransferRequestDto](widget-advanced/object-type-reference/wip-gastransferrequestdto.md)
+  * [ContractExecutionDto](widget-advanced/object-type-reference/wip-contractexecutiondto.md)
+  * [MessageSignRequestDto](widget-advanced/object-type-reference/messagesignrequestdto.md)
+  * [Eip712SignRequestDto](widget-advanced/object-type-reference/eip712signrequestdto.md)
+  * [TxStatusResult](widget-advanced/object-type-reference/wip-txstatusresult.md)
+  * [NFT](widget-advanced/object-type-reference/nft.md)
+  * [NFTContract](widget-advanced/object-type-reference/nftcontract.md)
+  * [Trait](widget-advanced/object-type-reference/trait.md)
+  * [WalletItems](widget-advanced/object-type-reference/walletitems.md)
+
 
 ## 🌊Deep dive
 
