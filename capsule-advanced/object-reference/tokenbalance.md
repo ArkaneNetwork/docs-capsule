@@ -28,3 +28,7 @@
 | `logo` | `String` | Logo of the token \(url\) |
 | `decimals` | `Number` | Decimals of the token |
 
+## Function Types
+
+{% page-ref page="../../custody-wallets/retrieve-token-balances.md" %}
+

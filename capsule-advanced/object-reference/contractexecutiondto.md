@@ -80,5 +80,3 @@ The **`chainSpecificFields`** depend on the chain uses to execute the smart cont
 }
 ```
 
-## Function Types
-

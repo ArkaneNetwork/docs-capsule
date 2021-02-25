@@ -28,5 +28,3 @@
 }
 ```
 
-## Function Types
-

@@ -40,7 +40,6 @@
   * [SecretType](capsule-advanced/object-reference/secrettype.md)
   * [WalletType](capsule-advanced/object-reference/wallettype.md)
   * [ImportWalletType](capsule-advanced/object-reference/importwallettype.md)
-  * [SecretType](capsule-advanced/object-reference/secrettype-1.md)
   * [Wallet](capsule-advanced/object-reference/wallet.md)
   * [WalletBalance](capsule-advanced/object-reference/walletbalance.md)
   * [TokenBalance](capsule-advanced/object-reference/tokenbalance.md)

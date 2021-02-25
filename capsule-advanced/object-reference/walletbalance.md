@@ -28,3 +28,9 @@
 | `rawGasBalance` | `string` | Raw balance of the gas token |
 | `decimals` | `number` | Number of decimals of the native token |
 
+## Function Types
+
+{% page-ref page="../../custody-wallets/retrieve-wallet-balance.md" %}
+
+
+

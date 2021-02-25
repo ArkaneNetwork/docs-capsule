@@ -63,3 +63,7 @@ description: Data structure for performing a non-fungible token transfer
 
 ## Function Types
 
+{% page-ref page="../../custody-wallets/transfer-a-non-fungible-token.md" %}
+
+
+
