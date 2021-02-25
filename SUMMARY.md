@@ -20,9 +20,9 @@
 * [Transfer a native token](custody-wallets/transfer-a-native-token.md)
 * [Transfer a fungible token](custody-wallets/transfer-a-fungible-token.md)
 * [Transfer a non-fungible token](custody-wallets/transfer-a-non-fungible-token.md)
-* [Sign a message](custody-wallets/wip-sign-a-message.md)
-* [Call a contract](custody-wallets/wip-call-a-contract.md)
-* [WIP: Get Tx status](custody-wallets/wip-get-tx-status.md)
+* [Sign a message](custody-wallets/sign-a-message.md)
+* [Call a contract](custody-wallets/call-a-contract.md)
+* [Get Tx status](custody-wallets/get-tx-status.md)
 
 ---
 
