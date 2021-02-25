@@ -27,7 +27,7 @@ description: Data structure for performing a native token transfer
 | :--- | :--- | :--- | :--- |
 | `walletId` | `True` | `String` | ID of the wallet one wants to sign with. |
 | `to` | `True` | `String` | Destination address of the transaction. Can be an address or an email address. |
-| `secretType` | `True` | [`SecretType`](secrettype-1.md) | Chain the transaction will be executed on. |
+| `secretType` | `True` | [`SecretType`]() | Chain the transaction will be executed on. |
 | `network` | `False` | `Object` | The [network](https://github.com/ArkaneNetwork/docs-capsule/tree/ae8d0ec438c8bf5d2c01ba17aa6704b255247dc0/deep-dive/environments.md) to submit the transaction to |
 | `network.name` | `True` | `String` | Display name of the network to submit the transaction to \(e.g.: "Rinkeby"\). This will be shown to the user when signing the transaction |
 | `network.nodeUrl` | `True` | `String` | URL of the node to submit the transaction to \(e.g.: "[https://rinkeby.infura.io"\](https://rinkeby.infura.io"\)\) |

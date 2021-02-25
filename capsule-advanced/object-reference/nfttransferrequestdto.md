@@ -32,9 +32,9 @@ description: Data structure for performing a non-fungible token transfer
 | `secretType` | `True` | [`SecretType`](secrettype.md) | Chain the transaction will be executed on. |
 | `tokenAddress` | `True` | `String` | Address of the token |
 | `tokenId` | `True` | `Number` | ID of the non-fungible token or ERC20 token inside ERC1155 |
-| `network` | `False` | `Object` | The [network](../../deep-dive/environments.md) to submit the transaction to |
+| `network` | `False` | `Object` | The [network](https://github.com/ArkaneNetwork/docs-capsule/tree/d5ed213ffa2231f744612602a66c12267889ebbf/deep-dive/environments.md) to submit the transaction to |
 | `network.name` | `True` | `String` | Display name of the network to submit the transaction to \(e.g.: "Rinkeby"\). This will be shown to the user when signing the transaction |
-| `network.nodeUrl` | `True` | `String` | URL of the node to submit the transaction to \(e.g.: "https://rinkeby.infura.io"\) |
+| `network.nodeUrl` | `True` | `String` | URL of the node to submit the transaction to \(e.g.: "[https://rinkeby.infura.io"\](https://rinkeby.infura.io"\)\) |
 | `network.chainId` | `False` | `Number` | Network ID of the selected network |
 | `data` | `False` | `String` | Data you want to send. This field will be ignored when building a token transaction request |
 | `value` | `True` | `Number` | Token value that should be transferred. |
@@ -62,8 +62,4 @@ description: Data structure for performing a non-fungible token transfer
 ```
 
 ## Function Types
-
-{% page-ref page="../reference/executenfttransfer.md" %}
-
-
 

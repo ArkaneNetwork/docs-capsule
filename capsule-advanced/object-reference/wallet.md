@@ -27,7 +27,7 @@
 | `id` | `string` | Wallet ID |
 | `address` | `string` | Blockchain address |
 | `walletType` | `WalletType` | Type of the wallet |
-| `secretType` | [`SecretType`](secrettype-1.md) | Type of the blockchain |
+| `secretType` | [`SecretType`]() | Type of the blockchain |
 | `archived` | `boolean` | Is the wallet archived |
 | `alias` | `string` | Wallet alias |
 | `description` | `string` | Wallet description |

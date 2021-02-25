@@ -36,7 +36,7 @@
       </td>
       <td style="text-align:left"><code>True</code>
       </td>
-      <td style="text-align:left"><a href="secrettype-1.md"><code>SecretType</code></a>
+      <td style="text-align:left"><a href><code>SecretType</code></a>
       </td>
       <td style="text-align:left">Chain the transaction will be executed on.</td>
     </tr>

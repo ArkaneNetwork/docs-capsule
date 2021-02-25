@@ -48,7 +48,3 @@
 
 ## Function Types
 
-{% page-ref page="../reference/gettransactionstatus.md" %}
-
-
-

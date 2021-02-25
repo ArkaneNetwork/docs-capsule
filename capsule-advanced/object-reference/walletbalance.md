@@ -19,7 +19,7 @@
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `secretType` | [`SecretType`](secrettype-1.md) | Type of blockchain |
+| `secretType` | [`SecretType`]() | Type of blockchain |
 | `balance` | `number` | Normalized balance of the native token |
 | `symbol` | `string` | Symbol of the native token |
 | `gasBalance` | `number` | Normalized balance of the gas token \(same as `balance` when the token for paying gas/fees is the same native token\) |

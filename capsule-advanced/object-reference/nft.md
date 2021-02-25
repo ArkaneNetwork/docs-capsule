@@ -38,5 +38,3 @@ description: This page describes an NFT
 | `attributes` | `False` | `Trait` | Show the attributes/properties of this token |
 | `contract` | `True` | `NFTContract` | Details about the contract that this contract belongs to |
 
-## Function Reference
-
