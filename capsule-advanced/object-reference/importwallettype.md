@@ -21,3 +21,9 @@ description: Enum that identifies the import wallet type
 }
 ```
 
+## Function Reference
+
+{% page-ref page="../../import-a-wallet.md" %}
+
+
+

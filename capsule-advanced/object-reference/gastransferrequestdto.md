@@ -56,7 +56,7 @@ description: Data structure for performing a gas transfer
 }
 ```
 
-## Function Types
+## Function Reference
 
 {% page-ref page="../../custody-wallets/transfer-a-native-token.md" %}
 

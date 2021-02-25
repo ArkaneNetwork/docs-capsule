@@ -65,7 +65,7 @@
 }
 ```
 
-## Function Types
+## Function Reference
 
 {% page-ref page="../../custody-wallets/create-wallet.md" %}
 

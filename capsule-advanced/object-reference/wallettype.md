@@ -20,3 +20,15 @@ description: Enum that identifies the wallet type
 | `WHITE_LABEL` | Wallet that can be recovered in case the pin is lost |
 | `UNRECOVERABLE_WHITE_LABEL` | Wallet that can not be recovered if the pin is lost |
 
+## Function Reference
+
+{% page-ref page="../../custody-wallets/create-wallet.md" %}
+
+{% page-ref page="../../custody-wallets/get-wallet.md" %}
+
+{% page-ref page="../../custody-wallets/get-wallet-by-id.md" %}
+
+{% page-ref page="../../custody-wallets/untitled.md" %}
+
+
+

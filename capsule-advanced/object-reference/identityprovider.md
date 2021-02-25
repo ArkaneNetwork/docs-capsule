@@ -10,3 +10,9 @@ enum IdentityProvider {
 }
 ```
 
+## Function Reference
+
+{% page-ref page="../authentication-bridge.md" %}
+
+
+

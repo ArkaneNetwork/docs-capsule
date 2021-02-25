@@ -59,7 +59,7 @@ description: Data structure for performing a fungible token transfer
 }
 ```
 
-## Function Types
+## Function Reference
 
 {% page-ref page="../../custody-wallets/transfer-a-fungible-token.md" %}
 
