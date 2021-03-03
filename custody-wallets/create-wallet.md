@@ -16,11 +16,11 @@ Create wallet
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="walletType" type="string" required=false %}
+{% api-method-parameter name="walletType" type="string" required=true %}
 Define if the wallet is recoverable or unrecoverable
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="secretType" type="string" required=false %}
+{% api-method-parameter name="secretType" type="string" required=true %}
 The blockchain on which to create the wallet
 {% endapi-method-parameter %}
 
