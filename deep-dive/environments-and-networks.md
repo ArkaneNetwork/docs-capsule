@@ -103,7 +103,7 @@ By default, you will connect to the blockchain network as described above. Mainn
 }
 ```
 
-By making use of the network object, you can change the node endpoint. In the example below we are connecting to the Rinkeby Ethereum testnet, instead of the default Kovan testnet.
+By making use of the network object, you can change the node endpoint. In the example below, we are connecting to the Rinkeby Ethereum testnet, instead of the default Rinkeby testnet.
 
 ```javascript
 //Using a custom node to connect to the Rinkeby Ethereum testnet
@@ -111,11 +111,6 @@ By making use of the network object, you can change the node endpoint. In the ex
   "walletId" : "cdc4c08a-b8fa-4e4c-z5a2-92c87b80f174",
   "to" : "0xdc71b72db51e227e65a45004ab2798d31e8934c9",
   "secretType" : "VECHAIN",
-  "network" : {
-    "name" : "Rinkeby",
-    "nodeUrl" : "https://rinkeby.arkane.network",
-    "chainId" : null
-  },
   "data" : "0x",
   "value" : 1.15
 }
