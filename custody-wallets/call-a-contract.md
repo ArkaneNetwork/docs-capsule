@@ -124,11 +124,6 @@ POST : https://api.arkane.network/api/transactions/execute
 		"to": "0xdc71b72db51e227e65a45004ab2798d31e8934c9",
 		"alias": null,
 		"secretType": "ETHEREUM",
-		"network": {
-			"name": "Rinkeby",
-			"nodeUrl": "https://rinkeby.arkane.network",
-			"chainId": null
-		},
 		"functionName": "transfer",
 		"value": 0,
 		"inputs": [{
