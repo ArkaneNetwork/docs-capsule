@@ -142,6 +142,10 @@ When set, the result will only contain tokens of these NFT contract addresses. M
 
 #### Response
 
+Perform the api call for wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E , which has several nfts. 
+
+![Visual representation of the NFT stored on wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E](../.gitbook/assets/image%20%281%29.png)
+
 ```javascript
 {
     "success": true,
