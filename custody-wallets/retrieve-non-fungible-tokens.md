@@ -72,7 +72,7 @@ When set, the result will only contain tokens of these NFT contract addresses. M
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/wallets/MATIC/<walletAddress>/nonfungibles" %}
+{% api-method method="get" host="https://api.arkane.network" path="/api/wallets/<SecretType>/<walletAddress>/nonfungibles" %}
 {% api-method-summary %}
 Get NFTs by wallet address
 {% endapi-method-summary %}
@@ -84,6 +84,10 @@ Get NFTs by wallet address
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="secretType" type="string" required=true %}
+Blockchain to query \(MATIC/ BSC/ Ethereum\)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="walletAddress" type="string" required=true %}
 Blockchain address of the wallet
 {% endapi-method-parameter %}
@@ -142,7 +146,7 @@ When set, the result will only contain tokens of these NFT contract addresses. M
 
 #### Response
 
-Perform the api call for wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E , which has several nfts. 
+Performing the api call for wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E , which has several nfts. 
 
 ![Visual representation of the NFT stored on wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E](../.gitbook/assets/image%20%281%29.png)
 
