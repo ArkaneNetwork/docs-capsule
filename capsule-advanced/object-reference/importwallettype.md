@@ -28,7 +28,8 @@ description: Enum that identifies the import wallet type
     NEO_KEYSTORE,
     BITCOIN_WIF,
     LITECOIN_WIF,
-    NEO_WIF
+    NEO_WIF,
+    MIGRATION
 }
 ```
 
