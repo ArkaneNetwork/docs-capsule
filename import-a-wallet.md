@@ -4,11 +4,9 @@ description: How to import an existing wallet
 
 # Import a wallet
 
-## Import using private key
-
 {% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
 {% api-method-summary %}
- 
+ Import using private key
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -75,11 +73,9 @@ Private key of the existing wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Import using keystore
-
 {% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
 {% api-method-summary %}
-
+Import using keystore
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -150,11 +146,9 @@ The password of the keystore
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Import using WIF
-
 {% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
 {% api-method-summary %}
-
+Import using WIF
 {% endapi-method-summary %}
 
 {% api-method-description %}
