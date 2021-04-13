@@ -75,14 +75,6 @@ Private key of the existing wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% hint style="info" %}
-For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet.md).
-{% endhint %}
-
-### Example
-
-#### Response
-
 ```javascript
 {
     "success": true,
@@ -126,12 +118,16 @@ For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="pincode" type="string" required=false %}
+PIN to encrypt the wallet with
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="walletType" type="string" required=true %}
 Make it recoverable or not
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="importWalletType" type="string" required=true %}
-Type of import \(eg. MATIC\_PRIVATE\_KEY\)
+Type of import \(eg. MATIC\_KEYSTORE\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="keystore" type="string" required=true %}
@@ -182,6 +178,64 @@ The password of the keystore
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Import using WIF
+
+{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="wif" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="walletType" type="string" required=false %}
+Make it recoverable or not
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="importWalletType" type="string" required=false %}
+Type of import \(eg. BITCOIN\_WIF\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="pincode" type="string" required=false %}
+PIN to encrypt the wallet with
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="wif" type="string" required=true %}
+The wif \(wallet import format\) 
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
+{% hint style="info" %}
+For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet.md).
+{% endhint %}
 
 ## Object Types
 

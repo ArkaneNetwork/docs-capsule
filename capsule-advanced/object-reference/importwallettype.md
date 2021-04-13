@@ -25,7 +25,10 @@ description: Enum that identifies the import wallet type
     VECHAIN_KEYSTORE,
     GOCHAIN_KEYSTORE,
     TRON_KEYSTORE,
-    NEO_KEYSTORE
+    NEO_KEYSTORE,
+    BITCOIN_WIF,
+    LITECOIN_WIF,
+    NEO_WIF
 }
 ```
 
