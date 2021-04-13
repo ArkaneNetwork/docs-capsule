@@ -8,9 +8,9 @@ description: How to export an existing wallet
 Please note that we do not export the private key, but rather a password secured keystore as it provides better protection against a man in the middle attack. 
 {% endhint %}
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/<walletID>/export" %}
+{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/{walletID}/export" %}
 {% api-method-summary %}
-Import a wallet
+Export a wallet
 {% endapi-method-summary %}
 
 {% api-method-description %}
