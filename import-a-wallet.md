@@ -219,7 +219,7 @@ The ID of the wallet you want to import into another secret type
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="to" type="object" required=true %}
-Destination secret ty e \(blockchain\), ex: MATIC
+Destination secret type \(blockchain\), ex: MATIC
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
