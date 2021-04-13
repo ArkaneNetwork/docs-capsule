@@ -150,7 +150,7 @@ The password of the keystore
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "success": true,
     "result": {
