@@ -157,12 +157,6 @@ Import using WIF
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="wif" type="string" required=true %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-body-parameters %}
 {% api-method-parameter name="walletType" type="string" required=true %}
 Make it recoverable or not
@@ -196,7 +190,53 @@ The wif \(wallet import format\)
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
+{% api-method-summary %}
+Import from other secret type \(blockchain\)
+{% endapi-method-summary %}
 
+{% api-method-description %}
+Using this endpoint, it is possible to use the same wallet \(address\) for a different blockchain. Currently it is only possible to import from ETHEREUM to MATIC, BSC and vice versa.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="walletType" type="string" required=true %}
+Make it recoverable or not
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="importWalletType" type="string" required=true %}
+Must be: MIGRATION
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="pincode" type="string" required=true %}
+PIN for the wallet
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="walletId" type="string" required=true %}
+The ID of the wallet you want to import into another secret type
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="to" type="object" required=true %}
+Destination secret type \(blockchain\), ex: MATIC
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% hint style="info" %}
 For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet.md).
@@ -207,6 +247,8 @@ For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet
 {% page-ref page="capsule-advanced/object-reference/wallettype.md" %}
 
 {% page-ref page="capsule-advanced/object-reference/importwallettype.md" %}
+
+{% page-ref page="capsule-advanced/object-reference/secrettype.md" %}
 
 
 
