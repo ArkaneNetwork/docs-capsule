@@ -18,6 +18,14 @@ description: Enum that identifies the import wallet type
     NEO_PRIVATE_KEY,
     AETERNITY_PRIVATE_KEY,
     LITECOIN_PRIVATE_KEY,
+    AETERNITY_KEYSTORE,
+    BSC_KEYSTORE,
+    ETHEREUM_KEYSTORE,
+    MATIC_KEYSTORE,
+    VECHAIN_KEYSTORE,
+    GOCHAIN_KEYSTORE,
+    TRON_KEYSTORE,
+    NEO_KEYSTORE
 }
 ```
 
