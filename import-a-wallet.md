@@ -75,35 +75,6 @@ Private key of the existing wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
-```javascript
-{
-    "success": true,
-    "result": {
-        "id": "08aa6c62-509c-4999-914b-f649c1812eb1",
-        "address": "0x5b0BB5d41A3e24222257625e746aFc2275c78315",
-        "secretType": "BSC",
-        "walletType": "WHITE_LABEL",
-        "createdAt": null,
-        "archived": false,
-        "alias": "white_hat_dogfish",
-        "description": "White hat Dogfish",
-        "primary": true,
-        "hasCustomPin": true,
-        "balance": {
-            "available": true,
-            "secretType": "BSC",
-            "balance": 0.0,
-            "gasBalance": 0.0,
-            "symbol": "BNB",
-            "gasSymbol": "BNB",
-            "rawBalance": "0",
-            "rawGasBalance": "0",
-            "decimals": 18
-        }
-    }
-}
-```
-
 ## Import using keystore
 
 {% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
