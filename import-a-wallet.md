@@ -118,7 +118,7 @@ Private key of the existing wallet
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="pincode" type="string" required=false %}
+{% api-method-parameter name="pincode" type="string" required=true %}
 PIN to encrypt the wallet with
 {% endapi-method-parameter %}
 
@@ -199,15 +199,15 @@ The password of the keystore
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="walletType" type="string" required=false %}
+{% api-method-parameter name="walletType" type="string" required=true %}
 Make it recoverable or not
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="importWalletType" type="string" required=false %}
+{% api-method-parameter name="importWalletType" type="string" required=true %}
 Type of import \(eg. BITCOIN\_WIF\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=false %}
+{% api-method-parameter name="pincode" type="string" required=true %}
 PIN to encrypt the wallet with
 {% endapi-method-parameter %}
 
