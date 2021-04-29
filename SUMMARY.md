@@ -28,7 +28,7 @@
   * [Update wallet PIN](custody-wallets/wallet-api/update-pin.md)
 * [NFT API](custody-wallets/nft-api/README.md)
   * [Create NFT Contract](custody-wallets/nft-api/create-an-nft-contract.md)
-  * [Untitled](custody-wallets/nft-api/untitled-2.md)
+  * [Retrieve NFT Contract](custody-wallets/nft-api/untitled-2.md)
   * [Untitled](custody-wallets/nft-api/untitled-1.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
