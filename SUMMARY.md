@@ -34,6 +34,8 @@
   * [Retrieve NFT Template](custody-wallets/nft-api/retrieve-nft-template.md)
   * [Retrieve all NFT Templates](custody-wallets/nft-api/retrieve-all-nft-templates.md)
   * [Retrieve NFT Metadata](custody-wallets/nft-api/retrieve-nft-metadata.md)
+  * [Mint NFT](custody-wallets/nft-api/mint-nft.md)
+  * [Mint fungible-NFT](custody-wallets/nft-api/mint-fungible-nft.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 
