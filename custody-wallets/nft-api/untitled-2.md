@@ -2,7 +2,7 @@
 description: How to retrieve the information of one of your NFT contracts
 ---
 
-# Retrieve NFT Contract
+# Retrieve Contract
 
 ## Endpoint: GET
 

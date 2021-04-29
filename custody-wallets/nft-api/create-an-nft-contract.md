@@ -5,7 +5,7 @@ description: >-
   creation of a collection.
 ---
 
-# Create NFT Contract
+# Create Contract
 
 ## Endpoint: POST
 

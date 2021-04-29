@@ -27,10 +27,13 @@
   * [Export a wallet](custody-wallets/wallet-api/export-a-wallet.md)
   * [Update wallet PIN](custody-wallets/wallet-api/update-pin.md)
 * [NFT API](custody-wallets/nft-api/README.md)
-  * [Create NFT Contract](custody-wallets/nft-api/create-an-nft-contract.md)
-  * [Retrieve NFT Contract](custody-wallets/nft-api/untitled-2.md)
-  * [Retrieve all NFT Contracts](custody-wallets/nft-api/untitled-1.md)
+  * [Create Contract](custody-wallets/nft-api/create-an-nft-contract.md)
+  * [Retrieve Contract](custody-wallets/nft-api/untitled-2.md)
+  * [Retrieve all Contracts](custody-wallets/nft-api/untitled-1.md)
   * [Create NFT Template](custody-wallets/nft-api/create-nft-template.md)
+  * [Retrieve NFT Template](custody-wallets/nft-api/retrieve-nft-template.md)
+  * [Retrieve all NFT Templates](custody-wallets/nft-api/retrieve-all-nft-templates.md)
+  * [Retrieve NFT Metadata](custody-wallets/nft-api/retrieve-nft-metadata.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 
