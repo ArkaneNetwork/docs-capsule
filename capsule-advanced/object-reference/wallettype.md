@@ -22,13 +22,13 @@ description: Enum that identifies the wallet type
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/create-wallet.md" %}
+{% page-ref page="../../custody-wallets/wallet-api/create-wallet.md" %}
 
-{% page-ref page="../../custody-wallets/get-wallet.md" %}
+{% page-ref page="../../custody-wallets/wallet-api/get-wallet.md" %}
 
-{% page-ref page="../../custody-wallets/get-wallet-by-id.md" %}
+{% page-ref page="../../custody-wallets/wallet-api/get-wallet-by-id.md" %}
 
-{% page-ref page="../../custody-wallets/untitled.md" %}
+{% page-ref page="../../custody-wallets/wallet-api/untitled.md" %}
 
 
 

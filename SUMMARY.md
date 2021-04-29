@@ -7,28 +7,26 @@
 * [How to authenticate](capsule/authentication.md)
 * [How to get a Bearer token](capsule/authenticate.md)
 
-## Custody wallets
+## API Products <a id="custody-wallets"></a>
 
-* [Introduction](custody-wallets/introduction.md)
-* [Create wallet](custody-wallets/create-wallet.md)
-* [Retrieve a wallet](custody-wallets/get-wallet.md)
-* [Retrieve a wallet by identifier](custody-wallets/get-wallet-by-id.md)
-* [Retrieve all wallets](custody-wallets/untitled.md)
-* [Retrieve wallet balance](custody-wallets/retrieve-wallet-balance.md)
-* [Retrieve token balance](custody-wallets/retrieve-token-balances.md)
-* [Retrieve non-fungible tokens](custody-wallets/retrieve-non-fungible-tokens.md)
-* [Transfer a native token](custody-wallets/transfer-a-native-token.md)
-* [Transfer a fungible token](custody-wallets/transfer-a-fungible-token.md)
-* [Transfer a non-fungible token](custody-wallets/transfer-a-non-fungible-token.md)
-* [Sign a message](custody-wallets/sign-a-message.md)
-* [Call a contract](custody-wallets/call-a-contract.md)
-* [Get Tx status](custody-wallets/get-tx-status.md)
-
----
-
-* [Import a wallet](import-a-wallet.md)
-* [Export a wallet](export-a-wallet.md)
-* [Update wallet PIN](update-pin.md)
+* [Wallet API](custody-wallets/wallet-api/README.md)
+  * [Introduction](custody-wallets/wallet-api/introduction.md)
+  * [Create wallet](custody-wallets/wallet-api/create-wallet.md)
+  * [Retrieve a wallet](custody-wallets/wallet-api/get-wallet.md)
+  * [Retrieve a wallet by identifier](custody-wallets/wallet-api/get-wallet-by-id.md)
+  * [Retrieve all wallets](custody-wallets/wallet-api/untitled.md)
+  * [Retrieve wallet balance](custody-wallets/wallet-api/retrieve-wallet-balance.md)
+  * [Retrieve token balance](custody-wallets/wallet-api/retrieve-token-balances.md)
+  * [Retrieve non-fungible tokens](custody-wallets/wallet-api/retrieve-non-fungible-tokens.md)
+  * [Transfer a native token](custody-wallets/wallet-api/transfer-a-native-token.md)
+  * [Transfer a fungible token](custody-wallets/wallet-api/transfer-a-fungible-token.md)
+  * [Transfer a non-fungible token](custody-wallets/wallet-api/transfer-a-non-fungible-token.md)
+  * [Sign a message](custody-wallets/wallet-api/sign-a-message.md)
+  * [Call a contract](custody-wallets/wallet-api/call-a-contract.md)
+  * [Get Tx status](custody-wallets/wallet-api/get-tx-status.md)
+  * [Import a wallet](custody-wallets/wallet-api/import-a-wallet.md)
+  * [Export a wallet](custody-wallets/wallet-api/export-a-wallet.md)
+  * [Update wallet PIN](custody-wallets/wallet-api/update-pin.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 

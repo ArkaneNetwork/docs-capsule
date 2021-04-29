@@ -46,5 +46,5 @@ description: Data structure for performing a native token transfer
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/transfer-a-native-token.md" %}
+{% page-ref page="../../custody-wallets/wallet-api/transfer-a-native-token.md" %}
 

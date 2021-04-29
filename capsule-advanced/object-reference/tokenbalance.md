@@ -30,5 +30,5 @@
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/retrieve-token-balances.md" %}
+{% page-ref page="../../custody-wallets/wallet-api/retrieve-token-balances.md" %}
 
