@@ -27,7 +27,7 @@
   * [Export a wallet](custody-wallets/wallet-api/export-a-wallet.md)
   * [Update wallet PIN](custody-wallets/wallet-api/update-pin.md)
 * [NFT API](custody-wallets/nft-api/README.md)
-  * [Create an NFT Contract](custody-wallets/nft-api/create-an-nft-contract.md)
+  * [Create NFT Contract](custody-wallets/nft-api/create-an-nft-contract.md)
   * [Untitled](custody-wallets/nft-api/untitled-2.md)
   * [Untitled](custody-wallets/nft-api/untitled-1.md)
 

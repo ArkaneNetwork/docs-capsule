@@ -1,11 +1,11 @@
 ---
 description: >-
   The creation of an NFT contract is the deployment of a new smart contract on a
-  specific blockchain. The concept of a contract can be consider as the creation
-  of a collection.
+  specific blockchain. The concept of a contract can be considered as the
+  creation of a collection.
 ---
 
-# Create an NFT Contract
+# Create NFT Contract
 
 ## Endpoint: POST
 
