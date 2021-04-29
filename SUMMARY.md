@@ -30,6 +30,7 @@
   * [Create NFT Contract](custody-wallets/nft-api/create-an-nft-contract.md)
   * [Retrieve NFT Contract](custody-wallets/nft-api/untitled-2.md)
   * [Retrieve all NFT Contracts](custody-wallets/nft-api/untitled-1.md)
+  * [Create NFT Template](custody-wallets/nft-api/create-nft-template.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 
