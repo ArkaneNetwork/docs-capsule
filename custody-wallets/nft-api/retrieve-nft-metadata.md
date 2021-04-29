@@ -4,7 +4,7 @@ description: >-
   contracts
 ---
 
-# Retrieve NFT Metadata
+# Retrieve NFT metadata
 
 ## Endpoint: GET
 

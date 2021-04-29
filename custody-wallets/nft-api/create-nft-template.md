@@ -4,7 +4,7 @@ description: >-
   NFTs from. A more technical representation of the template is token type.
 ---
 
-# Create NFT Template
+# Create NFT template
 
 ## Endpoint: POST
 

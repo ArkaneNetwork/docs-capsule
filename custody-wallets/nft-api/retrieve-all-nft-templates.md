@@ -2,7 +2,7 @@
 description: How to retrieve all NFT token types (templates) from one of your contracts
 ---
 
-# Retrieve all NFT Templates
+# Retrieve all NFT templates
 
 ## Endpoint: GET
 

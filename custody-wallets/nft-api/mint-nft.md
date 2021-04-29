@@ -1,3 +1,7 @@
+---
+description: Create NFTs based on a predefined NFT template (token-type)
+---
+
 # Mint NFT
 
 ## Endpoint: POST

@@ -1,3 +1,7 @@
+---
+description: Create fungible-NFTs based on a predefined NFT template (token-type).
+---
+
 # Mint fungible-NFT
 
 ## Endpoint: POST

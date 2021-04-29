@@ -27,15 +27,16 @@
   * [Export a wallet](custody-wallets/wallet-api/export-a-wallet.md)
   * [Update wallet PIN](custody-wallets/wallet-api/update-pin.md)
 * [NFT API](custody-wallets/nft-api/README.md)
-  * [Create Contract](custody-wallets/nft-api/create-an-nft-contract.md)
-  * [Retrieve Contract](custody-wallets/nft-api/untitled-2.md)
-  * [Retrieve all Contracts](custody-wallets/nft-api/untitled-1.md)
-  * [Create NFT Template](custody-wallets/nft-api/create-nft-template.md)
-  * [Retrieve NFT Template](custody-wallets/nft-api/retrieve-nft-template.md)
-  * [Retrieve all NFT Templates](custody-wallets/nft-api/retrieve-all-nft-templates.md)
-  * [Retrieve NFT Metadata](custody-wallets/nft-api/retrieve-nft-metadata.md)
+  * [Create contract](custody-wallets/nft-api/create-an-nft-contract.md)
+  * [Retrieve contract](custody-wallets/nft-api/untitled-2.md)
+  * [Retrieve all contracts](custody-wallets/nft-api/untitled-1.md)
+  * [Create NFT template](custody-wallets/nft-api/create-nft-template.md)
+  * [Retrieve NFT template](custody-wallets/nft-api/retrieve-nft-template.md)
+  * [Retrieve all NFT templates](custody-wallets/nft-api/retrieve-all-nft-templates.md)
+  * [Retrieve NFT metadata](custody-wallets/nft-api/retrieve-nft-metadata.md)
   * [Mint NFT](custody-wallets/nft-api/mint-nft.md)
   * [Mint fungible-NFT](custody-wallets/nft-api/mint-fungible-nft.md)
+  * [Retrieve NFTs by template](custody-wallets/nft-api/retrieve-nfts-by-template.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 

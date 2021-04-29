@@ -5,7 +5,7 @@ description: >-
   creation of a collection.
 ---
 
-# Create Contract
+# Create contract
 
 ## Endpoint: POST
 
