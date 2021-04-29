@@ -10,7 +10,6 @@
 ## API Products <a id="custody-wallets"></a>
 
 * [Wallet API](custody-wallets/wallet-api/README.md)
-  * [Introduction](custody-wallets/wallet-api/introduction.md)
   * [Create wallet](custody-wallets/wallet-api/create-wallet.md)
   * [Retrieve a wallet](custody-wallets/wallet-api/get-wallet.md)
   * [Retrieve a wallet by identifier](custody-wallets/wallet-api/get-wallet-by-id.md)
