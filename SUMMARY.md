@@ -26,6 +26,7 @@
   * [Import a wallet](custody-wallets/wallet-api/import-a-wallet.md)
   * [Export a wallet](custody-wallets/wallet-api/export-a-wallet.md)
   * [Update wallet PIN](custody-wallets/wallet-api/update-pin.md)
+* [NFT API](custody-wallets/nft-api.md)
 
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 
