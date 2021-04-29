@@ -1,5 +1,5 @@
 ---
-description: How to access Capsule
+description: How to access Arkane API
 ---
 
 # Authentication
@@ -9,7 +9,7 @@ description: How to access Capsule
 To connect to our [staging or production environment](../deep-dive/environments-and-networks.md) and the different networks, a private Client ID is required. By using a Client ID that is linked to your application, an extra level of security is added, as it allows transaction filtering based on origin. 
 
 {% hint style="info" %}
-🧙 To connect to our environment_s_ and blockchain networks, you will need to [register your app](https://arkane-network.typeform.com/to/hzbcGJ) to obtain a Client ID. 
+🧙 To connect to our environments, please [fill in this form](https://get.arkane.network/) to contact us.
 {% endhint %}
 
 ## Basic Authentication flow
