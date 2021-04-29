@@ -30,7 +30,7 @@
 * [Export a wallet](export-a-wallet.md)
 * [Update wallet PIN](update-pin.md)
 
-## ⚙️ Capsule Advanced
+## ⚙️Advanced <a id="capsule-advanced"></a>
 
 * [Authentication Bridge](capsule-advanced/authentication-bridge.md)
 * [Object Reference](capsule-advanced/object-reference/README.md)
