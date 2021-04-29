@@ -2,14 +2,14 @@
 
 * [👋 Introduction](README.md)
 
-## 📦 Capsule
+## 📦 Authentication <a id="capsule"></a>
 
-* [Authentication](capsule/authentication.md)
+* [How to authenticate](capsule/authentication.md)
+* [How to get a Bearer token](capsule/authenticate.md)
 
 ## Custody wallets
 
 * [Introduction](custody-wallets/introduction.md)
-* [Authenticate](custody-wallets/authenticate.md)
 * [Create wallet](custody-wallets/create-wallet.md)
 * [Retrieve a wallet](custody-wallets/get-wallet.md)
 * [Retrieve a wallet by identifier](custody-wallets/get-wallet-by-id.md)

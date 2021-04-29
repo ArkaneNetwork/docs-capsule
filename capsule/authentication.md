@@ -2,7 +2,7 @@
 description: How to access Arkane API
 ---
 
-# Authentication
+# How to authenticate
 
 ## Client ID
 

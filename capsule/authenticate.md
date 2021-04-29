@@ -2,7 +2,7 @@
 description: How to get a Bearer token
 ---
 
-# Authenticate
+# How to get a Bearer token
 
 {% api-method method="post" host="https://login.arkane.network" path="/auth/realms/Arkane/protocol/openid-connect/token" %}
 {% api-method-summary %}
