@@ -9,6 +9,7 @@ description: Enum that identifies the blockchain (secret type)
 ```javascript
 {
     AETERNITY = 'AETERNITY',
+    AVAC = 'AVAC',
     BITCOIN = 'BITCOIN',
     BSC = 'BSC',
     ETHEREUM = 'ETHEREUM',
@@ -26,6 +27,7 @@ description: Enum that identifies the blockchain (secret type)
 | Parameter | Description |
 | :--- | :--- |
 | `AETERNITY` | Value that represents the Aeternity blockchain |
+| `AVAC` | Value that represents the Avalance Contract chain \(c-chain\) |
 | `BITCOIN` | Value that represents the Bitcoin blockchain |
 | `BSC` | Value that represents the Binance Smart Chain blockchain |
 | `ETHEREUM` | Value that represents the Ethereum blockchain |
