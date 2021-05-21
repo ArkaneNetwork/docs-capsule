@@ -1,4 +1,8 @@
-# NFT Attributes
+---
+description: Properties / Stats / Boots
+---
+
+# Attributes
 
 ## General
 
