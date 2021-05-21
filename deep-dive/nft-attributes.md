@@ -131,3 +131,13 @@ Boosts is a category to display gains that are achieved by possessing or using a
 ]
 ```
 
+### Compatibility
+
+In order to be compatible with the NFT standards on the market, in terms of attributes, our system takes the above JSON structure and transforms it into a JSON that is compatible with the following attribute standards:
+
+* [ERC721](https://eips.ethereum.org/EIPS/eip-721)
+* [ERC115](https://eips.ethereum.org/EIPS/eip-1155)
+* [OpenSea's attribute standard](https://docs.opensea.io/docs/metadata-standards)
+
+This results in an easy-to-use property structure, which provides consistency and compatibility with any NFT service on the market, such as wallets, marketplaces,... 
+
