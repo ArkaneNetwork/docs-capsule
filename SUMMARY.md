@@ -41,7 +41,6 @@
 ## ⚙️Advanced
 
 * [NFT Configuration](advanced/nft-metadata/README.md)
-  * [Untitled](advanced/nft-metadata/untitled.md)
   * [Attributes](advanced/nft-metadata/nft-attributes.md)
   * [Animation & Media](advanced/nft-metadata/animation-and-media.md)
   * [Collection Info](advanced/nft-metadata/collection-info.md)
