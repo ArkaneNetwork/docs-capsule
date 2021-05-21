@@ -4,17 +4,13 @@ description: Properties / Stats / Boots
 
 # Attributes
 
-The attributes of an NFT item are grouped into three types. 
+In the NFT template \(token type\) you can define a list of attributes for an NFT. To make is simple you can define an attribute as one of three types, a **property**, a **stat,** or a **boost**.
 
-* property
-* stat
-* boost
-
-Each type has its own place in the marketplace, and each type has its own display characteristics.
+Each type has its own place in the NFT detail on the market, and each type has its own display characteristics.
 
 ![](../../.gitbook/assets/image%20%2813%29.png)
 
-## Properties
+## Property
 
 The properties section is mostly used to display text-based attributes such as the type or category of an item, a team, certain year, rarity, ...
 
@@ -28,7 +24,7 @@ The properties section is mostly used to display text-based attributes such as t
   ]
 ```
 
-## Stats
+## Stat
 
 The stats section is used to display certain stats and metrics, such as the level of a certain item, the amount of defense, power, or top speed a certain item possesses.
 
@@ -45,7 +41,7 @@ When a stat also has a max value defined it will be visualized as a progress bar
   ]
 ```
 
-## Boosts
+## Boost
 
 Boosts is a category to display gains that are achieved by possessing or using a certain item. It usually is accompanied by a positive or negative identifier. Examples of a boost are the increase or decrease of speed, armor but equally, it can be a reduction of certain fees or an increase in chance.
 
