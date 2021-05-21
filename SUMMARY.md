@@ -67,9 +67,9 @@
 ## 🌊Deep dive
 
 * [Environments & networks](deep-dive/environments-and-networks.md)
-* [NFT Metadata](deep-dive/nft-metadata/README.md)
-  * [Attributes](deep-dive/nft-metadata/nft-attributes.md)
+* [NFT Configuration](deep-dive/nft-metadata/README.md)
+  * [🔑 Attributes](deep-dive/nft-metadata/nft-attributes.md)
   * [Animation & Media](deep-dive/nft-metadata/animation-and-media.md)
-  * [Mint number / Burnable / Max Supply](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
+  * [Mint number / Max Supply](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
   * [Collection Info](deep-dive/nft-metadata/collection-info.md)
 

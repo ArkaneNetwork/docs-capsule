@@ -1,6 +1,8 @@
 ---
-description: A more detailed explanation of the NFT metadata structure and possibilities
+description: >-
+  A more detailed explanation of the NFT metadata structure, advanced
+  configurations and possibilities
 ---
 
-# NFT Metadata
+# NFT Configuration
 

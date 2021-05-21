@@ -2,7 +2,7 @@
 description: Properties / Stats / Boots
 ---
 
-# Attributes
+# 🔑 Attributes
 
 The attributes of an NFT item are grouped into three types. 
 
