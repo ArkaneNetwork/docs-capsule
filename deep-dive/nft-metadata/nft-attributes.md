@@ -20,7 +20,7 @@ Each type has its own place in the marketplace, and each type has its own displa
 
 The properties section is mostly used to display text-based attributes such as the type or category of an item, a team, certain year, rarity, ...
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 ```java
 "attributes" : [
@@ -36,7 +36,7 @@ The stats section is used to display certain stats and metrics, such as the leve
 
 When a stat also has a max value defined it will be visualized as a progress bar, otherwise, it will be shown as a card.
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2812%29.png)
 
 ```java
 "attributes" : [
