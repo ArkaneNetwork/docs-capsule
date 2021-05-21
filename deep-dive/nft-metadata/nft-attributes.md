@@ -1,5 +1,5 @@
 ---
-description: "\U0001F511Properties / Stats / Boots"
+description: Properties / Stats / Boots
 ---
 
 # Attributes

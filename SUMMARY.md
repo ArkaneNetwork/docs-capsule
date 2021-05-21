@@ -70,6 +70,6 @@
 * [NFT Configuration](deep-dive/nft-metadata/README.md)
   * [Attributes](deep-dive/nft-metadata/nft-attributes.md)
   * [Animation & Media](deep-dive/nft-metadata/animation-and-media.md)
-  * [Mint number / Max Supply](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
   * [Collection Info](deep-dive/nft-metadata/collection-info.md)
+  * [Mint number / Max Supply](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
 
