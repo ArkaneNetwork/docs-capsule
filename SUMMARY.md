@@ -67,5 +67,6 @@
 ## 🌊Deep dive
 
 * [Environments & networks](deep-dive/environments-and-networks.md)
-* [NFT Attributes](deep-dive/nft-attributes.md)
+* [NFT Metadata](deep-dive/nft-metadata/README.md)
+  * [NFT Attributes](deep-dive/nft-metadata/nft-attributes.md)
 
