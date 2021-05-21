@@ -49,7 +49,7 @@
   * [Mint number](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
 * [Environments & networks](deep-dive/environments-and-networks.md)
 
-## ⚙️Advanced <a id="capsule-advanced"></a>
+## 🧠Advanced <a id="capsule-advanced"></a>
 
 * [Authentication Bridge](capsule-advanced/authentication-bridge.md)
 * [Object Reference](capsule-advanced/object-reference/README.md)
