@@ -50,3 +50,9 @@ Please note that`maxSupply` is configured, stored, and track on-chain, meaning o
 }
 ```
 
+{% hint style="warning" %}
+When minting a token, the amount + current supply is checked against maxSupply., The currentSupply is only updated at the moment a tx is successful and confirmed. 
+
+Meaning, it is possible to submit a transaction to create a certain amount of an NFT which would surpass the max supply,  only to see the transaction fail on-chain.
+{% endhint %}
+
