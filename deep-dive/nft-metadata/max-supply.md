@@ -10,6 +10,10 @@ When creating the NFT template you can add advanced parameters to the JSON confi
 
 You can define a maximum supply by adding the optional field `maxSupply` to your  NFT template configuration. Default it is set to unlimited.
 
+{% hint style="info" %}
+Please note that`maxSupply` is configured, stored, and track on-chain, meaning once set it can not be altered.
+{% endhint %}
+
 ## Data Structure
 
 ### Signature

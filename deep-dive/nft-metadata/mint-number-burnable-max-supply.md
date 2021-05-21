@@ -8,6 +8,10 @@ description: Unique mint number
 
 When creating the NFT template you can add advanced parameters to the JSON configuration, such as defining if each NFT created from the template will have a unique mint number. Starting with 1 for the first mint and increased by +1 for each following NFT that is minted from that template. This generates truly unique NFTs as each version of your template has a unique number. Think about a Legendary sword [🗡️](https://emojipedia.org/dagger/)in your favorite game, only 5 exist and each Sword is unique. This is what we call a Non-fungible NFT. 
 
+{% hint style="info" %}
+Please note that the mint number is stored on the contract, therefore on-chain, it can not be altered.
+{% endhint %}
+
 On the other spectrum, we have what we call a Fungible NFT, to explain the difference we go back to your favorite game, but instead of a legendary sword, we are minting 100.000 fish 🐟NFTs. Used to heal your character. In the scenario, each fish is the same like each Bitcoin or Dollar is the same. In this case, we speak about Fungible NFT. 
 
 Depending on which type of NFT you can add the boolean field `fungible` to your NFT template configuration. It is optional and default it is set to `false`. Setting it to true will allow you to create Fungible NFTs.
