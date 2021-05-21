@@ -28,7 +28,6 @@ https://api-business-{{environment}}.arkane.network/api/apps/{{application_id}}/
     "imageThumbnail": "https://static.wikia.nocookie.net/parody/images/4/42/74915084_10162764640400387_6139958579186106368_o.jpg",
     "imagePreview": "https://static.wikia.nocookie.net/parody/images/4/42/74915084_10162764640400387_6139958579186106368_o.jpg",
     "externalUrl": "https://en.wikipedia.org/wiki/Space_Chickens_in_Space",
-    "backgroundColor": "#eeeeee",
     "fungible": false,
     "burnable": false,
     "currentSupply": 0,
