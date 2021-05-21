@@ -1,8 +1,8 @@
 ---
-description: Properties / Stats / Boots
+description: "\U0001F511Properties / Stats / Boots"
 ---
 
-# 🔑 Attributes
+# Attributes
 
 The attributes of an NFT item are grouped into three types. 
 
