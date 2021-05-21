@@ -294,11 +294,11 @@ For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet
 
 ## Object Types
 
-{% page-ref page="../../capsule-advanced/object-reference/wallettype.md" %}
+{% page-ref page="../../deep-dive-1/object-reference/wallettype.md" %}
 
-{% page-ref page="../../capsule-advanced/object-reference/importwallettype.md" %}
+{% page-ref page="../../deep-dive-1/object-reference/importwallettype.md" %}
 
-{% page-ref page="../../capsule-advanced/object-reference/secrettype.md" %}
+{% page-ref page="../../deep-dive-1/object-reference/secrettype.md" %}
 
 
 

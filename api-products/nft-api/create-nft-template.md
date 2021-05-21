@@ -70,6 +70,6 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
 ## Advanced
 
 {% hint style="info" %}
-For more information on configuration options in the NFT template, such as **adding media**, defining a **max supply**, and **much more** please read [NFT Configuration](../../deep-dive/nft-metadata/).
+For more information on configuration options in the NFT template, such as **adding media**, defining a **max supply**, and **much more** please read [NFT Configuration](../../advanced/nft-metadata/).
 {% endhint %}
 

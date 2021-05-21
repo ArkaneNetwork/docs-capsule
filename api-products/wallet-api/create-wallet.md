@@ -80,7 +80,7 @@ Status of the call and the wallet is returned.
 
 ## Object Types
 
-{% page-ref page="../../capsule-advanced/object-reference/secrettype.md" %}
+{% page-ref page="../../deep-dive-1/object-reference/secrettype.md" %}
 
-{% page-ref page="../../capsule-advanced/object-reference/wallettype.md" %}
+{% page-ref page="../../deep-dive-1/object-reference/wallettype.md" %}
 
