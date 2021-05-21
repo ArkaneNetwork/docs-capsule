@@ -13,8 +13,9 @@ Depending on which environment your application is connecting, your blockchain t
 | Service | Description | URL |
 | :--- | :--- | :--- |
 | Authentication | Endpoint to authenticate | [https://login.arkane.network](https://login.arkane.network/) |
-| Wallets | Endpoint for interacting with custody wallets | [https://api.arkane.network](https://api.arkane.network) |
-| NFT management | Endpoint used for NFT management | [https://api-business.arkane.network](https://api-business.arkane.network) |
+| Wallet API | Endpoint for interacting with custody wallets | [https://api.arkane.network](https://api.arkane.network) |
+| NFT API | Endpoint used for NFT management | [https://api-business.arkane.network](https://api-business.arkane.network) |
+| Market API | Endpoint used to interact with the market | [https://api.arkane.market](https://api.arkane.market/) |
 
 {% hint style="info" %}
 🧙 To connect to our environments, please [fill in this form](https://get.arkane.network/) to contact us.
@@ -26,6 +27,7 @@ Depending on which environment your application is connecting, your blockchain t
 | :--- | :--- |
 | Ethereum | mainnet |
 | Polygon / Matic | mainnet |
+| Avalanche | mainnet |
 | Binance Smart Chain | mainnet |
 | Bitcoin | mainnet |
 | VeChain | mainnet |
@@ -42,8 +44,9 @@ Depending on which environment your application is connecting, your blockchain t
 | Service | Description | URL |
 | :--- | :--- | :--- |
 | Authentication | Endpoint to authenticate | [https://login-staging.arkane.network/](https://login-staging.arkane.network/) |
-| Wallets | Endpoint for interacting with custody wallets | [https://api-staging.arkane.network/](https://api-staging.arkane.network/) |
-| NFT management | Endpoint used for NFT management | [https://api-business-staging.arkane.network/](https://api-business-staging.arkane.network/) |
+| Wallet API | Endpoint for interacting with custody wallets | [https://api-staging.arkane.network/](https://api-staging.arkane.network/) |
+| NFT API | Endpoint used for NFT management | [https://api-business-staging.arkane.network/](https://api-business-staging.arkane.network/) |
+| Market API | Endpoint used to interact with the market | [https://api-staging.arkane.market/](https://api-staging.arkane.market/) |
 
 ### Blockchain networks
 
@@ -51,6 +54,7 @@ Depending on which environment your application is connecting, your blockchain t
 | :--- | :--- |
 | Ethereum | testnet \(Rinkeby\) |
 | Polygon / Matic | testnet \(mumbai\)Polygon |
+| Avalanche | Fuji testnet |
 | Binance Smart Chain | testnet |
 | Bitcoin | testnet \(testnet3\) |
 | VeChain | testnet |
