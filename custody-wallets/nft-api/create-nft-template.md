@@ -67,3 +67,9 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
     "transactionHash": "0x36582ee04ef2b4570f381b59971deb2d2e698fb77724deb193333223119403c4"
 ```
 
+## Advanced
+
+{% hint style="info" %}
+For more information on configuration options in the NFT template, such as **adding media**, defining a **max supply**, and **much more** please read [NFT Configuration](../../deep-dive/nft-metadata/).
+{% endhint %}
+
