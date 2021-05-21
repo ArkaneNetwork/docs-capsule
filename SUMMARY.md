@@ -10,7 +10,7 @@
 ## 📦 API Products
 
 * [Wallet API](api-products/wallet-api/README.md)
-  * [Create wallet](api-products/wallet-api/create-wallet.md)
+  * [Create a wallet](api-products/wallet-api/create-wallet.md)
   * [Retrieve a wallet](api-products/wallet-api/get-wallet.md)
   * [Retrieve a wallet by identifier](api-products/wallet-api/get-wallet-by-id.md)
   * [Retrieve all wallets](api-products/wallet-api/untitled.md)

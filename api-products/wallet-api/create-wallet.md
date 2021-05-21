@@ -2,7 +2,7 @@
 description: How to create a new blockchain wallet
 ---
 
-# Create wallet
+# Create a wallet
 
 {% api-method method="post" host="https://api.arkane.network" path="/api/wallets" %}
 {% api-method-summary %}
