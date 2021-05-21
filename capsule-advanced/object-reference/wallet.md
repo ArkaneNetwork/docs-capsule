@@ -67,17 +67,17 @@
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/wallet-api/create-wallet.md" %}
+{% page-ref page="../../api-products/wallet-api/create-wallet.md" %}
 
-{% page-ref page="../../custody-wallets/wallet-api/get-wallet.md" %}
+{% page-ref page="../../api-products/wallet-api/get-wallet.md" %}
 
-{% page-ref page="../../custody-wallets/wallet-api/get-wallet-by-id.md" %}
+{% page-ref page="../../api-products/wallet-api/get-wallet-by-id.md" %}
 
-{% page-ref page="../../custody-wallets/wallet-api/untitled.md" %}
+{% page-ref page="../../api-products/wallet-api/untitled.md" %}
 
-{% page-ref page="../../custody-wallets/wallet-api/import-a-wallet.md" %}
+{% page-ref page="../../api-products/wallet-api/import-a-wallet.md" %}
 
-{% page-ref page="../../custody-wallets/wallet-api/export-a-wallet.md" %}
+{% page-ref page="../../api-products/wallet-api/export-a-wallet.md" %}
 
 
 

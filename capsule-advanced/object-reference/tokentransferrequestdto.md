@@ -48,5 +48,5 @@ description: Data structure for performing a fungible token transfer
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/wallet-api/transfer-a-fungible-token.md" %}
+{% page-ref page="../../api-products/wallet-api/transfer-a-fungible-token.md" %}
 

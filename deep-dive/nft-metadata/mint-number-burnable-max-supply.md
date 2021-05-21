@@ -17,7 +17,7 @@ On the other spectrum, we have what we call a Fungible NFT, to explain the diffe
 Depending on which type of NFT you can add the boolean field `fungible` to your NFT template configuration. It is optional and default it is set to `false`. Setting it to true will allow you to create Fungible NFTs.
 
 {% hint style="info" %}
-Please note when creating a Fungible NFT template you are required to use the [Mint Fungible NFT ](../../custody-wallets/nft-api/mint-fungible-nft.md)endpoint.
+Please note when creating a Fungible NFT template you are required to use the [Mint Fungible NFT ](../../api-products/nft-api/mint-fungible-nft.md)endpoint.
 {% endhint %}
 
 ## Data Structure

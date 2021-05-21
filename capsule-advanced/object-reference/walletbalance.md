@@ -30,7 +30,7 @@
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/wallet-api/retrieve-wallet-balance.md" %}
+{% page-ref page="../../api-products/wallet-api/retrieve-wallet-balance.md" %}
 
 
 

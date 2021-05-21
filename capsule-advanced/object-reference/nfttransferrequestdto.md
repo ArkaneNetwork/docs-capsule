@@ -45,7 +45,7 @@ description: Data structure for performing a non-fungible token transfer
 
 ## Function Reference
 
-{% page-ref page="../../custody-wallets/wallet-api/transfer-a-non-fungible-token.md" %}
+{% page-ref page="../../api-products/wallet-api/transfer-a-non-fungible-token.md" %}
 
 
 
