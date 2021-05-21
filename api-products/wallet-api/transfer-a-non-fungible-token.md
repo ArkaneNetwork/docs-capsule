@@ -95,7 +95,7 @@ POST : https://api.arkane.network/api/transactions/execute
     "from" : "0x89e01cEC55D718fA1Bf6B00fF21e6707cd9A3067",
     "tokenId" : 1
   }
-  "pincode" : "1234",
+  "pincode" : "1234"
 }
 ```
 
