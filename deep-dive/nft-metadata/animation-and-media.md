@@ -6,7 +6,7 @@ description: Adding Video and Audio to the mix
 
 NFT can be enriched by adding video or audio content. This allows NFT services to take advantage of this enriched media content, and for the creator it allows them to share more information about the content and value of the NFT.
 
-![Example of an NFT that is enriched with an audio file](../../.gitbook/assets/image%20%2816%29.png)
+![Example of an NFT that is enriched with an audio file](../../.gitbook/assets/image%20%2817%29.png)
 
 ## animationUrls
 
@@ -31,7 +31,7 @@ Since the `animationUrls[]` is an array it is possible to add more than one piec
   ]
 ```
 
-![Example of an NFT that is enriched with a video file](../../.gitbook/assets/image%20%286%29.png)
+![Example of an NFT that is enriched with a video file](../../.gitbook/assets/image%20%288%29.png)
 
 ## Data Structure
 
