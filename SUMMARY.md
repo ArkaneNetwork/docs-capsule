@@ -37,6 +37,7 @@
   * [Mint NFT](api-products/nft-api/mint-nft.md)
   * [Mint fungible-NFT](api-products/nft-api/mint-fungible-nft.md)
   * [Retrieve NFTs by template](api-products/nft-api/retrieve-nfts-by-template.md)
+* [Market API](api-products/market-api.md)
 
 ## ⚙️Advanced
 
