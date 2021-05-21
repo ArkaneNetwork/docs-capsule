@@ -38,6 +38,17 @@
   * [Mint fungible-NFT](api-products/nft-api/mint-fungible-nft.md)
   * [Retrieve NFTs by template](api-products/nft-api/retrieve-nfts-by-template.md)
 
+## 🌊Deep dive
+
+* [NFT Configuration](deep-dive/nft-metadata/README.md)
+  * [Untitled](deep-dive/nft-metadata/untitled.md)
+  * [Attributes](deep-dive/nft-metadata/nft-attributes.md)
+  * [Animation & Media](deep-dive/nft-metadata/animation-and-media.md)
+  * [Collection Info](deep-dive/nft-metadata/collection-info.md)
+  * [Max Supply](deep-dive/nft-metadata/max-supply.md)
+  * [Mint number](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
+* [Environments & networks](deep-dive/environments-and-networks.md)
+
 ## ⚙️Advanced <a id="capsule-advanced"></a>
 
 * [Authentication Bridge](capsule-advanced/authentication-bridge.md)
@@ -63,15 +74,4 @@
   * [NFTContract](capsule-advanced/object-reference/nftcontract.md)
   * [Trait](capsule-advanced/object-reference/trait.md)
   * [WalletItems](capsule-advanced/object-reference/walletitems.md)
-
-## 🌊Deep dive
-
-* [NFT Configuration](deep-dive/nft-metadata/README.md)
-  * [Untitled](deep-dive/nft-metadata/untitled.md)
-  * [Attributes](deep-dive/nft-metadata/nft-attributes.md)
-  * [Animation & Media](deep-dive/nft-metadata/animation-and-media.md)
-  * [Collection Info](deep-dive/nft-metadata/collection-info.md)
-  * [Max Supply](deep-dive/nft-metadata/max-supply.md)
-  * [Mint number](deep-dive/nft-metadata/mint-number-burnable-max-supply.md)
-* [Environments & networks](deep-dive/environments-and-networks.md)
 
