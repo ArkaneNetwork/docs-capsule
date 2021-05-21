@@ -45,7 +45,7 @@
   * [Animation & Media](advanced/nft-metadata/animation-and-media.md)
   * [Collection Info](advanced/nft-metadata/collection-info.md)
   * [Max Supply](advanced/nft-metadata/max-supply.md)
-  * [WIP: Burnable](advanced/nft-metadata/wip-burnable.md)
+  * [Burnable](advanced/nft-metadata/wip-burnable.md)
   * [Mint number](advanced/nft-metadata/mint-number-burnable-max-supply.md)
 * [Environments & networks](advanced/environments-and-networks.md)
 
