@@ -123,7 +123,9 @@ Returns the result of the call and the wallet
 {% endapi-method %}
 
 {% hint style="info" %}
-After updating the offer with the signature the status of the offer will transition from **NEW** to **INITIATING\_OFFER**, meaning the NFT will be taken into custody. If that was successful the status will be updated to **READY**. Meaning the offer was successfully created and is live on the market.
+After updating the offer with the signature the status of the offer will transition from **NEW** to **INITIATING\_OFFER**, meaning the NFT will be taken into custody. If that was successful the status will be updated to **READY**. Meaning the offer was successfully created and is live on the market.  
+  
+To learn more about the different states of an offer please read: [Status](../../deep-dive-1/object-reference/status.md)
 {% endhint %}
 
 {% hint style="warning" %}
