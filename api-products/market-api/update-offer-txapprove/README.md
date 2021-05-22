@@ -135,7 +135,7 @@ The Approve transaction is not always required, when a wallet has approved the m
 In this case the [Update offer: TxApprove](./) step can be skipped and moved directly to [Update offer: Signature](../update-offer-signature.md).
 {% endhint %}
 
-### How can you know if the Approve is needed?
+### How can you know if the Approve is required?
 
 An easy way is to call the [Get prepared Approve tx](get-prepared-transaction.md) endpoint. When the result set is empty it means the Approve step can be skipped. If the result set contains data, then the Approve still needs to happen.
 
