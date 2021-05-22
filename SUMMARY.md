@@ -37,7 +37,8 @@
   * [Mint NFT](api-products/nft-api/mint-nft.md)
   * [Mint fungible-NFT](api-products/nft-api/mint-fungible-nft.md)
   * [Retrieve NFTs by template](api-products/nft-api/retrieve-nfts-by-template.md)
-* [Market API](api-products/market-api.md)
+* [Market API](api-products/market-api/README.md)
+  * [List all offers](api-products/market-api/list-all-offers.md)
 
 ## ⚙️Advanced
 
@@ -75,4 +76,5 @@
   * [NFTContract](deep-dive-1/object-reference/nftcontract.md)
   * [Trait](deep-dive-1/object-reference/trait.md)
   * [WalletItems](deep-dive-1/object-reference/walletitems.md)
+  * [Status](deep-dive-1/object-reference/status.md)
 
