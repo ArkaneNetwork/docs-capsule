@@ -4,7 +4,7 @@ description: Endpoint to cancel one of your offers
 
 # Cancel an offer
 
-{% api-method method="get" host="https://api.arkane.market" path="/offers/:offerId/cancel" %}
+{% api-method method="post" host="https://api.arkane.market" path="/offers/:offerId/cancel" %}
 {% api-method-summary %}
 Cancel an offer
 {% endapi-method-summary %}
