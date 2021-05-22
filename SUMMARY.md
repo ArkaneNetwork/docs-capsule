@@ -39,6 +39,7 @@
   * [Retrieve NFTs by template](api-products/nft-api/retrieve-nfts-by-template.md)
 * [Market API](api-products/market-api/README.md)
   * [List all offers](api-products/market-api/list-all-offers.md)
+  * [List all platform offers](api-products/market-api/list-all-platform-offers.md)
 
 ## ⚙️Advanced
 

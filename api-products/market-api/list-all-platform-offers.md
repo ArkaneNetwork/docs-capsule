@@ -1,10 +1,10 @@
 ---
-description: Endpoint to fetch all offers available in the global market
+description: Endpoint to fetch all offers created by the client
 ---
 
-# List all offers
+# List all platform offers
 
-{% api-method method="get" host="https://api.arkane.market" path="/offers" %}
+{% api-method method="get" host="https://api.arkane.market" path="/user/offers" %}
 {% api-method-summary %}
 Get offers
 {% endapi-method-summary %}
@@ -16,12 +16,8 @@ Get offers
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="type" type="string" required=false %}
-Filter all offers by type, '**SALE**' or '**AUCTION**'
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="contractAddress" type="string" required=false %}
-Filter all offers by contract address
+Filter all offer by contract address
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="array" required=false %}
@@ -274,9 +270,9 @@ The status query parameter is optional, when not provided the endpoint will filt
 
 | Description |  |
 | :--- | :--- |
-| READY | Offer is ready and is live on the market |
-| SOLD | Offer has been sold and is no longer active |
-| CLOSED | Offer has not been sold and is no longer active |
+| READY | Offer is ready and live on the market |
+| SOLD | Offer has been sold, and is no longer active |
+| CLOSED | Offer has not been sold, and is no longer active |
 | NEW | Newly created offer, waiting for Approve tx and signed data |
 | INITIATING\_OFFER | Taking an NFT into custody |
 | FINALIZING\_OFFER | Moving an NFT out of custody |
