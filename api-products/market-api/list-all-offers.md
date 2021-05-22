@@ -258,13 +258,9 @@ Returns the result of the call and the wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example
-
-#### Filter on closed offers
-
-```javascript
-https://api.arkane.market/offers?status=CLOSED
-```
+{% hint style="info" %}
+The status query parameter is optional, when not provided the endpoint will filter on the status **READY**.
+{% endhint %}
 
 ## Status
 
@@ -277,7 +273,15 @@ https://api.arkane.market/offers?status=CLOSED
 | INITIATING\_OFFER | Taking an NFT into custody |
 | FINALIZING\_OFFER | Moving an NFT out of custody |
 
-{% page-ref page="../../deep-dive-1/object-reference/status.md" %}
+{% page-ref page="list-all-offers.md" %}
+
+## Example
+
+#### Filter on closed offers
+
+```javascript
+https://api.arkane.market/offers?status=CLOSED
+```
 
 
 
