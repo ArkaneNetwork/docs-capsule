@@ -21,7 +21,7 @@ Get prepared Approve transaction
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="offerId" type="string" required=true %}
-ID of the offer that needs the update
+ID of the offer
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
