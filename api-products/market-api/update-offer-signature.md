@@ -137,7 +137,7 @@ Note this step assumes you've already completed [Update offer: TxApprove](update
 #### Request
 
 ```javascript
-https://api-qa.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/signature
+https://api.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/signature
 ```
 
 #### Request Body

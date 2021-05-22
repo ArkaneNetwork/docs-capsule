@@ -132,7 +132,7 @@ Note that in order to move an offer from state **NEW** to state **READY**, the o
 #### Request
 
 ```javascript
-https://api-qa.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/txapprove
+https://api.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/txapprove
 ```
 
 #### Request Body
