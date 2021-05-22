@@ -266,8 +266,6 @@ Returns the result of the call and the wallet
 https://api.arkane.market/offers?status=CLOSED
 ```
 
-#### 
-
 ## Status
 
 | Description |  |
