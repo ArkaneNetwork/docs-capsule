@@ -85,6 +85,12 @@ Returns the result of the call and the wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+When an offer is bought, the state of the offer transitions from **READY** to **FINALIZNIG\_OFFER**, once the NFT is successfully transferred to the buyer's wallet the status gets updated one last time to **SOLD**.
+
+Learn more about the different [states](../../deep-dive-1/object-reference/status.md).
+{% endhint %}
+
 ## Example
 
 #### Request
