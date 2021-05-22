@@ -16,8 +16,12 @@ Get offers
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
+{% api-method-parameter name="type" type="string" required=false %}
+Filter all offers by type, '**SALE**' or '**AUCTION**'
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="contractAddress" type="string" required=false %}
-Filter all offer by contract address
+Filter all offers by contract address
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="array" required=false %}
@@ -270,9 +274,9 @@ The status query parameter is optional, when not provided the endpoint will filt
 
 | Description |  |
 | :--- | :--- |
-| READY | Offer is ready and live on the market |
-| SOLD | Offer has been sold, and is no longer active |
-| CLOSED | Offer has not been sold, and is no longer active |
+| READY | Offer is ready and is live on the market |
+| SOLD | Offer has been sold and is no longer active |
+| CLOSED | Offer has not been sold and is no longer active |
 | NEW | Newly created offer, waiting for Approve tx and signed data |
 | INITIATING\_OFFER | Taking an NFT into custody |
 | FINALIZING\_OFFER | Moving an NFT out of custody |
@@ -285,19 +289,22 @@ The status query parameter is optional, when not provided the endpoint will filt
 
 ```javascript
 //Default filtering applies (status=READY)
-https://api.arkane.market/offers
+https://api.arkane.market/user/offers
 
 //Filter on status SOLD
-https://api.arkane.market/offers?status=SOLD
+https://api.arkane.market/user/offers?status=SOLD
+
+//Filter on type AUCTION
+https://api.arkane.market/user/offers?type=AUCTION
 
 //Filter on status SOLD and READY
-https://api.arkane.market/offers?status=SOLD,READY
+https://api.arkane.market/user/offers?status=SOLD,READY
 
 //Filter based on contract address (status=READY)
-https://api.arkane.market/offers?contractAddress=0x1d9d2d1176e774a6843c2d18d638f2d4ca392e61
+https://api.arkane.market/user/offers?contractAddress=0x1d9d2d1176e774a6843c2d18d638f2d4ca392e61
 
 //Filter based on contract address and status=SOLD
-https://api.arkane.market/offers?status=SOLD&contractAddress=0x1d9d2d1176e774a6843c2d18d638f2d4ca392e61
+https://api.arkane.market/user/offers?status=SOLD&contractAddress=0x1d9d2d1176e774a6843c2d18d638f2d4ca392e61
 Respon
 ```
 
