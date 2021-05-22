@@ -1,4 +1,8 @@
-# Untitled
+---
+description: Endpoint to initiate a new offer
+---
+
+# Create an offer
 
 {% api-method method="post" host="https://api.arkane.market" path="/offers" %}
 {% api-method-summary %}
@@ -124,6 +128,10 @@ Returns the result of the call and the wallet
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+This endpoint will create a new offer with the [status](../../deep-dive-1/object-reference/status.md) **NEW**.
+{% endhint %}
 
 ## Example
 
