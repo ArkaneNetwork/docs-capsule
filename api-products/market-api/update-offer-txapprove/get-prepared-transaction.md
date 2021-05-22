@@ -66,6 +66,17 @@ Returns the result of the call and the wallet
 **Note**: When the end-user has executed the result of this call, that transaction hash should be providing back to the market by using [Update offer: TxApprove](./).
 {% endhint %}
 
+## What if the result set is empty?
+
+It is possible that in certain cases the call was successful, but that the result set is empty. This means that the wallet that stores the NFT, approved the market in the past for that specific NFT contract. Therefore the end-user is not required to perform the Approve transaction for a second time. In this case the [Update offer: TxApprove](./) step can be skipped and moved directly to [Update offer: Signature](../update-offer-signature.md).
+
+```javascript
+{
+    "success": true,
+    "result": []
+}
+```
+
 ## Example
 
 #### Request
