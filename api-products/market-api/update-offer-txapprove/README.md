@@ -127,6 +127,20 @@ Returns the result of the call and the wallet
 Note that in order to move an offer from state **NEW** to state **READY**, the offer will need a 2nd update, which is [Update offer: Signature](../update-offer-signature.md).
 {% endhint %}
 
+## TxApprove not always required
+
+The Approve transaction is not always required, when a wallet has approved the market for a specific NFT contract in the past the wallet will not be required to approve the market a second time. More concrete if a user has approved the market to take an NFT of a certain NFT contract into custody he will not have to approve the market next time he wants to sell a different NFT of the same NFT contract.
+
+{% hint style="info" %}
+In this case the [Update offer: TxApprove](./) step can be skipped and moved directly to [Update offer: Signature](../update-offer-signature.md).
+{% endhint %}
+
+### How can you know if the Approve is needed?
+
+An easy way is to call the [Get prepared Approve tx](get-prepared-transaction.md) endpoint. When the result set is empty it means the Approve step can be skipped. If the result set contains data, then the Approve still needs to happen.
+
+{% page-ref page="get-prepared-transaction.md" %}
+
 ## Example
 
 #### Request
