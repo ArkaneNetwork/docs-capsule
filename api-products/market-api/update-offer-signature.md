@@ -123,7 +123,11 @@ Returns the result of the call and the wallet
 {% endapi-method %}
 
 {% hint style="info" %}
-Note that in order to move an offer from state **NEW** to state **READY**, the offer will need a 2nd update, which is [Update offer: Signature](update-offer-signature.md).
+After updating the offer with the signature the status of the offer will transition from **NEW** to **INITIATING\_OFFER**, meaning the NFT will be taken into custody. If that was successful the status will be updated to **READY**. Meaning the offer was successfully created and is live on the market.
+{% endhint %}
+
+{% hint style="warning" %}
+Note this step assumes you've already completed [Update offer: TxApprove](update-offer-txapprove/). 
 {% endhint %}
 
 ## Example
