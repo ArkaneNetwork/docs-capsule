@@ -273,7 +273,7 @@ The status query parameter is optional, when not provided the endpoint will filt
 | INITIATING\_OFFER | Taking an NFT into custody |
 | FINALIZING\_OFFER | Moving an NFT out of custody |
 
-{% page-ref page="list-all-offers.md" %}
+{% page-ref page="../../deep-dive-1/object-reference/status.md" %}
 
 ## Example
 
