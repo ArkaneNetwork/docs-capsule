@@ -45,6 +45,7 @@
   * [Update offer: TxApprove](api-products/market-api/update-offer-txapprove/README.md)
     * [Get prepared Approve tx](api-products/market-api/update-offer-txapprove/get-prepared-transaction.md)
   * [Update offer: Signature](api-products/market-api/update-offer-signature.md)
+  * [Cancel an offer](api-products/market-api/cancel-an-offer.md)
 
 ## ⚙️Advanced
 
