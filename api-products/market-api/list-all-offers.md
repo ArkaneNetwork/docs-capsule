@@ -311,7 +311,6 @@ Respon
 #### Response
 
 ```javascript
-
 {
 	"success": true,
 	"result": [{
