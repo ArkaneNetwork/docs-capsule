@@ -20,7 +20,7 @@ Get offers
 Filter all offer by contract address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="status" type="string" required=false %}
+{% api-method-parameter name="status" type="array" required=false %}
 Filter all offers by status
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -287,8 +287,11 @@ The status query parameter is optional, when not provided the endpoint will filt
 //Default filtering applies (status=READY)
 https://api.arkane.market/offers
 
-//Filter on statu=SOLD
+//Filter on status SOLD
 https://api.arkane.market/offers?status=SOLD
+
+//Filter on status SOLD and READY
+https://api.arkane.market/offers?status=SOLD,READY
 
 //Filter based on contract address (status=READY)
 https://api.arkane.market/offers?contractAddress=0x1d9d2d1176e774a6843c2d18d638f2d4ca392e61
