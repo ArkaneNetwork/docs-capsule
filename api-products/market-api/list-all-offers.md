@@ -294,6 +294,9 @@ https://api.arkane.market/offers
 //Filter on status SOLD
 https://api.arkane.market/offers?status=SOLD
 
+//Filter on type AUCTION
+https://api.arkane.market/offers?type=AUCTION
+
 //Filter on status SOLD and READY
 https://api.arkane.market/offers?status=SOLD,READY
 
