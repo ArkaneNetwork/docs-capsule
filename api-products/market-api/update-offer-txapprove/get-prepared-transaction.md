@@ -4,13 +4,13 @@ description: >-
   launch
 ---
 
-# Get prepared transaction
+# Get prepared Approve tx
 
 Since there are multiple variants and standards of NFT contracts it can be difficult for a client to know for each NFT contract which function to call and which input parameter each function might need. To overcome that specific pain the market also provides an endpoint that returns that required information, allowing the client to easily query what they need to forward to their end-users. 
 
 {% api-method method="get" host="https://api.arkane.market" path="/offers/:offerId/preparation/transactions" %}
 {% api-method-summary %}
-Update offer: Signature
+Get prepared Approve transaction
 {% endapi-method-summary %}
 
 {% api-method-description %}

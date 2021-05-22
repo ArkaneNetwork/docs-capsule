@@ -43,7 +43,7 @@
   * [Retrieve an offer](api-products/market-api/retrieve-an-offer.md)
   * [Create an offer](api-products/market-api/untitled.md)
   * [Update offer: TxApprove](api-products/market-api/update-offer-txapprove/README.md)
-    * [Get prepared transaction](api-products/market-api/update-offer-txapprove/get-prepared-transaction.md)
+    * [Get prepared Approve tx](api-products/market-api/update-offer-txapprove/get-prepared-transaction.md)
   * [Update offer: Signature](api-products/market-api/update-offer-signature.md)
 
 ## ⚙️Advanced
