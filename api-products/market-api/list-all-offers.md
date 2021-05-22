@@ -279,5 +279,7 @@ https://api.arkane.market/offers?status=CLOSED
 | INITIATING\_OFFER | Taking an NFT into custody |
 | FINALIZING\_OFFER | Moving an NFT out of custody |
 
+{% page-ref page="../../deep-dive-1/object-reference/status.md" %}
+
 
 
