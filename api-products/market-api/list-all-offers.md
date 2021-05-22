@@ -17,7 +17,7 @@ Get offers
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="status" type="string" required=false %}
-Filter all offer by status
+Filter all offers by status
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
