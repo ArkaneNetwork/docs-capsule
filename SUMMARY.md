@@ -42,6 +42,8 @@
   * [List all your offers](api-products/market-api/list-all-platform-offers.md)
   * [Retrieve an offer](api-products/market-api/retrieve-an-offer.md)
   * [Create an offer](api-products/market-api/untitled.md)
+  * [Update offer: TxApprove](api-products/market-api/update-offer-txapprove.md)
+  * [Update offer: Signature](api-products/market-api/update-offer-signature.md)
 
 ## ⚙️Advanced
 
