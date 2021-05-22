@@ -1,8 +1,8 @@
 ---
-description: Endpoint to fetch all offers created by the client
+description: Endpoint to fetch all offers created by you
 ---
 
-# List all platform offers
+# List all your offers
 
 {% api-method method="get" host="https://api.arkane.market" path="/user/offers" %}
 {% api-method-summary %}
