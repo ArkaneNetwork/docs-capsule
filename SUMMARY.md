@@ -41,6 +41,7 @@
   * [List all offers](api-products/market-api/list-all-offers.md)
   * [List all your offers](api-products/market-api/list-all-platform-offers.md)
   * [Retrieve an offer](api-products/market-api/retrieve-an-offer.md)
+  * [Untitled](api-products/market-api/untitled.md)
 
 ## ⚙️Advanced
 
