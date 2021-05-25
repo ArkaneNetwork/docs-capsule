@@ -23,7 +23,11 @@ The READY status means that the NFT has been successfully taken into custody and
 
 ### **FINALIZING\_OFFER**
 
-When the lifecycle of an offer is coming to an end, this can be triggered by a sale of the NFT, by canceling the sale, or in case of an auction, when time runs out, the state moves from **READY** to **FINALIZING\_OFFER**. This means the NFT is moving out of custody and is either being sent to the wallet of the buyer or back to the wallet of the seller.
+When the lifecycle of an offer is coming to an end, triggered by a sale of the NFT, the state moves from **READY** to **FINALIZING\_OFFER**. This means the NFT is moving out of custody and is either being sent to the wallet of the buyer or back to the wallet of the seller.
+
+### CLOSING\_OFFER
+
+When the lifecycle of an offer is coming to an end, this can be triggered by canceling the sale, or in case of an auction, when time runs out, the state moves from **READY** to **CLOSING\_OFFER**. This means the NFT is moving out of custody and is either being sent to the wallet of the buyer or back to the wallet of the seller.
 
 ### SOLD
 
@@ -32,4 +36,14 @@ The **SOLD** state is a final state, which follows the **FINALIZING\_OFFER** sta
 ### CLOSED
 
 The **CLOSED** state is a final state, which follows the **FINALIZING\_OFFER** state. The transition happens when the offer was canceled by the seller and the NFT was successfully moved out of custody and moved back into the seller's wallet.
+
+### REFUSED
+
+Something went wrong while taking the item into custody, a detailed investigation is needed.
+
+### ERROR
+
+Something went wrong. A detailed investigation is needed.
+
+
 
