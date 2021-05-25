@@ -16,13 +16,13 @@ Buy an offer
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="offerId" type="string" required=false %}
+{% api-method-parameter name="offerId" type="string" required=true %}
 ID of the offer to cancel
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="externalUserId" type="string" required=true %}
+{% api-method-parameter name="externalUserId" type="string" required=false %}
 String to identify the end-user, the buyer.
 {% endapi-method-parameter %}
 
