@@ -127,6 +127,10 @@ Returns the result of the call and the wallet
 Note that in order to move an offer from state **NEW** to state **READY**, the offer will need a 2nd update, which is [Update offer: Signature](../update-offer-signature.md).
 {% endhint %}
 
+{% hint style="warning" %}
+**Note:** The order is important. First the TxApprove, then the Signature. 
+{% endhint %}
+
 ## TxApprove not always required
 
 The Approve transaction is not always required, when a wallet has approved the market for a specific NFT contract in the past the wallet will not be required to approve the market a second time. More concrete if a user has approved the market to take an NFT of a certain NFT contract into custody he will not have to approve the market next time he wants to sell a different NFT of the same NFT contract.
