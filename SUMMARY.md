@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Introduction](README.md)
+* [Postman Collection](https://documenter.getpostman.com/view/11995086/TzXwEdfX#intro)
 
 ## 🔑 Authentication
 
