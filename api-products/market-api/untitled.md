@@ -130,7 +130,11 @@ Returns the result of the call and the wallet
 {% endapi-method %}
 
 {% hint style="info" %}
-This endpoint will create a new offer with the [status](../../deep-dive-1/object-reference/status.md) **NEW**. Once a new offer is created it needs to be updated with [Update offer: TxApprove](update-offer-txapprove/) and [Update offer: Signature](update-offer-signature.md) before it can move to the state **READY** and become live on the market.
+This endpoint will create a new offer with the [status](../../deep-dive-1/object-reference/status.md) **NEW**. Once a new offer is created it needs to be updated **first** with [Update offer: TxApprove](update-offer-txapprove/), follow by [Update offer: Signature](update-offer-signature.md) before it can move to the state **READY** and become live on the market.
+{% endhint %}
+
+{% hint style="warning" %}
+**Note:** The order is important. First the TxApprove, then the Signature. 
 {% endhint %}
 
 ## Example

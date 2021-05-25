@@ -39,7 +39,7 @@ The **CLOSED** state is a final state, which follows the **FINALIZING\_OFFER** s
 
 ### REFUSED
 
-Something went wrong while taking the item into custody, a detailed investigation is needed.
+Something went wrong **while taking the item into custody**, a detailed investigation is needed.
 
 ### ERROR
 

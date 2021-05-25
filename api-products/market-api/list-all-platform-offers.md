@@ -266,10 +266,6 @@ Returns the result of the call and the wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% hint style="info" %}
-The status query parameter is optional, when not provided the endpoint will filter on the status **READY**.
-{% endhint %}
-
 ## Status
 
 | Description |  |
@@ -280,6 +276,9 @@ The status query parameter is optional, when not provided the endpoint will filt
 | NEW | Newly created offer, waiting for Approve tx and signed data |
 | INITIATING\_OFFER | Taking an NFT into custody |
 | FINALIZING\_OFFER | Moving an NFT out of custody |
+| CLOSING\_OFFER | Item was not sold, is being sent back to the user |
+| ERROR | Something went wrong... |
+| REFUSED | Something went wrong while the item was being sent to the market |
 
 {% page-ref page="../../deep-dive-1/object-reference/status.md" %}
 
