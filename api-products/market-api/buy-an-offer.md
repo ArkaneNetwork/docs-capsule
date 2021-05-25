@@ -91,6 +91,10 @@ When an offer is bought, the state of the offer transitions from **READY** to **
 Learn more about the different [states](../../deep-dive-1/object-reference/status.md).
 {% endhint %}
 
+{% hint style="warning" %}
+If the **`walletAddress`** is invalid, the NFT will be sent to the email address of the buyer. In an API solution that would mean the email address of the Client. 
+{% endhint %}
+
 ## Example
 
 #### Request
