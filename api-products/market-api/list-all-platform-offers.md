@@ -16,6 +16,10 @@ Get offers
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
+{% api-method-parameter name="externalUserId" type="string" required=false %}
+Filter by externalBuyerId and externalSellerId
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="type" type="string" required=false %}
 Filter all offers by type, '**SALE**' or '**AUCTION**'
 {% endapi-method-parameter %}
@@ -265,6 +269,10 @@ Returns the result of the call and the wallet
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+To get all your offers related to a certain user, you can use the **`externalUserId`** query parameter, assuming you've filled it incorrectly when creating and buying offers.
+{% endhint %}
 
 ## Status
 
