@@ -4,12 +4,24 @@ description: How to access Arkane API
 
 # How to authenticate
 
-## Client ID
+## Client ID & Secret
 
 To connect to our [staging or production environment](../advanced/environments-and-networks.md) and the different networks, a private Client ID is required. By using a Client ID that is linked to your application, an extra level of security is added, as it allows transaction filtering based on origin. 
 
 {% hint style="info" %}
 🧙 To connect to our environments, please get in touch by [filling in this form](https://get.arkane.network/). When we've reviewed your application we will contact you.
+{% endhint %}
+
+## Already have your Client ID & Secret?
+
+Awesome, no time to waste, full speed ahead. 
+
+The best place to start is by downloading our [Postman Collection](https://documenter.getpostman.com/view/11995086/TzXwEdfX). It covers all our available endpoints for all our API products. Once downloaded you only need to update the variables with your own client id and secret and you are good to go.
+
+![](../.gitbook/assets/image%20%2821%29.png)
+
+{% hint style="info" %}
+By default our postman collection points to our staging environment, which is connected to different testnets and is the perfect environment to start playing around. To learn more about our environments and the different blockchain networks please have a look at [Environments & networks](../advanced/environments-and-networks.md).
 {% endhint %}
 
 ## Basic Authentication flow
