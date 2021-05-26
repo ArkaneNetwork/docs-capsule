@@ -6,7 +6,7 @@ description: >-
 
 # Get Tx status
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/transactions/<secretType>/<transactionHash>/status" %}
+{% api-method method="post" host="https://api.arkane.network" path="/api/transactions/:secretType/:transactionHash/status" %}
 {% api-method-summary %}
 Get the status of a transaction
 {% endapi-method-summary %}
