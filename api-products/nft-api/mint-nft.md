@@ -19,6 +19,10 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
 }
 ```
 
+{% hint style="info" %}
+Since **`destinations`** is an array it is possible to provide a list of addresses, this will result in minting one NFT for each address.
+{% endhint %}
+
 ## Returns
 
 ```javascript
