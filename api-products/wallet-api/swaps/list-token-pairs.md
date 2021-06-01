@@ -2,7 +2,7 @@
 description: Fetch a list of available token pairs
 ---
 
-# List token pairs
+# Retrieve token pairs
 
 Get the available token pairs supported by our endpoint. The result set depends on the blockchain the wallet \(`walletId`\) is hosted on. If you feel you are missing a token pair, please contact us and we will look into making that available for you.
 
