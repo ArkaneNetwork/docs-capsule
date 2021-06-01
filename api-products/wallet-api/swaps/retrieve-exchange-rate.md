@@ -1,14 +1,14 @@
 ---
-description: Fetch a list of available token pairs
+description: Endpoint to gather detailed information about a potential swap
 ---
 
-# List token pairs
+# Retrieve exchange rate
 
-Get the available token pairs supported by our endpoint. The result set depends on the blockchain the wallet \(`walletId`\) is hosted on. If you feel you are missing a token pair, please contact us and we will look into making that available for you.
+This endpoint returns information about the expected result of the swap. It provides the expected output amount, as well gives information about the slippage, and fee involved for that specific swap.
 
 {% api-method method="get" host="https://api.arkane.network" path="/api/wallets/:walletId/swaps/pairs" %}
 {% api-method-summary %}
-Get possible pairs
+Get exchange rate
 {% endapi-method-summary %}
 
 {% api-method-description %}
