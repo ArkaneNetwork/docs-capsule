@@ -4,7 +4,7 @@ description: >-
   token id.
 ---
 
-# Get token info
+# Get NFT info
 
 {% api-method method="get" host="https://<chain>-azrael.arkane.network" path="/contracts/:tokenContract/tokens/:tokenId" %}
 {% api-method-summary %}

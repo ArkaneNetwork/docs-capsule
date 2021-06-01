@@ -2,7 +2,7 @@
 description: Retrieve the NFT contract information based on the contract address
 ---
 
-# Get token contract
+# Get NFT contract
 
 {% api-method method="get" host="https://<chain>-azrael.arkane.network" path="/contracts/:tokenContract" %}
 {% api-method-summary %}

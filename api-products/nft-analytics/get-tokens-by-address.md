@@ -2,7 +2,7 @@
 description: Retrieve all tokens that are stored on a wallet address
 ---
 
-# Get tokens by address
+# Get NFTs by address
 
 {% api-method method="get" host="https://<chain>-azrael.arkane.network" path="/:walletAddress/tokens" %}
 {% api-method-summary %}
