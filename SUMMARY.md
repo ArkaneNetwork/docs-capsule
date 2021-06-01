@@ -24,6 +24,7 @@
   * [Swaps](api-products/wallet-api/swaps/README.md)
     * [Retrieve token pairs](api-products/wallet-api/swaps/list-token-pairs.md)
     * [Retrieve exchange rate](api-products/wallet-api/swaps/retrieve-exchange-rate.md)
+    * [Untitled](api-products/wallet-api/swaps/untitled.md)
   * [Sign a message](api-products/wallet-api/sign-a-message.md)
   * [Call a contract](api-products/wallet-api/call-a-contract.md)
   * [Get Tx status](api-products/wallet-api/get-tx-status.md)

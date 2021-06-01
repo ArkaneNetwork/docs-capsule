@@ -80,10 +80,6 @@ SELL
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% hint style="info" %}
-**Note:**  
-{% endhint %}
-
 ## Example
 
 #### Request
