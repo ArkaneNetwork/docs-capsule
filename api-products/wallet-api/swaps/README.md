@@ -4,7 +4,7 @@ description: How to swap one token for another using the Wallet API
 
 # Swaps
 
-Performing a token swap consists out of 4 steps. 
+Performing a token swap consists out of 4 steps:
 
 **Step 01:** Retrieve the token pairs that are available for swapping.
 
