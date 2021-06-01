@@ -27,7 +27,7 @@ ID of the wallet
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Returns the result of the call and the wallet 
+
 {% endapi-method-response-example-description %}
 
 ```javascript
