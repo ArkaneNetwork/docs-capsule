@@ -67,7 +67,9 @@ Returns the result of the call and the wallet
 {% endapi-method %}
 
 {% hint style="info" %}
-**Note:** The token pairs will be automaticly filters based on the blockchain that is hosting the wallet. If the wallet is on Ethereum , the list will only display tokens that are availble for swapping on the Ethereum blockchain.
+**Note:** The token pairs will be automatically filtered based on the blockchain that is hosting the wallet. If the wallet is on Ethereum, the list will only display tokens that are available for swapping on the Ethereum blockchain.
+
+Currently, the swap endpoints support Ethereum, Polygon \(Matic\), and BSC \(Binance Smart Chain\).
 {% endhint %}
 
 ## Example
