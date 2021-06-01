@@ -63,7 +63,7 @@ SELL
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="exchange" type="string" required=true %}
-ONE\_INCH ; DEX that will be used for the swap
+ONE\_INCH ; DEX used for the swap
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
