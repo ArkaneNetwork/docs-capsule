@@ -8,9 +8,7 @@ NFT Analytics offers a set of endpoints that provides the ability to query NFT r
 
 The following blockchain are currently supported by our NFT Analytics
 
-* Ethereum
 * Polygon \(Matic\)
-* BSC \(Binance Smart Chain\)
 * Avalanche \(C-Chain\)
 
 {% hint style="info" %}
