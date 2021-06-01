@@ -66,6 +66,10 @@ Returns the result of the call and the wallet
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+**Note:** The token pairs will be automaticly filters based on the blockchain that is hosting the wallet. If the wallet is on Ethereum , the list will only display tokens that are availble for swapping on the Ethereum blockchain.
+{% endhint %}
+
 ## Example
 
 #### Request
