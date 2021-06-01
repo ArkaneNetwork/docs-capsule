@@ -24,6 +24,48 @@ Build swap tx
 Wallet which holds the token to swap
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="walletId" type="string" required=true %}
+Wallet hosting the 'from' tokens
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="destinationWalletId" type="string" required=true %}
+wallet that will receive the 'to' tokens
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="fromSecretType" type="string" required=true %}
+Which blockchain to use
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="toSecretType" type="string" required=true %}
+Which blockchain to use
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="fromToken" type="string" required=true %}
+Source token contract address
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="toToken" type="string" required=true %}
+Destination token contract address
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="inputAmount" type="string" required=true %}
+Amount to swap
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="outputAmount" type="string" required=true %}
+Amount to receive
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="orderType" type="string" required=true %}
+SELL
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="exchange" type="string" required=true %}
+DEX that will be used for the swap
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
