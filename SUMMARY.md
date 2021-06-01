@@ -45,6 +45,7 @@
 * [NFT Analytics](api-products/nft-analytics/README.md)
   * [Get tokens by address](api-products/nft-analytics/get-tokens-by-address.md)
   * [Get token contract](api-products/nft-analytics/get-token-contract.md)
+  * [Get token info](api-products/nft-analytics/get-token-info.md)
 * [Market API](api-products/market-api/README.md)
   * [List all offers](api-products/market-api/list-all-offers.md)
   * [List all your offers](api-products/market-api/list-all-platform-offers.md)
