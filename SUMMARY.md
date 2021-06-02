@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Introduction](README.md)
+* [Changelog](changelog.md)
 * [Postman Collection](https://documenter.getpostman.com/view/11995086/TzXwEdfX)
 
 ## 🔑 Authentication
@@ -39,6 +40,7 @@
   * [Retrieve NFT template](api-products/nft-api/retrieve-nft-template.md)
   * [Retrieve all NFT templates](api-products/nft-api/retrieve-all-nft-templates.md)
   * [Retrieve NFT metadata](api-products/nft-api/retrieve-nft-metadata.md)
+  * [Update NFT metadata](api-products/nft-api/update-nft-metadata.md)
   * [Mint NFT](api-products/nft-api/mint-nft.md)
   * [Mint fungible-NFT](api-products/nft-api/mint-fungible-nft.md)
   * [Retrieve NFTs by template](api-products/nft-api/retrieve-nfts-by-template.md)
