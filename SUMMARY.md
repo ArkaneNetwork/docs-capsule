@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Introduction](README.md)
-* [Changelog](changelog.md)
+* [📝 Changelog](changelog.md)
 * [Postman Collection](https://documenter.getpostman.com/view/11995086/TzXwEdfX)
 
 ## 🔑 Authentication
