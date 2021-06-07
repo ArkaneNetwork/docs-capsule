@@ -52,7 +52,7 @@
   * [List all offers](api-products/market-api/list-all-offers.md)
   * [List all your offers](api-products/market-api/list-all-platform-offers.md)
   * [Retrieve an offer](api-products/market-api/retrieve-an-offer.md)
-  * [Create an offer](api-products/market-api/untitled.md)
+  * [Create an offer](api-products/market-api/create-offer.md)
   * [Update offer: TxApprove](api-products/market-api/update-offer-txapprove/README.md)
     * [Get prepared Approve tx](api-products/market-api/update-offer-txapprove/get-prepared-transaction.md)
   * [Update offer: Signature](api-products/market-api/update-offer-signature.md)
