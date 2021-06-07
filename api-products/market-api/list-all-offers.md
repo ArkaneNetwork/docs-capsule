@@ -267,7 +267,7 @@ Returns the result of the call and the wallet
 {% endapi-method %}
 
 {% hint style="info" %}
-The status query parameter is optional, when not provided the endpoint will filter on the status **READY**.
+The status query parameter is optional, when not provided the endpoint will filter on the [status](../../deep-dive-1/object-reference/status.md) **READY**.
 {% endhint %}
 
 ## Status
