@@ -44,6 +44,7 @@
   * [Mint NFT](api-products/nft-api/mint-nft.md)
   * [Mint fungible-NFT](api-products/nft-api/mint-fungible-nft.md)
   * [Retrieve NFTs by template](api-products/nft-api/retrieve-nfts-by-template.md)
+  * [Retrieve supported Chains](api-products/nft-api/retrieve-supported-chains.md)
 * [NFT Analytics](api-products/nft-analytics/README.md)
   * [Get NFTs by address](api-products/nft-analytics/get-tokens-by-address.md)
   * [Get NFT contract](api-products/nft-analytics/get-token-contract.md)
