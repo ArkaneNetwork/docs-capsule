@@ -1,7 +1,7 @@
 ---
 description: >-
   This page describes how the authentication bridge can be used. This allows you
-  to swap an Identity Provider Token (IDP) for an Arkane authentication token.
+  to swap an Identity Provider Token (IDP) for a Venly authentication token.
 ---
 
 # Authentication Bridge
