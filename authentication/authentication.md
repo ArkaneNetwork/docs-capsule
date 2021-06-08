@@ -1,5 +1,5 @@
 ---
-description: How to access Arkane API
+description: How to access Venly API
 ---
 
 # How to authenticate
