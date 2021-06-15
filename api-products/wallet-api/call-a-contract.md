@@ -52,7 +52,7 @@ Id of the wallet that will initiate the tx
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="to" type="string" required=true %}
-Destination Address \(can be a blockchain address or email address\)
+Destination Address \(contract address\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="secretType" type="string" required=true %}
