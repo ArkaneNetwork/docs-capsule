@@ -7,13 +7,13 @@ description: How to retrieve all NFT token types (templates) from one of your co
 ## Endpoint: GET
 
 ```javascript
-https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{contract_id}}
+https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{contract_id}}/token-types
 ```
 
 ## Example
 
 ```javascript
-https://api-business.arkane.network/api/apps/0aaa40b2-590f-4a14-b4a2-5d30c7b2b626/contracts/203
+https://api-business.arkane.network/api/apps/0aaa40b2-590f-4a14-b4a2-5d30c7b2b626/contracts/203/token-types
 ```
 
 ## Returns
