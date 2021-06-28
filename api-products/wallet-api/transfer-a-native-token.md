@@ -88,7 +88,8 @@ POST : https://api.arkane.network/api/transactions/execute
      "walletId": "944124ed-305d-4e56-a0fd-bce1c7f1537c",
      "to": "0xf56799d7C95C6DEb708A9f55b2e75A685A94F980",
      "secretType": "ETHEREUM",
-     "value": 0
+     "value": 0,
+     "data": '' //optional
    },
    "pincode": "1234"
 }
