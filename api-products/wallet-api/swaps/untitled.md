@@ -6,7 +6,7 @@ description: Endpoint that will return the tx the wallet needs to execute
 
 This endpoint returns the transaction detail that is needed to perform the actual swap, based on information obtained in the swap-get-rate endpoint.
 
-This endpoint will build a transaction for you, which afterward you or your user needs to execute. This can be done by using the [transfer a native token](../transfer-a-native-token.md) endpoint where the **`data`** field is filled in \(see [TransferRequestDto](../../../deep-dive-1/object-reference/transferrequestdto.md)\) using the response from the request below.
+This endpoint will build a transaction for you, which afterward you or your user needs to execute. This can be done by using the [transfer a native token](../transfer-a-native-token.md) endpoint where the **`data`**, **`to`** and the **`value`** field is filled in \(see [TransferRequestDto](../../../deep-dive-1/object-reference/transferrequestdto.md)\) using the response from the request below.
 
 {% api-method method="post" host="https://api.arkane.network" path="/api/wallets/:walletId/swaps" %}
 {% api-method-summary %}
