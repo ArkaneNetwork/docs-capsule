@@ -20,7 +20,9 @@ Performing a token swap consists out of 4 steps:
 
 **Step 04:** Execute the token swap, for this you can use the transfer native token request with the **`data`** parameter filled in using the one that is provided in **step 03**.
 
-{% page-ref page="../call-a-contract.md" %}
+{% page-ref page="../transfer-a-native-token.md" %}
+
+
 
   
 
