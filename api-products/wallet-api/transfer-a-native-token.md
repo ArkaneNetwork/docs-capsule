@@ -106,3 +106,7 @@ POST : https://api.arkane.network/api/transactions/execute
 }
 ```
 
+{% page-ref page="../../deep-dive-1/object-reference/transferrequestdto.md" %}
+
+
+
