@@ -18,7 +18,7 @@ Performing a token swap consists out of 4 steps:
 
 {% page-ref page="untitled.md" %}
 
-**Step 04:** Execute the token swap, via a smart contract call.
+**Step 04:** Execute the token swap, for this you can use the transfer native token request with the **`data`** parameter filled in using the one that is provided in **step 03**.
 
 {% page-ref page="../call-a-contract.md" %}
 
