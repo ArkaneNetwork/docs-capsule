@@ -2,7 +2,7 @@
 description: Endpoint to gather detailed information about a potential swap
 ---
 
-# Retrieve exchange rate
+# 2 - Retrieve exchange rate
 
 This endpoint returns information about the expected result of the swap. It provides the expected output amount, as well gives information about the slippage, and fee involved for that specific swap.
 

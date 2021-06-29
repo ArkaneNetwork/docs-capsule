@@ -16,9 +16,9 @@ Performing a token swap consists out of 4 steps:
 
 **Step 03:** Generate the transaction that will perform the swap
 
-{% page-ref page="untitled.md" %}
+{% page-ref page="build-swap-tx.md" %}
 
-**Step 04:** Execute the token swap, for this you can use the transfer native token request using the data that is returned from **step 03**.
+**Step 04:** Execute the token swap, for this you will need to take the response from **step 03** and launch transactions accordingly.
 
 {% page-ref page="../transfer-a-native-token.md" %}
 
