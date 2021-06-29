@@ -8,6 +8,10 @@ description: >-
 
 From [Build swap tx](build-swap-tx.md), you get a response containing the transactions that need to be executed in order to complete the swap. This response contains an array of transactions that need to be **executed in the same order**.
 
+{% hint style="info" %}
+The reason why you might need to execute multiple transactions for a swap is because it might be necessary to **`approve`** a contract to spend tokens for executing a swap.
+{% endhint %}
+
 ## Prepare transactions
 
 Given the response from [step 3 - Build swap tx](build-swap-tx.md):
