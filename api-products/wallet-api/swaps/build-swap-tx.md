@@ -50,11 +50,11 @@ Source token contract address
 Destination token contract address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="inputAmount" type="string" required=true %}
+{% api-method-parameter name="inputAmount" type="number" required=true %}
 Amount to swap
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="outputAmount" type="string" required=true %}
+{% api-method-parameter name="outputAmount" type="number" required=true %}
 Amount to receive
 {% endapi-method-parameter %}
 
