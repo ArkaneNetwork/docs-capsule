@@ -36,11 +36,7 @@ Given the response from [step 3 - Build swap tx](build-swap-tx.md):
 }
 ```
 
-This response contains 1 transaction that needs to be executed. As you can see, the pincode is set to null. **You will need to enrich this with the pincode of that wallet**.
-
-{% hint style="danger" %}
-Don't forget to enrich the transactions with the correct pincode
-{% endhint %}
+This response contains 1 transaction that needs to be executed. 
 
 ## Execute transactions
 
