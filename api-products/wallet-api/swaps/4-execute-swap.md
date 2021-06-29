@@ -6,7 +6,7 @@ description: >-
 
 # 4 - Execute swap
 
-From [Build swap tx](build-swap-tx.md), you get a response containing the transactions that need to be **executed in the same order** to complete the swap. This response contains an array of transactions that need to be executed in the same order.
+From [Build swap tx](build-swap-tx.md), you get a response containing the transactions that need to be executed in order to complete the swap. This response contains an array of transactions that need to be **executed in the same order**.
 
 ## Prepare transactions
 
