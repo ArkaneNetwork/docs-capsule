@@ -34,7 +34,7 @@ Token address of the source token
 Token address of the destination token
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="amount" type="integer" required=true %}
+{% api-method-parameter name="amount" type="number" required=true %}
 Amount to swap
 {% endapi-method-parameter %}
 
