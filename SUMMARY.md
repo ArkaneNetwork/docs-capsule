@@ -62,6 +62,7 @@
   * [Cancel an offer](api-products/market-api/cancel-an-offer.md)
   * [Get user balance](api-products/market-api/get-user-balance.md)
   * [Get user balance history](api-products/market-api/get-user-balance-history.md)
+  * [Get deposit address](api-products/market-api/get-deposit-address.md)
 
 ## ⚙️Advanced
 
