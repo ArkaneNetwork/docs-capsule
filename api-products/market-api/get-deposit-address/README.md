@@ -66,5 +66,3 @@ https://api.arkane.market/user/deposit-addresses
 When the response is empty you can create a deposit address by using the [Create deposit address](create-deposit-address.md) endpoint.
 {% endhint %}
 
-
-
