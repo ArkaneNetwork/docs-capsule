@@ -66,3 +66,11 @@ https://api.arkane.market/user/credits/history
 }
 ```
 
+{% hint style="info" %}
+**Gross**: The total amount of the offer  
+**Net**: The value that impacts your balance  
+**Fees**: The difference between gross and net. Fees that are taken by the market and the collection owner
+{% endhint %}
+
+
+
