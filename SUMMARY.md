@@ -64,6 +64,7 @@
   * [Get user balance history](api-products/market-api/get-user-balance-history.md)
   * [Get deposit address](api-products/market-api/get-deposit-address/README.md)
     * [Create deposit address](api-products/market-api/get-deposit-address/create-deposit-address.md)
+  * [Withdraw balance](api-products/market-api/withdraw-balance.md)
 
 ## ⚙️Advanced
 
