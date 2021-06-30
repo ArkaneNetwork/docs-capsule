@@ -56,7 +56,9 @@ POST https://api.arkane.market/user/deposit-addresses
 #### Request Body
 
 ```javascript
-POST https://api.arkane.market/user/deposit-addresses
+{
+    "secretType": "ETHEREUM"
+}
 ```
 
 #### Response
@@ -73,8 +75,4 @@ POST https://api.arkane.market/user/deposit-addresses
     ]
 }
 ```
-
-{% hint style="info" %}
-When the response is empty you can create a deposit address by using the [Create deposit address](create-deposit-address.md) endpoint.
-{% endhint %}
 
