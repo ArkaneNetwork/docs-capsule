@@ -4,8 +4,6 @@ description: Endpoint to generate a deposit address for your user.
 
 # Create deposit address
 
-
-
 {% api-method method="post" host="https://api.arkane.market" path="/user/deposit-addresses" %}
 {% api-method-summary %}
 Create deposit address
