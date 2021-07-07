@@ -62,8 +62,13 @@ transactionRequest object
 
 {% endapi-method-response-example-description %}
 
-```
-
+```java
+{
+    "success": true,
+    "result": {
+        "transactionHash": "0x8c953e09d8cede9f4eb0d1ee96de4f5a99e31dba7e64312bb252a465de12d10d"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
