@@ -22,6 +22,7 @@
   * [Transfer a native token](api-products/wallet-api/transfer-a-native-token.md)
   * [Transfer a fungible token](api-products/wallet-api/transfer-a-fungible-token.md)
   * [Transfer a non-fungible token](api-products/wallet-api/transfer-a-non-fungible-token.md)
+  * [Resubmit transaction](api-products/wallet-api/resubmit-transaction.md)
   * [Swaps](api-products/wallet-api/swaps/README.md)
     * [1 - Retrieve token pairs](api-products/wallet-api/swaps/list-token-pairs.md)
     * [2 - Retrieve exchange rate](api-products/wallet-api/swaps/retrieve-exchange-rate.md)
