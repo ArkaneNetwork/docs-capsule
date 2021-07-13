@@ -4,6 +4,15 @@ description: What's new under the hood?
 
 # 📝 Changelog
 
+### 2.1.3 - 2021-07-03
+
+* Market API: Added endpoint to retrieve the [balance history](api-products/market-api/get-user-balance-history.md)
+
+#### Switch market credits system to USDC
+
+* Market API: Added endpoint to [create](api-products/market-api/get-deposit-address/create-deposit-address.md) and [retrieve](api-products/market-api/get-deposit-address/) a USDC deposit address
+* Market API: Added endpoint to [withdraw USDC balance](api-products/market-api/withdraw-balance.md)
+
 ### 2.1.2 - 2021-06-02
 
 * NFT API: Added endpoint to [update the metadata of an NFT](api-products/nft-api/update-nft-metadata.md) \(token type\)
