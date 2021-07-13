@@ -1,8 +1,8 @@
 ---
 description: >-
-  Sometimes a transactions fails to execute/propagate. This can be due to
-  several factors, for example the gas price being too low. Using this endpoint,
-  you are able to resubmit an existing transaction.
+  Sometimes a transaction fails to execute/propagate. This can be due to several
+  factors, for example the gas price being too low. Using this endpoint, you are
+  able to resubmit an existing transaction.
 ---
 
 # Resubmit transaction
