@@ -30,6 +30,7 @@
   * [Sign a message](api-products/wallet-api/sign-a-message.md)
   * [Call a contract](api-products/wallet-api/call-a-contract.md)
   * [Get Tx status](api-products/wallet-api/get-tx-status.md)
+  * [Get fees](api-products/wallet-api/get-fees.md)
   * [Resubmit transaction](api-products/wallet-api/resubmit-transaction.md)
   * [Import a wallet](api-products/wallet-api/import-a-wallet.md)
   * [Export a wallet](api-products/wallet-api/export-a-wallet.md)
