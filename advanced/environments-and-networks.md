@@ -18,7 +18,7 @@ Depending on which environment your application is connecting, your blockchain t
 | Market API | Endpoint used to interact with the market | [https://api.arkane.market](https://api.arkane.market/) |
 
 {% hint style="info" %}
-🧙 To connect to our environments, please [fill in this form](https://get.arkane.network/) to contact us.
+🧙 To connect to our systems, please request access using [this form](https://forms.venly.io/clientID). 
 {% endhint %}
 
 ### Blockchain networks
