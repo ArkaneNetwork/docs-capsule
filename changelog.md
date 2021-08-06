@@ -4,6 +4,11 @@ description: What's new under the hood?
 
 # 📝 Changelog
 
+### 2.1.4 - 2021-08-06
+
+* Wallet API: Fixed typo in [postman collection](https://documenter.getpostman.com/view/11995086/TzXwEdfX), in the token transfer endpoint
+* Wallet API: Added endpoint to [resubmit a transaction](api-products/wallet-api/resubmit-transaction.md)
+
 ### 2.1.3 - 2021-07-03
 
 * Market API: Added endpoint to retrieve the [balance history](api-products/market-api/get-user-balance-history.md)
