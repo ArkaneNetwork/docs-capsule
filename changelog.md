@@ -6,8 +6,9 @@ description: What's new under the hood?
 
 ### 2.1.4 - 2021-08-06
 
-* Wallet API: Fixed typo in [postman collection](https://documenter.getpostman.com/view/11995086/TzXwEdfX), in the token transfer endpoint
 * Wallet API: Added endpoint to [resubmit a transaction](api-products/wallet-api/resubmit-transaction.md)
+* Postman: add endpoint to perform an NFT transfer \(ERC721 / ERC1155\)
+* Postman: Fixed typo in the token transfer endpoint
 
 ### 2.1.3 - 2021-07-03
 
