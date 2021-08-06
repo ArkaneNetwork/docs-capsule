@@ -74,9 +74,10 @@ POST : https://api.arkane.network/api/transactions/resubmit
 
 ```javascript
 {
-    "secretType": "ETHEREUM",
-    "transactionHash": "0x0e305bdf01149c2e35ea6ffb48ab474d714aa03173b06427c6325f0693c59f92",
-    "pincode": "1111"
+    "success": true,
+    "result": {
+        "transactionHash": "0xebe407f2b9987e1d37c371d395bdb603f5fc6eb43ac58711d77e7ed944b4261a"
+    }
 }
 ```
 
