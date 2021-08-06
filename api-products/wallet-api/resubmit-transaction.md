@@ -20,15 +20,15 @@ Safely resubmit a transaction. Executing this will overwrite the existing transa
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="secretType" type="string" required=true %}
-The secret type of the transaction
+MATIC, BSC, ETHEREUM, ...
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="transactionHash" type="string" required=true %}
-The hash of the transaction to resubmit
+Hash of the transaction to resubmit
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="pincode" type="string" required=true %}
-The pincode associated to the wallet of the transaction
+PIN associated with the wallet of the transaction
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
