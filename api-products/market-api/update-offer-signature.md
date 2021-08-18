@@ -132,6 +132,12 @@ To learn more about the different states of an offer please read: [Status](../..
 Note this step assumes you've already completed [Update offer: TxApprove](update-offer-txapprove/). 
 {% endhint %}
 
+### Quick Tip
+
+If you want to verify your signature before submitting it, a great tool is [verifySig](https://etherscan.io/verifySig). Just enter the wallet address, the data to sign and the signed hash and the tool will validate for you if your signed hash is correct.
+
+![Screenshot of a successful Signature hash](../../.gitbook/assets/image%20%2823%29.png)
+
 ## Example
 
 #### Request
