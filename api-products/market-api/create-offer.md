@@ -228,7 +228,6 @@ https://api.arkane.market/offers
 		"sellerId": "7cbc2bd3-b3d7-4d8e-bda8-173e56189f75",
 		"sellerAddress": "0xdb7c22EA49EF93F753F2ed4c9E1A2589aC6E7690",
 		"startDate": "2020-10-21T14:46:09.252659Z",
-		"endDate": "2020-10-31T14:46:09.252674Z",
 		"type": "SALE",
 		"status": "NEW",
 		"dataToSign": "b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5_0xdb7c22EA49EF93F753F2ed4c9E1A2589aC6E7690_0xb06b3f1e824BD7eFC0BCe584cF6B772dC0Ff7C75_2",
