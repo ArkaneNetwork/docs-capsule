@@ -26,6 +26,10 @@ Wallet which holds the token to swap
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="enableGasEstimate" type="boolean" required=false %}
+Indicate to include gas estimate \(response will contain value for the "gas" field\). The response will include the gasLimit that needs to be used to execute the swap.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="walletId" type="string" required=true %}
 Wallet hosting the 'from' tokens
 {% endapi-method-parameter %}
@@ -42,11 +46,11 @@ Which blockchain to use
 Which blockchain to use
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="fromToken" type="string" required=true %}
+{% api-method-parameter name="fromToken" type="string" required=false %}
 Source token contract address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="toToken" type="string" required=true %}
+{% api-method-parameter name="toToken" type="string" required=false %}
 Destination token contract address
 {% endapi-method-parameter %}
 
