@@ -114,6 +114,22 @@ ONE\_INCH ; DEX used for the swap
 https://api.arkane.network/api/wallets/b97e9e8b-035c-40a0-bac0-96b07fc0444a/swaps
 ```
 
+```javascript
+{
+    "walletId" : "b97e9e8b-035c-40a0-bac0-96b07fc0444a",
+    "destinationWalletId": "b97e9e8b-035c-40a0-bac0-96b07fc0444a",
+    "fromSecretType": "MATIC",
+    "toSecretType": "MATIC",
+    "fromToken": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "toToken": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+    "inputAmount": "1",
+    "outputAmount": "2.038411",
+    "orderType": "SELL",
+    "exchange": "ONE_INCH",
+    "enableGasEstimate": true
+}
+```
+
 #### Response
 
 ```javascript
@@ -123,8 +139,8 @@ https://api.arkane.network/api/wallets/b97e9e8b-035c-40a0-bac0-96b07fc0444a/swap
         {
             "walletId": "b97e9e8b-035c-40a0-bac0-96b07fc0444a",
             "pincode": null,
-            "gasPrice": null,
-            "gas": null,
+            "gasPrice": 20000000000,
+            "gas": 523381,
             "nonce": null,
             "value": 1000000000000000000,
             "to": "0x11111112542d85b3ef69ae05771c2dccff4faa26",
