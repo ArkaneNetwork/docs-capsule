@@ -103,7 +103,7 @@ ONE\_INCH ; DEX used for the swap
 {% endapi-method %}
 
 {% hint style="info" %}
-**Note:**  This endpoint builds the transaction which will perform the swap. Therefore the result of this call can be passed directly to [Call a contract](../call-a-contract.md) to perform the actual swap.
+**Note:**  This endpoint builds the transaction which will perform the swap. Therefore the result of this call can be passed directly to [Call a contract](../execute-contract-call.md) to perform the actual swap.
 {% endhint %}
 
 ## Example
