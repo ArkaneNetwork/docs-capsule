@@ -109,7 +109,19 @@ This api allows you to sign EIP712 messages
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="signatureRequest.walletId" type="string" required=false %}
+{% api-method-parameter name="signatureRequest.data" type="string" required=true %}
+The JSON of the EIP712 message to sign
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="signatureRequest.type" type="string" required=true %}
+The signature type, in this case: EIP712
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="signatureRequest.secretType" type="string" required=true %}
+The secret type where you want to sign
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="signatureRequest.walletId" type="string" required=true %}
 The id of the wallet of which you want to sign
 {% endapi-method-parameter %}
 
@@ -125,11 +137,118 @@ The pincode for the wallet
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "success": true,
+    "result": {
+        "type": "HEX_SIGNATURE",
+        "r": "0xc3708e09824e67af571b0c4d2d9a98c4ec5eb2831946674da7db5d6bc1a35635",
+        "s": "0x53174e2c71cdac33b447974f54cddcf63bd2644106edad6ee53665c032f370b1",
+        "v": "0x1b",
+        "signature": "0xc3708e09824e67af571b0c4d2d9a98c4ec5eb2831946674da7db5d6bc1a3563553174e2c71cdac33b447974f54cddcf63bd2644106edad6ee53665c032f370b11b"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Example
+
+#### Request
+
+```javascript
+POST : https://api.arkane.network/api/signatures
+```
+
+#### Request Body
+
+```javascript
+{
+    "pincode": 1234,
+    "signatureRequest": {
+        "type": "EIP712",
+        "secretType": "ETHEREUM",
+        "walletId": "d6c73e54-dce3-4ec4-974f-93942e177d5b",
+        "data": {
+            "types": {
+                "EIP712Domain": [
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "version",
+                        "type": "string"
+                    },
+                    {
+                        "name": "chainId",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "verifyingContract",
+                        "type": "address"
+                    },
+                    {
+                        "name": "salt",
+                        "type": "bytes32"
+                    }
+                ],
+                "Bid": [
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "bidder",
+                        "type": "Identity"
+                    }
+                ],
+                "Identity": [
+                    {
+                        "name": "userId",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "wallet",
+                        "type": "address"
+                    }
+                ]
+            },
+            "domain": {
+                "name": "My amazing dApp",
+                "version": "2",
+                "chainId": 1,
+                "verifyingContract": "0x1C56346CD2A2Bf3202F771f50d3D14a367B48070",
+                "salt": "0xf2d857f4a3edcb9b78b4d503bfe733db1e3f6cdc2b7971ee739626c97e86a558"
+            },
+            "primaryType": "Bid",
+            "message": {
+                "amount": 100,
+                "bidder": {
+                    "userId": 323,
+                    "wallet": "0x3333333333333333333333333333333333333333"
+                }
+            }
+        }
+    }
+}
+
+```
+
+#### Response
+
+```javascript
+{
+    "success": true,
+    "result": {
+        "type": "HEX_SIGNATURE",
+        "r": "0xc3708e09824e67af571b0c4d2d9a98c4ec5eb2831946674da7db5d6bc1a35635",
+        "s": "0x53174e2c71cdac33b447974f54cddcf63bd2644106edad6ee53665c032f370b1",
+        "v": "0x1b",
+        "signature": "0xc3708e09824e67af571b0c4d2d9a98c4ec5eb2831946674da7db5d6bc1a3563553174e2c71cdac33b447974f54cddcf63bd2644106edad6ee53665c032f370b11b"
+    }
+}
+```
 
