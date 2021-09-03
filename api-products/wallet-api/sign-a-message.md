@@ -1,12 +1,12 @@
 ---
-description: Signs arbitrary data using a specific wallet.
+description: Sign data using your wallet
 ---
 
-# Sign a message
+# Signatures
 
 {% api-method method="post" host="https://api.arkane.network" path="/api/signatures" %}
 {% api-method-summary %}
-Sign a message
+Sign a message \(arbitrary data\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -58,10 +58,6 @@ PIN related to the wallet ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% hint style="info" %}
-🧙 The signatures endpoint supports the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) standard, Ethereum typed structured data hashing and signing. This EIP aims to improve the usability of off-chain message signing for use on-chain.
-{% endhint %}
-
 ## Example 
 
 #### Request 
@@ -96,4 +92,44 @@ POST : https://api.arkane.network/api/signatures
   "signature" : "0xb91467e570a6466aa9e9876cbcd013baba02900b8979d43fe208a4a4f339f5fd6007e74cd82e037b800186422fc2da167c747ef045e5d18a5f5d4300f8e1a0291c"
 }
 ```
+
+{% hint style="info" %}
+🧙 The signatures endpoint supports the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) standard, Ethereum typed structured data hashing and signing. This EIP aims to improve the usability of off-chain message signing for use on-chain.
+{% endhint %}
+
+{% api-method method="post" host="https://api.arkane.network" path="/api/signatures" %}
+{% api-method-summary %}
+Sign an EIP712 message
+{% endapi-method-summary %}
+
+{% api-method-description %}
+This api allows you to sign EIP712 messages
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="signatureRequest.walletId" type="string" required=false %}
+The id of the wallet of which you want to sign
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="pincode" type="string" required=true %}
+The pincode for the wallet
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 

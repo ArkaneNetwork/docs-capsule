@@ -27,7 +27,7 @@
     * [2 - Retrieve exchange rate](api-products/wallet-api/swaps/retrieve-exchange-rate.md)
     * [3 - Build swap tx](api-products/wallet-api/swaps/build-swap-tx.md)
     * [4 - Execute swap](api-products/wallet-api/swaps/4-execute-swap.md)
-  * [Sign a message](api-products/wallet-api/sign-a-message.md)
+  * [Signatures](api-products/wallet-api/sign-a-message.md)
   * [Execute contract call](api-products/wallet-api/execute-contract-call.md)
   * [Get Tx status](api-products/wallet-api/get-tx-status.md)
   * [Get fees](api-products/wallet-api/get-fees.md)
