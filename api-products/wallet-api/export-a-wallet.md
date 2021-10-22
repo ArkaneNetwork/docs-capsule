@@ -5,43 +5,27 @@ description: How to export an existing wallet
 # Export a wallet
 
 {% hint style="warning" %}
-Please note that we do not export the private key, but rather a password secured keystore as it provides better protection against a man in the middle attack. 
+Please note that we do not export the private key, but rather a password secured keystore as it provides better protection against a man in the middle attack.&#x20;
 {% endhint %}
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/{walletID}/export" %}
-{% api-method-summary %}
-Export a wallet
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/{walletID}/export" method="post" summary="Export a wallet" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="path" name="walletId" type="string" %}
 ID of the wallet you want to export
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN to decrypt the wallet 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="password" type="string" required=true %}
+{% swagger-parameter in="body" name="password" type="string" %}
 Password to secure the keystore
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -50,10 +34,8 @@ Password to secure the keystore
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 For importing a wallet please have a look at[`import a wallet`](import-a-wallet.md).
@@ -71,6 +53,4 @@ For importing a wallet please have a look at[`import a wallet`](import-a-wallet.
     }
 }
 ```
-
-
 

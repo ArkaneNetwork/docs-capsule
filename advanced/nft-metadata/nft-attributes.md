@@ -4,17 +4,17 @@ description: Properties / Stats / Boots
 
 # Attributes
 
-In the NFT template \(token type\) you can define a list of attributes for an NFT. To make is simple you can define an attribute as one of three types, a **property**, a **stat,** or a **boost**.
+In the NFT template (token type) you can define a list of attributes for an NFT. To make is simple you can define an attribute as one of three types, a **property**, a **stat,** or a **boost**.
 
 Each type has its own place in the NFT detail on the market, and each type has its own display characteristics.
 
-![](../../.gitbook/assets/image%20%2813%29.png)
+![](<../../.gitbook/assets/image (10).png>)
 
 ## Property
 
 The properties section is mostly used to display text-based attributes such as the type or category of an item, a team, certain year, rarity, ...
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+![](<../../.gitbook/assets/image (11).png>)
 
 ```java
 "attributes" : [
@@ -30,7 +30,7 @@ The stats section is used to display certain stats and metrics, such as the leve
 
 When a stat also has a max value defined it will be visualized as a progress bar, otherwise, it will be shown as a card.
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](<../../.gitbook/assets/image (12).png>)
 
 ```java
 "attributes" : [
@@ -45,7 +45,7 @@ When a stat also has a max value defined it will be visualized as a progress bar
 
 Boosts is a category to display gains that are achieved by possessing or using a certain item. It usually is accompanied by a positive or negative identifier. Examples of a boost are the increase or decrease of speed, armor but equally, it can be a reduction of certain fees or an increase in chance.
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](<../../.gitbook/assets/image (13).png>)
 
 ```java
 "attributes" : [
@@ -137,5 +137,4 @@ In order to be compatible with the NFT standards on the market, in terms of attr
 * [ERC115](https://eips.ethereum.org/EIPS/eip-1155)
 * [OpenSea's metadata standard](https://docs.opensea.io/docs/metadata-standards)
 
-This results in an easy-to-use property structure, which provides consistency and compatibility with any NFT service on the market, such as wallets, marketplaces,... 
-
+This results in an easy-to-use property structure, which provides consistency and compatibility with any NFT service on the market, such as wallets, marketplaces,...&#x20;

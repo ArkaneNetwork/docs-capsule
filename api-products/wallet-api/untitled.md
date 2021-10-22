@@ -4,24 +4,12 @@ description: Retrieve all the wallets
 
 # Retrieve all wallets
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/wallets" %}
-{% api-method-summary %}
-Get all wallets
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets" method="get" summary="Get all wallets" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -125,10 +113,8 @@ Get all wallets
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 For retrieving a specific wallet it is recommended to use [`Get wallet`](get-wallet.md) or [`Get wallet by id`](get-wallet-by-id.md).
@@ -242,5 +228,4 @@ For retrieving a specific wallet it is recommended to use [`Get wallet`](get-wal
 }
 ```
 
-## 
-
+##

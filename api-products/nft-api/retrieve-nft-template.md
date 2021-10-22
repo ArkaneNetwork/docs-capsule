@@ -52,4 +52,3 @@ https://api-business-{{environment}}.arkane.network/api/apps/{{application_id}}/
     "transactionHash": "0x36582ee04ef2b4570f381b59971deb2d2e698fb77724deb193333223119403c4"
 }
 ```
-

@@ -4,38 +4,24 @@ description: Endpoint to withdraw your balance/credits in USDC to an Ethereum wa
 
 # Withdraw balance
 
-{% api-method method="post" host="https://api.arkane.market" path="/orders/usdc" %}
-{% api-method-summary %}
-Create deposit address
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/orders/usdc" method="post" summary="Create deposit address" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="string" required=true %}
+{% swagger-parameter in="body" name="address" type="string" %}
 Blockchain address which will receive the USDC
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
+{% swagger-parameter in="body" name="type" type="string" %}
 WITHDRAWAL
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="amount" type="integer" required=true %}
+{% swagger-parameter in="body" name="amount" type="integer" %}
 Amount of USDC to withdraw
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -54,10 +40,8 @@ Returns the result of the call and the wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -97,4 +81,3 @@ POST https://api.arkane.market/orders/usdc
     }
 }
 ```
-

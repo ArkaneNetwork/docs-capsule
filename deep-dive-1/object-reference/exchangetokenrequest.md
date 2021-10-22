@@ -8,9 +8,8 @@
 }
 ```
 
-| Field | Type | **Description** | Example |
-| :--- | :--- | :--- | :--- |
-| `clientId` | `string` | The client for which you want a token | `'Arketype'` |
+| Field              | Type                                      | **Description**                                      | Example      |
+| ------------------ | ----------------------------------------- | ---------------------------------------------------- | ------------ |
+| `clientId`         | `string`                                  | The client for which you want a token                | `'Arketype'` |
 | `identityProvider` | [`IdentityProvider`](identityprovider.md) | The identity provider to which the`idpToken` belongs | `'FACEBOOK'` |
-| `idpToken` | `string` | The token of the external IDP |  |
-
+| `idpToken`         | `string`                                  | The token of the external IDP                        |              |

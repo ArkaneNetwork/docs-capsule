@@ -17,18 +17,19 @@
 
 ## Parameters
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `tokenAddress` | `String` | Address of the token |
-| `rawBalance` | `String` | Raw token balance |
-| `balance` | `Number` | Normalized token balance |
-| `type` | `String` | The type of token, which depends on the specific blockchain |
-| `transferable` | `Boolean` | Indicates whether or not the token can be transferred |
-| `symbol` | `String` | The symbol of the token |
-| `logo` | `String` | Logo of the token \(url\) |
-| `decimals` | `Number` | Decimals of the token |
+| Parameter      | Type      | Description                                                 |
+| -------------- | --------- | ----------------------------------------------------------- |
+| `tokenAddress` | `String`  | Address of the token                                        |
+| `rawBalance`   | `String`  | Raw token balance                                           |
+| `balance`      | `Number`  | Normalized token balance                                    |
+| `type`         | `String`  | The type of token, which depends on the specific blockchain |
+| `transferable` | `Boolean` | Indicates whether or not the token can be transferred       |
+| `symbol`       | `String`  | The symbol of the token                                     |
+| `logo`         | `String`  | Logo of the token (url)                                     |
+| `decimals`     | `Number`  | Decimals of the token                                       |
 
 ## Function Reference
 
-{% page-ref page="../../api-products/wallet-api/retrieve-token-balances.md" %}
-
+{% content-ref url="../../api-products/wallet-api/retrieve-token-balances.md" %}
+[retrieve-token-balances.md](../../api-products/wallet-api/retrieve-token-balances.md)
+{% endcontent-ref %}

@@ -6,62 +6,48 @@ description: >-
 
 # Transfer a non-fungible token
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/transactions/execute" %}
-{% api-method-summary %}
-Transfer a non-fungible token
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/transactions/execute" method="post" summary="Transfer a non-fungible token" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="tokenId" type="string" required=true %}
+{% swagger-parameter in="body" name="tokenId" type="string" %}
 NFT Token ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="tokenAddress" type="string" required=true %}
+{% swagger-parameter in="body" name="tokenAddress" type="string" %}
 NFT Token contract address
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN related to the wallet ID
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=true %}
-NFT\_TRANSFER
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="type" type="string" %}
+NFT_TRANSFER
+{% endswagger-parameter %}
 
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="body" name="walletId" type="string" %}
 Id of the wallet that will initiate the tx
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="to" type="string" required=true %}
-Destination Address \(can be a blockchain address or email address\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="to" type="string" %}
+Destination Address (can be a blockchain address or email address)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="secretType" type="string" required=true %}
+{% swagger-parameter in="body" name="secretType" type="string" %}
 On which blockchain the tx will be executed
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="value" type="integer" required=true %}
+{% swagger-parameter in="body" name="value" type="integer" %}
 Amount you want to transfer
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="transactionRequest" type="object" required=true %}
+{% swagger-parameter in="body" name="transactionRequest" type="object" %}
 transactionRequest object
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```java
 {
     "success": true,
@@ -70,18 +56,16 @@ transactionRequest object
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 🧙 The destination of a token transfer is not limited to a blockchain address, we also support **email addresses**.
 {% endhint %}
 
-## Example 
+## Example&#x20;
 
-#### Request 
+#### Request&#x20;
 
 ```javascript
 POST : https://api.arkane.network/api/transactions/execute
@@ -113,4 +97,3 @@ POST : https://api.arkane.network/api/transactions/execute
     }
 }
 ```
-

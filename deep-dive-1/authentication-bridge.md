@@ -6,44 +6,28 @@ description: >-
 
 # Authentication Bridge
 
-{% api-method method="post" host="https://connect.arkane.network" path="/auth/exchange" %}
-{% api-method-summary %}
-Exchange token
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://connect.arkane.network" path="/auth/exchange" method="post" summary="Exchange token" %}
+{% swagger-description %}
 This endpoint allows you to exchange authentication tokens
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="content-type" type="string" required=true %}
+{% swagger-parameter in="header" name="content-type" type="string" %}
 application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="clientId" type="string" required=true %}
-The client id for which you want a token \(Ex. Arketype\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="clientId" type="string" %}
+The client id for which you want a token (Ex. Arketype)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="identityProvider" type="object" required=true %}
+{% swagger-parameter in="body" name="identityProvider" type="object" %}
 Which IdentityProvider to use
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="idpToken" type="string" required=true %}
+{% swagger-parameter in="body" name="idpToken" type="string" %}
 The token of the external IDP
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns AuthenticationToken
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns AuthenticationToken" %}
 ```
 {
     "access_token": "<generated_access_token>",
@@ -56,18 +40,14 @@ Returns AuthenticationToken
     "scope": "view:wallets sign:wallets view:profile email profile"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-```text
+```
 {
     "clientId": "Arketype",
     "identityProvider": "FACEBOOK",
     "idpToken": "<facebook_access_token"
 }
 ```
-
-
 

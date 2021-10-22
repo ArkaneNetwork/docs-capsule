@@ -70,4 +70,3 @@ https://api-business.arkane.network/api/apps/0aaa40b2-590f-4a14-b4a2-5d30c7b2b62
     }
 ]
 ```
-

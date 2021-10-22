@@ -38,4 +38,3 @@ https://api-business.arkane.network/api/apps/0aaa40b2-590f-4a14-b4a2-5d30c7b2b62
     "transactionHash": "0x959fdb61ab62354f780e7fce22c650f51e1d71a80f055062559719723858e3f4"
 }
 ```
-

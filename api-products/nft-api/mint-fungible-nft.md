@@ -116,4 +116,3 @@ Since **`destinations`** is an array it is possible to provide a list of address
     }
 ]
 ```
-

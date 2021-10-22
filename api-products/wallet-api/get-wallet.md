@@ -4,30 +4,16 @@ description: Retrieve a single wallet using its unique id
 
 # Retrieve a wallet
 
-{% api-method method="get" host=" https://api.arkane.network" path="/api/wallets/<wallet\_id>" %}
-{% api-method-summary %}
-Get wallet
-{% endapi-method-summary %}
+{% swagger baseUrl=" https://api.arkane.network" path="/api/wallets/<wallet_id>" method="get" summary="Get wallet" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="wallet id" type="string" required=true %}
+{% swagger-parameter in="path" name="wallet id" type="string" %}
 The id of the wallet you want to fetch.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -58,10 +44,8 @@ Returns the result of the call and the wallet
         }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 For retrieving all wallets or a set of wallets based on a common identifier it is recommended to use [`Get wallets`](untitled.md) or [`Get wallet by id`](get-wallet-by-id.md).
@@ -108,5 +92,4 @@ https://api.arkane.network/api/wallets/6ddcbcc3-e242-4bb5-b4f3-3913ccba3e8d
 }
 ```
 
-## 
-
+##

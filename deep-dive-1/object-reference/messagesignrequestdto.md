@@ -12,11 +12,11 @@
 
 ## Parameters
 
-| Parameter | Required | Type | Description |
-| :--- | :--- | :--- | :--- |
-| `walletId` | `True` | `String` | ID of the wallet one wants to sign with. |
-| `secretType` | `True` | [`SecretType`]() | Chain the transaction will be executed on. |
-| `data` | `True` | `String` | Address of the token |
+| Parameter    | Required | Type                             | Description                                |
+| ------------ | -------- | -------------------------------- | ------------------------------------------ |
+| `walletId`   | `True`   | `String`                         | ID of the wallet one wants to sign with.   |
+| `secretType` | `True`   | [`SecretType`](broken-reference) | Chain the transaction will be executed on. |
+| `data`       | `True`   | `String`                         | Address of the token                       |
 
 ## Example
 
@@ -27,4 +27,3 @@
   "data" : "I agree with terms and conditions"
 }
 ```
-

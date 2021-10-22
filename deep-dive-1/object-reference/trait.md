@@ -17,10 +17,9 @@ export interface Trait {
 
 ## Parameters
 
-| Parameter | Required | Type | Description |
-| :--- | :--- | :--- | :--- |
-| `traitType` | `False` | `String` | The type of the trait, ex: boost |
-| `value` | `False` | `String` | The value of the trait, ex: 5 |
-| `displayType` | `False` | `String` | Chain the transaction will be executed on. |
-| `traitCount` | `False` | `String` | The number of items having the trait |
-
+| Parameter     | Required | Type     | Description                                |
+| ------------- | -------- | -------- | ------------------------------------------ |
+| `traitType`   | `False`  | `String` | The type of the trait, ex: boost           |
+| `value`       | `False`  | `String` | The value of the trait, ex: 5              |
+| `displayType` | `False`  | `String` | Chain the transaction will be executed on. |
+| `traitCount`  | `False`  | `String` | The number of items having the trait       |

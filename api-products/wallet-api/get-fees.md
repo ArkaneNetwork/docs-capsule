@@ -4,31 +4,17 @@ description: 'Get the current fees (for EVM based chains: gasprice) for a certai
 
 # Get fees
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/transactions/{secretType}/fees" %}
-{% api-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/transactions/{secretType}/fees" method="get" summary="" %}
+{% swagger-description %}
 
-{% endapi-method-summary %}
+{% endswagger-description %}
 
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="secretType" type="string" required=false %}
+{% swagger-parameter in="path" name="secretType" type="string" %}
 The secret type
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the current fee for given chain.   
-Warning: the resulting object structure can be different depending on given secretType
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the current fee for given chain. 
+Warning: the resulting object structure can be different depending on given secretType" %}
 ```javascript
 {
     "success": true,
@@ -52,10 +38,8 @@ Warning: the resulting object structure can be different depending on given secr
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Example
 
@@ -88,4 +72,3 @@ GET : https://api.arkane.network/api/transactions/ETHEREUM/fees
     ]
 }
 ```
-

@@ -4,50 +4,36 @@ description: Endpoint to initiate a new offer
 
 # Create an offer
 
-{% api-method method="post" host="https://api.arkane.market" path="/offers" %}
-{% api-method-summary %}
-Get offers
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/offers" method="post" summary="Get offers" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="body" name="type" type="string" %}
+Type of the offer (SALE / AUCTION)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="type" type="string" required=true %}
-Type of the offer \(SALE / AUCTION\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="nft.tokenId" type="string" required=true %}
+{% swagger-parameter in="body" name="nft.tokenId" type="string" %}
 TokenID of the NFT
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="nft.address" type="string" required=true %}
+{% swagger-parameter in="body" name="nft.address" type="string" %}
 NFT Contract related to the NFT
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="nft.chain" type="string" required=true %}
+{% swagger-parameter in="body" name="nft.chain" type="string" %}
 Blockchain that is hosting the NFT
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="sellerAddress" type="string" required=true %}
+{% swagger-parameter in="body" name="sellerAddress" type="string" %}
 Address where the NFT is stored
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="price" type="string" required=true %}
+{% swagger-parameter in="body" name="price" type="string" %}
 Price of the offer
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
 	"success": true,
@@ -124,17 +110,15 @@ Returns the result of the call and the wallet
 	}
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 This endpoint will create a new offer with the [status](../../deep-dive-1/object-reference/status.md) **NEW**. Once a new offer is created it needs to be updated **first** with [Update offer: TxApprove](update-offer-txapprove/), follow by [Update offer: Signature](update-offer-signature.md) before it can move to the state **READY** and become live on the market.
 {% endhint %}
 
 {% hint style="warning" %}
-**Note:** The order is important. First the TxApprove, then the Signature. 
+**Note: **The order is important. First the TxApprove, then the Signature.&#x20;
 {% endhint %}
 
 ## Example
@@ -237,4 +221,3 @@ https://api.arkane.market/offers
 	}
 }
 ```
-

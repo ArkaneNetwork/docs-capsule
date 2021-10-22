@@ -12,7 +12,7 @@ enum IdentityProvider {
 
 ## Function Reference
 
-{% page-ref page="../authentication-bridge.md" %}
-
-
+{% content-ref url="../authentication-bridge.md" %}
+[authentication-bridge.md](../authentication-bridge.md)
+{% endcontent-ref %}
 

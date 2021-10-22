@@ -6,32 +6,18 @@ description: >-
 
 # Get prepared Approve tx
 
-Since there are multiple variants and standards of NFT contracts it can be difficult for a client to know for each NFT contract which function to call and which input parameter each function might need. To overcome that specific pain the market also provides an endpoint that returns that required information, allowing the client to easily query what they need to forward to their end-users. 
+Since there are multiple variants and standards of NFT contracts it can be difficult for a client to know for each NFT contract which function to call and which input parameter each function might need. To overcome that specific pain the market also provides an endpoint that returns that required information, allowing the client to easily query what they need to forward to their end-users.&#x20;
 
-{% api-method method="get" host="https://api.arkane.market" path="/offers/:offerId/preparation/transactions" %}
-{% api-method-summary %}
-Get prepared Approve transaction
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/offers/:offerId/preparation/transactions" method="get" summary="Get prepared Approve transaction" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="offerId" type="string" required=true %}
+{% swagger-parameter in="path" name="offerId" type="string" %}
 ID of the offer
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -57,10 +43,8 @@ Returns the result of the call and the wallet
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="warning" %}
 **Note**: When the end-user has executed the result of this call, that transaction hash should be providing back to the market by using [Update offer: TxApprove](./).
@@ -112,4 +96,3 @@ https://api.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/preparatio
     ]
 }
 ```
-

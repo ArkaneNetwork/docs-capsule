@@ -4,42 +4,28 @@ description: How to import an existing wallet
 
 # Import a wallet
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
-{% api-method-summary %}
- Import using private key
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/import" method="post" summary=" Import using private key" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="walletType" type="string" required=true %}
+{% swagger-parameter in="body" name="walletType" type="string" %}
 Make it recoverable or not
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="importWalletType" type="string" required=true %}
-Type of import \(eg. MATIC\_PRIVATE\_KEY\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="importWalletType" type="string" %}
+Type of import (eg. MATIC_PRIVATE_KEY)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN to encrypt the wallet with
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="privateKey" type="string" required=true %}
+{% swagger-parameter in="body" name="privateKey" type="string" %}
 Private key of the existing wallet
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -68,51 +54,35 @@ Private key of the existing wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
-{% api-method-summary %}
-Import using keystore
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/import" method="post" summary="Import using keystore" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN to encrypt the wallet with
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="walletType" type="string" required=true %}
+{% swagger-parameter in="body" name="walletType" type="string" %}
 Make it recoverable or not
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="importWalletType" type="string" required=true %}
-Type of import \(eg. MATIC\_KEYSTORE\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="importWalletType" type="string" %}
+Type of import (eg. MATIC_KEYSTORE)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="keystore" type="string" required=true %}
-JSON file that represents the wallet \(warning: this is a string field so make sure the JSON body is escaped properly\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="keystore" type="string" %}
+JSON file that represents the wallet (warning: this is a string field so make sure the JSON body is escaped properly)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="password" type="string" required=true %}
+{% swagger-parameter in="body" name="password" type="string" %}
 The password of the keystore
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -141,47 +111,31 @@ The password of the keystore
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
-{% api-method-summary %}
-Import using WIF
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/import" method="post" summary="Import using WIF" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="walletType" type="string" required=true %}
+{% swagger-parameter in="body" name="walletType" type="string" %}
 Make it recoverable or not
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="importWalletType" type="string" required=true %}
-Type of import \(eg. BITCOIN\_WIF\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="importWalletType" type="string" %}
+Type of import (eg. BITCOIN_WIF)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN to encrypt the wallet with
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="wif" type="string" required=true %}
-The wif \(wallet import format\) 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="wif" type="string" %}
+The wif (wallet import format) 
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -210,51 +164,35 @@ The wif \(wallet import format\)
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/import" %}
-{% api-method-summary %}
-Import from other secret type \(blockchain\)
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/import" method="post" summary="Import from other secret type (blockchain)" %}
+{% swagger-description %}
+Using this endpoint, it is possible to use the same wallet (address) for a different blockchain. Currently it is only possible to import from ETHEREUM to MATIC, BSC and vice versa.
+{% endswagger-description %}
 
-{% api-method-description %}
-Using this endpoint, it is possible to use the same wallet \(address\) for a different blockchain. Currently it is only possible to import from ETHEREUM to MATIC, BSC and vice versa.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="walletType" type="string" required=true %}
+{% swagger-parameter in="body" name="walletType" type="string" %}
 Make it recoverable or not
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="importWalletType" type="string" required=true %}
+{% swagger-parameter in="body" name="importWalletType" type="string" %}
 Must be: MIGRATION
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN for the wallet
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="body" name="walletId" type="string" %}
 The ID of the wallet you want to import into another secret type
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="to" type="object" required=true %}
-Destination SecretType \(blockchain\), ex: MATIC
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="to" type="object" %}
+Destination SecretType (blockchain), ex: MATIC
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -283,10 +221,8 @@ Destination SecretType \(blockchain\), ex: MATIC
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet.md).
@@ -294,11 +230,15 @@ For exporting a wallet please have a look at [`Export a wallet`](export-a-wallet
 
 ## Object Types
 
-{% page-ref page="../../deep-dive-1/object-reference/wallettype.md" %}
+{% content-ref url="../../deep-dive-1/object-reference/wallettype.md" %}
+[wallettype.md](../../deep-dive-1/object-reference/wallettype.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../deep-dive-1/object-reference/importwallettype.md" %}
+{% content-ref url="../../deep-dive-1/object-reference/importwallettype.md" %}
+[importwallettype.md](../../deep-dive-1/object-reference/importwallettype.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../deep-dive-1/object-reference/secrettype.md" %}
-
-
+{% content-ref url="../../deep-dive-1/object-reference/secrettype.md" %}
+[secrettype.md](../../deep-dive-1/object-reference/secrettype.md)
+{% endcontent-ref %}
 

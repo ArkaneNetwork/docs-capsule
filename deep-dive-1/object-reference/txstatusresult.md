@@ -10,31 +10,9 @@
 
 ## Parameters
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>status</code>
-      </td>
-      <td style="text-align:left"><code>String</code>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li><code>UNKNOWN</code> Not yet visible on the chain.</li>
-          <li><code>PENDING</code> Not yet completed (or failed).</li>
-          <li><code>SUCCEEDED</code> Completed successfully</li>
-          <li><code>FAILED</code> Transaction is failed.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Parameter | Type     | Description                                                                                                                                                                                                                               |
+| --------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `status`  | `String` | <ul><li><code>UNKNOWN</code> Not yet visible on the chain.</li><li><code>PENDING</code> Not yet completed (or failed).</li><li><code>SUCCEEDED</code> Completed successfully</li><li><code>FAILED</code> Transaction is failed.</li></ul> |
 
 ## Example
 
@@ -45,4 +23,3 @@
   "data" : "I agree with terms and conditions"
 }
 ```
-

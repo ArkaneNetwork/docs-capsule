@@ -6,34 +6,20 @@ description: >-
 
 # Get Tx status
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/transactions/:secretType/:transactionHash/status" %}
-{% api-method-summary %}
-Get the status of a transaction
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/transactions/:secretType/:transactionHash/status" method="get" summary="Get the status of a transaction" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="transactionHash" type="string" %}
+The transaction hash (id)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="transactionHash" type="string" required=true %}
-The transaction hash \(id\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="path" name="secretType" type="string" %}
+Chain (Ethereum, MATIC, BSC,...)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="secretType" type="string" required=true %}
-Chain \(Ethereum, MATIC, BSC,...\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```java
 {
     "success": true,
@@ -65,14 +51,12 @@ Chain \(Ethereum, MATIC, BSC,...\)
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-## Example 
+## Example&#x20;
 
-#### Request 
+#### Request&#x20;
 
 ```javascript
 GET : https://api.arkane.network/api/transactions/ETHEREUM/0x586b8c4d1f2a3d5760b6290825149cd1319c91b65b258e3f8a8fb432e6c0cbe3/status
@@ -111,4 +95,3 @@ GET : https://api.arkane.network/api/transactions/ETHEREUM/0x586b8c4d1f2a3d5760b
     }
 }
 ```
-

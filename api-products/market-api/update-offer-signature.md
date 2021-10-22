@@ -8,38 +8,28 @@ The last step in the offer creation is getting the signature of the end-user, pr
 
 This is done by asking the end-user to sign a piece of data. The data that is required to sign can be found in the details of the offer, more specifically the `dataToSign` attribute. To get the details of an offer please take a look at [Retrieve an offer](retrieve-an-offer.md).
 
-{% page-ref page="retrieve-an-offer.md" %}
+{% content-ref url="retrieve-an-offer.md" %}
+[retrieve-an-offer.md](retrieve-an-offer.md)
+{% endcontent-ref %}
 
-{% api-method method="patch" host="https://api.arkane.market" path="/offers/:offerId/signature" %}
-{% api-method-summary %}
-Update offer: Signature
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/offers/:offerId/signature" method="patch" summary="Update offer: Signature" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="offerId" type="string" required=true %}
+{% swagger-parameter in="path" name="offerId" type="string" %}
 ID of the offer that needs the update
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="signature" type="string" required=true %}
-Signature of the signed data of the `dataToSign` attribute.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="signature" type="string" %}
+Signature of the signed data of the 
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
+`dataToSign`
 
+ attribute.
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -117,26 +107,24 @@ Returns the result of the call and the wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
-After updating the offer with the signature the status of the offer will transition from **NEW** to **INITIATING\_OFFER**, meaning the NFT will be taken into custody. If that was successful the status will be updated to **READY**. Meaning the offer was successfully created and is live on the market.  
-  
+After updating the offer with the signature the status of the offer will transition from **NEW** to **INITIATING\_OFFER**, meaning the NFT will be taken into custody. If that was successful the status will be updated to **READY**. Meaning the offer was successfully created and is live on the market.\
+\
 To learn more about the different states of an offer please read: [Status](../../deep-dive-1/object-reference/status.md)
 {% endhint %}
 
 {% hint style="warning" %}
-Note this step assumes you've already completed [Update offer: TxApprove](update-offer-txapprove/). 
+Note this step assumes you've already completed [Update offer: TxApprove](update-offer-txapprove/).&#x20;
 {% endhint %}
 
 ### Quick Tip
 
 If you want to verify your signature before submitting it, a great tool is [verifySig](https://etherscan.io/verifySig). Just enter the wallet address, the data to sign and the signed hash and the tool will validate for you if your signed hash is correct.
 
-![Screenshot of a successful Signature hash](../../.gitbook/assets/image%20%2823%29.png)
+![Screenshot of a successful Signature hash](<../../.gitbook/assets/image (24).png>)
 
 ## Example
 
@@ -233,4 +221,3 @@ https://api.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/signature
     }
 }
 ```
-

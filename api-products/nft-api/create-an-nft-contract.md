@@ -56,4 +56,3 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts
 {% hint style="info" %}
 For more information on the metadata of an NFT contract please read [Collection Info](../../advanced/nft-metadata/collection-info.md).
 {% endhint %}
-

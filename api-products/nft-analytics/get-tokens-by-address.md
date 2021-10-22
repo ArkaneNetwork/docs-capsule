@@ -4,30 +4,16 @@ description: Retrieve all tokens that are stored on a wallet address
 
 # Get NFTs by address
 
-{% api-method method="get" host="https://<chain>-azrael.arkane.network" path="/:walletAddress/tokens" %}
-{% api-method-summary %}
-Get tokens by wallet address
-{% endapi-method-summary %}
+{% swagger baseUrl="https://<chain>-azrael.arkane.network" path="/:walletAddress/tokens" method="get" summary="Get tokens by wallet address" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="walletAddress" type="string" required=true %}
+{% swagger-parameter in="path" name="walletAddress" type="string" %}
 Address of the wallet
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 [
     {
@@ -226,10 +212,8 @@ Returns the result of the call and the wallet
     }
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -439,4 +423,3 @@ https://matic-azrael.arkane.network/0x9d9376EEbFE3443544d3654f7aD272f0A31D8152/t
     }
 ]
 ```
-

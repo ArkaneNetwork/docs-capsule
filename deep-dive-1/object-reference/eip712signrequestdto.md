@@ -12,49 +12,11 @@
 
 ## Parameters
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Required</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>walletId</code>
-      </td>
-      <td style="text-align:left"><code>True</code>
-      </td>
-      <td style="text-align:left"><code>String</code>
-      </td>
-      <td style="text-align:left">ID of the wallet one wants to sign with.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>secretType</code>
-      </td>
-      <td style="text-align:left"><code>True</code>
-      </td>
-      <td style="text-align:left"><a href><code>SecretType</code></a>
-      </td>
-      <td style="text-align:left">Chain the transaction will be executed on.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>data</code>
-      </td>
-      <td style="text-align:left"><code>True</code>
-      </td>
-      <td style="text-align:left">
-        <p><code>JSON</code>
-        </p>
-        <p><code>String(containing the JSON)</code>
-        </p>
-      </td>
-      <td style="text-align:left">Should contain valid JSON (keys should be quoted)</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter    | Required | Type                                                                    | Description                                       |
+| ------------ | -------- | ----------------------------------------------------------------------- | ------------------------------------------------- |
+| `walletId`   | `True`   | `String`                                                                | ID of the wallet one wants to sign with.          |
+| `secretType` | `True`   | [`SecretType`](broken-reference)                                        | Chain the transaction will be executed on.        |
+| `data`       | `True`   | <p><code>JSON</code></p><p><code>String(containing the JSON)</code></p> | Should contain valid JSON (keys should be quoted) |
 
 ## Example
 
@@ -125,4 +87,3 @@
     }
 }
 ```
-

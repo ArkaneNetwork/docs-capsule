@@ -4,38 +4,24 @@ description: How to get a Bearer token
 
 # How to get a Bearer token
 
-{% api-method method="post" host="https://login.arkane.network" path="/auth/realms/Arkane/protocol/openid-connect/token" %}
-{% api-method-summary %}
-Get bearer and refresh token
-{% endapi-method-summary %}
+{% swagger baseUrl="https://login.arkane.network" path="/auth/realms/Arkane/protocol/openid-connect/token" method="post" summary="Get bearer and refresh token" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="body" name="grant_type" type="string" %}
+client_credentials
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="grant\_type" type="string" required=true %}
-client\_credentials
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="client\_id" type="string" required=true %}
+{% swagger-parameter in="body" name="client_id" type="string" %}
 Private client id
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="client\_secret" type="string" required=true %}
+{% swagger-parameter in="body" name="client_secret" type="string" %}
 Secret
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Status of the call and the wallet is returned.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Status of the call and the wallet is returned." %}
 ```javascript
 {
     "access_token": "eyJhbGciOsJSUzI1NiIsInR3cCIgOiAiSldUIiwia2lkIiA6ICJmQi1UenBOb0hBVGhwT2J4aW9qTDBrdm83MldmRzRXRXh1eFpiaXlGQUhzIn0.eyJleHAiOjE2MTI5MDYwNTksImlhdCI6MTYxMjkwNDI1OSwianRpIjoiYWVkYjFlMGYtOGE1Yi00ZjRiLWEwMTQtMDQyNmJiOGZkN2JkIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi1xYS5hcmthbmUubmV0d29yay9hdXRoL3JlYWxtcy9BcmthbmUiLCJhdWQiOiJyZWFsbS1tYW5hZ2VtZW50Iiwic3ViIjoiNDkxN2I2ZmEtMjY1Ny00YmRkLWI4ZTgtZmE1ZGQ4YmQ0MDU3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiU3RyaWVnZWwtY2Fwc3VsZSIsInNlc3Npb25fc3RhdGUiOiI4NWJhZWY0ZS1hZDZjLTQ4ZDAtYTQ3Yy1mNWYxNzQ0OTI0ZWMiLCJhY3IiOiIxIiwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsicXVlcnktY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfX0sInNjb3BlIjoidmlldzp3YWxsZXRzIHVzZTphbGwtd2FsbGV0cyB3aGl0ZWxhYmVsIHNpZ246d2FsbGV0cyB2aWV3OnByb2ZpbGUgc2F2ZTp0cmFuc2FjdGlvbiBlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTcyLjY5LjU0LjM1IiwiY2xpZW50SWQiOiJTdHJpZWdlbC1jYXBzdWxlIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LXN0cmllZ2VsLWNhcHN1bGUiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjY5LjU0LjM1In0.dWxl4rUWMkpfNXLXvoV5eHuGwlyZZu-czjZj8be6ssvK2oq-ZrBxh-gBWCZAqIcKE_dQXKQYBFSlViB2DI-_gCeApaacXiECDr9LdEoPeOe9DU0rzxX2a8diK6XzaS_GOBNt32b79ZYatWzWA2J1tyBZbGvairmyW1FldHi4NQvQyn4UDK-rhLG0RapGQyFSiD0cmXHf765uTasXP9cAa7NNyihpdcVcTjVfdAJGW-I2D7QrjyQZBdx_HqKTafheKhlv-OLnldILxsOIfOI6FTAX9zItHkBRCSL7KhnkLA0jjzHviCefxsu3qItelyK9bkf6pFjkiqqJBE9VETM2Qg",
@@ -48,16 +34,14 @@ Status of the call and the wallet is returned.
     "scope": "view:wallets use:all-wallets whitelabel sign:wallets view:profile save:transaction email profile"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
 #### Request
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](<../.gitbook/assets/image (7).png>)
 
 #### Response
 
@@ -73,6 +57,4 @@ Status of the call and the wallet is returned.
     "scope": "view:wallets use:all-wallets whitelabel sign:wallets view:profile save:transaction email profile"
 }
 ```
-
-
 

@@ -1,27 +1,15 @@
 ---
-description: 'Fetch your balance history, an overview of sales, purchases and commissions'
+description: Fetch your balance history, an overview of sales, purchases and commissions
 ---
 
 # Get user balance history
 
-{% api-method method="get" host="https://api.arkane.market" path="/user/credits/history" %}
-{% api-method-summary %}
-Get user balance history
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/user/credits/history" method="get" summary="Get user balance history" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -182,10 +170,8 @@ Returns the result of the call and the wallet
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -359,10 +345,8 @@ https://api.arkane.market/user/credits/history
 ```
 
 {% hint style="info" %}
-**Gross**: The total amount of the offer  
-**Net**: The value that impacts your balance  
+**Gross**: The total amount of the offer\
+**Net**: The value that impacts your balance\
 **Fees**: The difference between gross and net. Fees that are taken by the market and the collection/contract owner
 {% endhint %}
-
-
 

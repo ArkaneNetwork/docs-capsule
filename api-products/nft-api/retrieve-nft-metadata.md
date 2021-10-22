@@ -98,4 +98,3 @@ https://api-business-{{environment}}.arkane.network/api/apps/{{application_id}}/
     "fungible": false
 }
 ```
-

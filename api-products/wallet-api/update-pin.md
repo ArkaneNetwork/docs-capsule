@@ -4,45 +4,29 @@ description: How to update the pin of a wallet
 
 # Update wallet PIN
 
-{% api-method method="patch" host="https://api.arkane.network" path="/api/wallets/<WALLET\_ID>/security" %}
-{% api-method-summary %}
-Update wallet pin
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/<WALLET_ID>/security" method="patch" summary="Update wallet pin" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="newPincode" type="string" required=true %}
+{% swagger-parameter in="body" name="newPincode" type="string" %}
 New pin
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 Current pin
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 PATCH : https://api.arkane.network/api/wallets/<WALLET_ID>/security
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-## Example 
+## Example&#x20;
 
-#### Request 
+#### Request&#x20;
 
 ```javascript
 PATCH : https://api.arkane.network/api/wallets/944124ed-305d-4e56-a0fd-bce1c7f1537c/security
@@ -88,4 +72,3 @@ PATCH : https://api.arkane.network/api/wallets/944124ed-305d-4e56-a0fd-bce1c7f15
     }
 }
 ```
-

@@ -4,30 +4,16 @@ description: Retrieve the NFT contract information based on the contract address
 
 # Get NFT contract
 
-{% api-method method="get" host="https://<chain>-azrael.arkane.network" path="/contracts/:tokenContract" %}
-{% api-method-summary %}
-Get token contract
-{% endapi-method-summary %}
+{% swagger baseUrl="https://<chain>-azrael.arkane.network" path="/contracts/:tokenContract" method="get" summary="Get token contract" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="tokenContract" type="string" required=true %}
+{% swagger-parameter in="path" name="tokenContract" type="string" %}
 Address of the token contract
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "address": "0x7227e371540cf7b8e512544ba6871472031f3335",
@@ -36,10 +22,8 @@ Returns the result of the call and the wallet
     "symbol": "NDITEM1"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -59,4 +43,3 @@ https://matic-azrael.arkane.network/contracts/0x7227e371540cf7b8e512544ba6871472
     "symbol": "NDITEM1"
 }
 ```
-

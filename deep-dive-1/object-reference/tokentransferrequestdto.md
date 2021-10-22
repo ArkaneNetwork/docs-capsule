@@ -19,19 +19,19 @@ description: Data structure for performing a fungible token transfer
 
 ## Parameters
 
-| Parameter | Required | Type | Description |
-| :--- | :--- | :--- | :--- |
-| `walletId` | `True` | `String` | ID of the wallet one wants to sign with. |
-| `to` | `True` | `String` | Destination address of the transaction. Can be an address or an email address. |
-| `secretType` | `True` | [`SecretType`](secrettype.md) | Chain the transaction will be executed on. |
-| `tokenAddress` | `True` | `String` | Address of the token |
-| `data` | `False` | `String` | Data you want to send. This field will be ignored when building a token transaction request |
-| `value` | `True` | `Number` | Token value that should be transferred. |
+| Parameter      | Required | Type                          | Description                                                                                 |
+| -------------- | -------- | ----------------------------- | ------------------------------------------------------------------------------------------- |
+| `walletId`     | `True`   | `String`                      | ID of the wallet one wants to sign with.                                                    |
+| `to`           | `True`   | `String`                      | Destination address of the transaction. Can be an address or an email address.              |
+| `secretType`   | `True`   | [`SecretType`](secrettype.md) | Chain the transaction will be executed on.                                                  |
+| `tokenAddress` | `True`   | `String`                      | Address of the token                                                                        |
+| `data`         | `False`  | `String`                      | Data you want to send. This field will be ignored when building a token transaction request |
+| `value`        | `True`   | `Number`                      | Token value that should be transferred.                                                     |
 
 {% hint style="info" %}
 🧙 You don’t have to take into account the number of decimals for different tokens, Arkane handles that for you.
 
-**Example:** If a token has 18 decimals and you want to transfer 1 token, provide the value 1. Arkane will translate this to the correct nondecimal value \(1 \* 10e18\).
+**Example:** If a token has 18 decimals and you want to transfer 1 token, provide the value 1. Arkane will translate this to the correct nondecimal value (1 \* 10e18).
 {% endhint %}
 
 ## Example
@@ -48,5 +48,6 @@ description: Data structure for performing a fungible token transfer
 
 ## Function Reference
 
-{% page-ref page="../../api-products/wallet-api/transfer-a-fungible-token.md" %}
-
+{% content-ref url="../../api-products/wallet-api/transfer-a-fungible-token.md" %}
+[transfer-a-fungible-token.md](../../api-products/wallet-api/transfer-a-fungible-token.md)
+{% endcontent-ref %}

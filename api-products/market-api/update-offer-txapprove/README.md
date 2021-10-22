@@ -6,40 +6,26 @@ description: Endpoint to pass the transaction hash of the Approve transaction
 
 In order for the market to take an NFT into custody, the market requires the end user to execute a contract call, allowing the market to move the NFT. Since the market doesn't know the end-users of the client, it is up to the client to ask the user to perform the Approve transaction. Once the user has launched the Approve transaction the client sends the transaction hash of that transaction back to the market for validation.
 
-Since there are multiple variants and standards of NFT contracts it can be difficult for a client to know for each NFT contract which function to call and which input parameter each function might need. To overcome that specific pain the market also provides an endpoint that returns that required information, allowing the client to easily query what they need to forward to their end-users. 
+Since there are multiple variants and standards of NFT contracts it can be difficult for a client to know for each NFT contract which function to call and which input parameter each function might need. To overcome that specific pain the market also provides an endpoint that returns that required information, allowing the client to easily query what they need to forward to their end-users.&#x20;
 
-{% page-ref page="get-prepared-transaction.md" %}
+{% content-ref url="get-prepared-transaction.md" %}
+[get-prepared-transaction.md](get-prepared-transaction.md)
+{% endcontent-ref %}
 
-{% api-method method="patch" host="https://api.arkane.market" path="/offers/:offerId/txapprove" %}
-{% api-method-summary %}
-Update offer: TxApprove
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/offers/:offerId/txapprove" method="patch" summary="Update offer: TxApprove" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="offerId" type="string" required=true %}
+{% swagger-parameter in="path" name="offerId" type="string" %}
 ID of the offer that needs the update
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="txApprove" type="string" required=true %}
+{% swagger-parameter in="body" name="txApprove" type="string" %}
 Transaction hash of the Approve transaction executed by the end-user.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -118,17 +104,15 @@ Returns the result of the call and the wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 Note that in order to move an offer from state **NEW** to state **READY**, the offer will need a 2nd update, which is [Update offer: Signature](../update-offer-signature.md).
 {% endhint %}
 
 {% hint style="warning" %}
-**Note:** The order is important. First the TxApprove, then the Signature. 
+**Note: **The order is important. First the TxApprove, then the Signature.&#x20;
 {% endhint %}
 
 ## TxApprove not always required
@@ -143,7 +127,9 @@ In this case the [Update offer: TxApprove](./) step can be skipped and moved dir
 
 An easy way is to call the [Get prepared Approve tx](get-prepared-transaction.md) endpoint. When the result set is empty it means the Approve step can be skipped. If the result set contains data, then the Approve still needs to happen.
 
-{% page-ref page="get-prepared-transaction.md" %}
+{% content-ref url="get-prepared-transaction.md" %}
+[get-prepared-transaction.md](get-prepared-transaction.md)
+{% endcontent-ref %}
 
 ## Example
 
@@ -241,4 +227,3 @@ https://api.arkane.market/offers/b91c6f5f-5ebd-4941-99c1-94e9d1cbd9d5/txapprove
     }
 }
 ```
-

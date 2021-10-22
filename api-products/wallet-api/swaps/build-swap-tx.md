@@ -8,76 +8,60 @@ This endpoint returns the transaction detail that is needed to perform the actua
 
 This endpoint will build a transaction for you, which afterward you or your user needs to execute. Each item in the response array needs to be taken, enriched with the correct pincode and submitted agains the endpoint **`/api/transactions/execute`**
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets/:walletId/swaps" %}
-{% api-method-summary %}
-Build swap tx
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/:walletId/swaps" method="post" summary="Build swap tx" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="path" name="walletId" type="string" %}
 Wallet which holds the token to swap
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="enableGasEstimate" type="boolean" required=false %}
-Indicate to include gas estimate \(response will contain value for the "gas" field\). The response will include the gasLimit that needs to be used to execute the swap.
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="enableGasEstimate" type="boolean" %}
+Indicate to include gas estimate (response will contain value for the "gas" field). The response will include the gasLimit that needs to be used to execute the swap.
+{% endswagger-parameter %}
 
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="body" name="walletId" type="string" %}
 Wallet hosting the 'from' tokens
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="destinationWalletId" type="string" required=true %}
+{% swagger-parameter in="body" name="destinationWalletId" type="string" %}
 wallet that will receive the 'to' tokens
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="fromSecretType" type="string" required=true %}
+{% swagger-parameter in="body" name="fromSecretType" type="string" %}
 Which blockchain to use
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="toSecretType" type="string" required=true %}
+{% swagger-parameter in="body" name="toSecretType" type="string" %}
 Which blockchain to use
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="fromToken" type="string" required=false %}
+{% swagger-parameter in="body" name="fromToken" type="string" %}
 Source token contract address
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="toToken" type="string" required=false %}
+{% swagger-parameter in="body" name="toToken" type="string" %}
 Destination token contract address
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="inputAmount" type="number" required=true %}
+{% swagger-parameter in="body" name="inputAmount" type="number" %}
 Amount to swap
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="outputAmount" type="number" required=true %}
+{% swagger-parameter in="body" name="outputAmount" type="number" %}
 Amount to receive
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="orderType" type="string" required=true %}
+{% swagger-parameter in="body" name="orderType" type="string" %}
 SELL
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="exchange" type="string" required=true %}
-ONE\_INCH ; DEX used for the swap
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="exchange" type="string" %}
+ONE_INCH ; DEX used for the swap
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -97,10 +81,8 @@ ONE\_INCH ; DEX used for the swap
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 **Note:**  This endpoint builds the transaction which will perform the swap. Therefore the result of this call can be passed directly to [Call a contract](../execute-contract-call.md) to perform the actual swap.
@@ -151,4 +133,3 @@ https://api.arkane.network/api/wallets/b97e9e8b-035c-40a0-bac0-96b07fc0444a/swap
     ]
 }
 ```
-

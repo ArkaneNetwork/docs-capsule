@@ -4,46 +4,32 @@ description: How to create a new blockchain wallet
 
 # Create a wallet
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/wallets" %}
-{% api-method-summary %}
-Create wallet
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets" method="post" summary="Create wallet" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="walletType" type="string" required=true %}
+{% swagger-parameter in="body" name="walletType" type="string" %}
 Define if the wallet is recoverable or unrecoverable
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="secretType" type="string" required=true %}
+{% swagger-parameter in="body" name="secretType" type="string" %}
 The blockchain on which to create the wallet
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="identifier" type="string" required=false %}
+{% swagger-parameter in="body" name="identifier" type="string" %}
 An identifier that can be used to query or group wallets
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="description" type="string" required=false %}
+{% swagger-parameter in="body" name="description" type="string" %}
 A description to describe the wallet.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 The pin that will encrypt and decrypt the wallet
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Status of the call and the wallet is returned.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Status of the call and the wallet is returned." %}
 ```javascript
 {
     "success": true,
@@ -73,14 +59,15 @@ Status of the call and the wallet is returned.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Object Types
 
-{% page-ref page="../../deep-dive-1/object-reference/secrettype.md" %}
+{% content-ref url="../../deep-dive-1/object-reference/secrettype.md" %}
+[secrettype.md](../../deep-dive-1/object-reference/secrettype.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../deep-dive-1/object-reference/wallettype.md" %}
-
+{% content-ref url="../../deep-dive-1/object-reference/wallettype.md" %}
+[wallettype.md](../../deep-dive-1/object-reference/wallettype.md)
+{% endcontent-ref %}

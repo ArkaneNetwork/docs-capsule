@@ -27,17 +27,17 @@ The **`chainSpecificFields`** depend on the chain uses to execute the smart cont
 
 ## Parameters
 
-| Parameter | Required | Type | Description |
-| :--- | :--- | :--- | :--- |
-| `walletId` | `True` | `String` | ID of the wallet one wants to sign with. |
-| `to` | `True` | `String` | Destination address of the transaction. |
-| `secretType` | `True` | [`SecretType`](secrettype.md) | Chain the transaction will be executed on. |
-| `value` | `True` | `Number` | The amount that will be sent with the contract execution. Value will be passed as-is. This means that for example in Etheruem the value is in WEI |
-| `functionName` | `True` | `String` | Name of the function on the contract that needs to be executed |
-| `inputs[]` | `True` | `Array` | Array of inputs needed to execute the function |
-| `inputs[].type` | `True` | `String` | Type of the input parameter \(ex. uint256\) |
-| `inputs[].value` | `True` | `String` | Value of the input parameter. Needs to be passed as a string value, will be parsed by Arkane |
-| [`chainSpecificFields`](https://github.com/ArkaneNetwork/docs-capsule/tree/d5ed213ffa2231f744612602a66c12267889ebbf/deep-dive/contract-calls.md) | `True` | `Object` | Fields that contain chain specific values. For possible values, please see [chain specific fields documentation](https://github.com/ArkaneNetwork/docs-capsule/tree/d5ed213ffa2231f744612602a66c12267889ebbf/deep-dive/contract-calls.md). |
+| Parameter                                                                                                                                        | Required | Type                          | Description                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `walletId`                                                                                                                                       | `True`   | `String`                      | ID of the wallet one wants to sign with.                                                                                                                                                                                                   |
+| `to`                                                                                                                                             | `True`   | `String`                      | Destination address of the transaction.                                                                                                                                                                                                    |
+| `secretType`                                                                                                                                     | `True`   | [`SecretType`](secrettype.md) | Chain the transaction will be executed on.                                                                                                                                                                                                 |
+| `value`                                                                                                                                          | `True`   | `Number`                      | The amount that will be sent with the contract execution. Value will be passed as-is. This means that for example in Etheruem the value is in WEI                                                                                          |
+| `functionName`                                                                                                                                   | `True`   | `String`                      | Name of the function on the contract that needs to be executed                                                                                                                                                                             |
+| `inputs[]`                                                                                                                                       | `True`   | `Array`                       | Array of inputs needed to execute the function                                                                                                                                                                                             |
+| `inputs[].type`                                                                                                                                  | `True`   | `String`                      | Type of the input parameter (ex. uint256)                                                                                                                                                                                                  |
+| `inputs[].value`                                                                                                                                 | `True`   | `String`                      | Value of the input parameter. Needs to be passed as a string value, will be parsed by Arkane                                                                                                                                               |
+| [`chainSpecificFields`](https://github.com/ArkaneNetwork/docs-capsule/tree/d5ed213ffa2231f744612602a66c12267889ebbf/deep-dive/contract-calls.md) | `True`   | `Object`                      | Fields that contain chain specific values. For possible values, please see [chain specific fields documentation](https://github.com/ArkaneNetwork/docs-capsule/tree/d5ed213ffa2231f744612602a66c12267889ebbf/deep-dive/contract-calls.md). |
 
 ## Example
 
@@ -60,4 +60,3 @@ The **`chainSpecificFields`** depend on the chain uses to execute the smart cont
   }
 }
 ```
-

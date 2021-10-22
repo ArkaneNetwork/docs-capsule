@@ -6,50 +6,36 @@ description: Endpoint to gather detailed information about a potential swap
 
 This endpoint returns information about the expected result of the swap. It provides the expected output amount, as well gives information about the slippage, and fee involved for that specific swap.
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/swaps/rates" %}
-{% api-method-summary %}
-Get exchange rate
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/swaps/rates" method="get" summary="Get exchange rate" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="fromSecretType" type="string" required=true %}
+{% swagger-parameter in="query" name="fromSecretType" type="string" %}
 Blockchain to use
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="toSecretType" type="string" required=true %}
+{% swagger-parameter in="query" name="toSecretType" type="string" %}
 Blockchain to use
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="fromToken" type="string" required=true %}
+{% swagger-parameter in="query" name="fromToken" type="string" %}
 Token address of the source token
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="toToken" type="string" required=true %}
+{% swagger-parameter in="query" name="toToken" type="string" %}
 Token address of the destination token
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="amount" type="number" required=true %}
+{% swagger-parameter in="query" name="amount" type="number" %}
 Amount to swap
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="orderType" type="string" required=true %}
+{% swagger-parameter in="query" name="orderType" type="string" %}
 SELL
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -75,10 +61,8 @@ SELL
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -115,4 +99,3 @@ https://api.arkane.network/api/swaps/rates?fromSecretType=MATIC&toSecretType=MAT
     }
 }
 ```
-

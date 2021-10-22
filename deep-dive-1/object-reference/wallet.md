@@ -22,20 +22,20 @@
 
 ## Parameters
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `id` | `string` | Wallet ID |
-| `address` | `string` | Blockchain address |
-| `walletType` | `WalletType` | Type of the wallet |
-| `secretType` | [`SecretType`]() | Type of the blockchain |
-| `archived` | `boolean` | Is the wallet archived |
-| `alias` | `string` | Wallet alias |
-| `description` | `string` | Wallet description |
-| `primary` | `boolean` | Is the wallet the primary wallet for the `secretType`? |
-| `balance` | [`WalletBalance`](walletbalance.md) | Native token balance of the wallet |
-| `hasCustomPin` | `boolean` | Has the wallet a custom pin. |
-| `createdAt` | `Date` | Creation date |
-| `lastUpdated` | `number` | Last updated |
+| Parameter      | Type                                | Description                                            |
+| -------------- | ----------------------------------- | ------------------------------------------------------ |
+| `id`           | `string`                            | Wallet ID                                              |
+| `address`      | `string`                            | Blockchain address                                     |
+| `walletType`   | `WalletType`                        | Type of the wallet                                     |
+| `secretType`   | [`SecretType`](broken-reference)    | Type of the blockchain                                 |
+| `archived`     | `boolean`                           | Is the wallet archived                                 |
+| `alias`        | `string`                            | Wallet alias                                           |
+| `description`  | `string`                            | Wallet description                                     |
+| `primary`      | `boolean`                           | Is the wallet the primary wallet for the `secretType`? |
+| `balance`      | [`WalletBalance`](walletbalance.md) | Native token balance of the wallet                     |
+| `hasCustomPin` | `boolean`                           | Has the wallet a custom pin.                           |
+| `createdAt`    | `Date`                              | Creation date                                          |
+| `lastUpdated`  | `number`                            | Last updated                                           |
 
 ## Example
 
@@ -67,17 +67,27 @@
 
 ## Function Reference
 
-{% page-ref page="../../api-products/wallet-api/create-wallet.md" %}
+{% content-ref url="../../api-products/wallet-api/create-wallet.md" %}
+[create-wallet.md](../../api-products/wallet-api/create-wallet.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../api-products/wallet-api/get-wallet.md" %}
+{% content-ref url="../../api-products/wallet-api/get-wallet.md" %}
+[get-wallet.md](../../api-products/wallet-api/get-wallet.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../api-products/wallet-api/get-wallet-by-id.md" %}
+{% content-ref url="../../api-products/wallet-api/get-wallet-by-id.md" %}
+[get-wallet-by-id.md](../../api-products/wallet-api/get-wallet-by-id.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../api-products/wallet-api/untitled.md" %}
+{% content-ref url="../../api-products/wallet-api/untitled.md" %}
+[untitled.md](../../api-products/wallet-api/untitled.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../api-products/wallet-api/import-a-wallet.md" %}
+{% content-ref url="../../api-products/wallet-api/import-a-wallet.md" %}
+[import-a-wallet.md](../../api-products/wallet-api/import-a-wallet.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../api-products/wallet-api/export-a-wallet.md" %}
-
-
+{% content-ref url="../../api-products/wallet-api/export-a-wallet.md" %}
+[export-a-wallet.md](../../api-products/wallet-api/export-a-wallet.md)
+{% endcontent-ref %}
 

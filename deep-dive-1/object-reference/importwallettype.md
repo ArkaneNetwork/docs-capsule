@@ -35,7 +35,7 @@ description: Enum that identifies the import wallet type
 
 ## Function Reference
 
-{% page-ref page="../../api-products/wallet-api/import-a-wallet.md" %}
-
-
+{% content-ref url="../../api-products/wallet-api/import-a-wallet.md" %}
+[import-a-wallet.md](../../api-products/wallet-api/import-a-wallet.md)
+{% endcontent-ref %}
 

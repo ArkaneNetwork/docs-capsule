@@ -4,32 +4,18 @@ description: Fetch a list of available token pairs
 
 # 1 - Retrieve token pairs
 
-Get the available token pairs supported by our endpoint. The result set depends on the blockchain the wallet \(`walletId`\) is hosted on. If you feel you are missing a token pair, please contact us and we will look into making that available for you.
+Get the available token pairs supported by our endpoint. The result set depends on the blockchain the wallet (`walletId`) is hosted on. If you feel you are missing a token pair, please contact us and we will look into making that available for you.
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/wallets/:walletId/swaps/pairs" %}
-{% api-method-summary %}
-Get possible pairs
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/:walletId/swaps/pairs" method="get" summary="Get possible pairs" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="path" name="walletId" type="string" %}
 ID of the wallet
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -63,15 +49,13 @@ ID of the wallet
 
 
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 **Note:** The token pairs will be automatically filtered based on the blockchain that is hosting the wallet. If the wallet is on Ethereum, the list will only display tokens that are available for swapping on the Ethereum blockchain.
 
-Currently, the swap endpoints support Ethereum, Polygon \(Matic\), and BSC \(Binance Smart Chain\).
+Currently, the swap endpoints support Ethereum, Polygon (Matic), and BSC (Binance Smart Chain).
 {% endhint %}
 
 ## Example
@@ -115,4 +99,3 @@ https://api.arkane.network/api/wallets/b97e9e8b-035c-40a0-bac0-96b07fc0444a/swap
     ]
 }
 ```
-

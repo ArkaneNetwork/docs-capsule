@@ -4,40 +4,24 @@ description: Endpoint to buy a certain offer
 
 # Buy an offer
 
-{% api-method method="post" host="https://api.arkane.market" path="/offers/:offerId/buy" %}
-{% api-method-summary %}
-Buy an offer
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/offers/:offerId/buy" method="post" summary="Buy an offer" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="offerId" type="string" required=true %}
+{% swagger-parameter in="path" name="offerId" type="string" %}
 ID of the offer to cancel
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="externalUserId" type="string" required=false %}
+{% swagger-parameter in="body" name="externalUserId" type="string" %}
 String to identify the end-user, the buyer.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="walletAddress" type="string" required=true %}
+{% swagger-parameter in="body" name="walletAddress" type="string" %}
 Address of the buyer, NFT will be sent to that address
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -80,10 +64,8 @@ Returns the result of the call and the wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 When an offer is bought, the state of the offer transitions from **READY** to **FINALIZNIG\_OFFER**, once the NFT is successfully transferred to the buyer's wallet the status gets updated one last time to **SOLD**.
@@ -92,7 +74,7 @@ Learn more about the different [states](../../deep-dive-1/object-reference/statu
 {% endhint %}
 
 {% hint style="warning" %}
-If the **`walletAddress`** is invalid, the NFT will be sent to the email address of the buyer. In an API solution that would mean the email address of the Client. 
+If the **`walletAddress`** is invalid, the NFT will be sent to the email address of the buyer. In an API solution that would mean the email address of the Client.&#x20;
 {% endhint %}
 
 ## Example
@@ -156,4 +138,3 @@ https://api.arkane.market/offers/18ec506b-1d11-4f94-95f4-e19d89f93da1/buy
     }
 }
 ```
-

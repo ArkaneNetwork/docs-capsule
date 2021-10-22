@@ -4,30 +4,16 @@ description: Endpoint to generate a deposit address for your user.
 
 # Create deposit address
 
-{% api-method method="post" host="https://api.arkane.market" path="/user/deposit-addresses" %}
-{% api-method-summary %}
-Create deposit address
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/user/deposit-addresses" method="post" summary="Create deposit address" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="secretType" type="string" required=true %}
+{% swagger-parameter in="body" name="secretType" type="string" %}
 ETHEREUM
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -40,10 +26,8 @@ Returns the result of the call and the wallet
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -75,4 +59,3 @@ POST https://api.arkane.market/user/deposit-addresses
     ]
 }
 ```
-

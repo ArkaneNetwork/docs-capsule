@@ -1,5 +1,5 @@
 ---
-description: "Allow an NFT to get burned \U0001F525"
+description: Allow an NFT to get burned 🔥
 ---
 
 # Burnable
@@ -49,4 +49,3 @@ Please note that `burnable` is configured, stored, and track on-chain, meaning o
   ]
 }
 ```
-

@@ -4,30 +4,16 @@ description: How to retrieve the native balance of a wallet
 
 # Retrieve wallet balance
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/wallets/<walletId>/balance" %}
-{% api-method-summary %}
-Get native balance
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/<walletId>/balance" method="get" summary="Get native balance" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="path" name="walletId" type="string" %}
 ID of the wallet
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -44,10 +30,8 @@ ID of the wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -70,5 +54,4 @@ ID of the wallet
 }
 ```
 
-## 
-
+##

@@ -20,15 +20,15 @@ description: Data structure for performing a non-fungible token transfer
 
 ## Parameters
 
-| Parameter | Required | Type | Description |
-| :--- | :--- | :--- | :--- |
-| `walletId` | `True` | `String` | ID of the wallet one wants to sign with. |
-| `to` | `True` | `String` | Destination address of the transaction. Can be an address or an email address. |
-| `secretType` | `True` | [`SecretType`](secrettype.md) | Chain the transaction will be executed on. |
-| `tokenAddress` | `True` | `String` | Address of the token |
-| `tokenId` | `True` | `Number` | ID of the non-fungible token or ERC20 token inside ERC1155 |
-| `data` | `False` | `String` | Data you want to send. This field will be ignored when building a token transaction request |
-| `value` | `True` | `Number` | Token value that should be transferred. |
+| Parameter      | Required | Type                          | Description                                                                                 |
+| -------------- | -------- | ----------------------------- | ------------------------------------------------------------------------------------------- |
+| `walletId`     | `True`   | `String`                      | ID of the wallet one wants to sign with.                                                    |
+| `to`           | `True`   | `String`                      | Destination address of the transaction. Can be an address or an email address.              |
+| `secretType`   | `True`   | [`SecretType`](secrettype.md) | Chain the transaction will be executed on.                                                  |
+| `tokenAddress` | `True`   | `String`                      | Address of the token                                                                        |
+| `tokenId`      | `True`   | `Number`                      | ID of the non-fungible token or ERC20 token inside ERC1155                                  |
+| `data`         | `False`  | `String`                      | Data you want to send. This field will be ignored when building a token transaction request |
+| `value`        | `True`   | `Number`                      | Token value that should be transferred.                                                     |
 
 ## Example
 
@@ -45,7 +45,7 @@ description: Data structure for performing a non-fungible token transfer
 
 ## Function Reference
 
-{% page-ref page="../../api-products/wallet-api/transfer-a-non-fungible-token.md" %}
-
-
+{% content-ref url="../../api-products/wallet-api/transfer-a-non-fungible-token.md" %}
+[transfer-a-non-fungible-token.md](../../api-products/wallet-api/transfer-a-non-fungible-token.md)
+{% endcontent-ref %}
 

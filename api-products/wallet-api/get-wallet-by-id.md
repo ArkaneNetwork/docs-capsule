@@ -4,30 +4,16 @@ description: Retrieve a set of wallets using a common identifier
 
 # Retrieve a wallet by identifier
 
-{% api-method method="get" host="https://api-arkane.network" path="/api/wallets?identifier=<COMMON\_IDENTIFIER>" %}
-{% api-method-summary %}
-Get wallet by identifier
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api-arkane.network" path="/api/wallets?identifier=<COMMON_IDENTIFIER>" method="get" summary="Get wallet by identifier" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="identifier" type="string" required=true %}
+{% swagger-parameter in="query" name="identifier" type="string" %}
 Identifier to fetch a single or group of wallets
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-The result of the call and a group of wallets
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="The result of the call and a group of wallets" %}
 ```javascript
 {
     "success": true,
@@ -82,10 +68,8 @@ The result of the call and a group of wallets
         }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 For retrieving all wallets or a or specific wallet it is recommended to use [`Get wallets`](untitled.md) or [`Get wallet`](get-wallet.md).
@@ -156,5 +140,4 @@ https://api.arkane.network/api/wallets?identifier=user_id=ABC123
 }
 ```
 
-## 
-
+##

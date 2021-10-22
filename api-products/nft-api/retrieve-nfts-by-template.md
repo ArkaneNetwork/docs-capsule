@@ -6,7 +6,7 @@
 https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{contract_id}}/token-types/{{token_type_id}}/tokens
 ```
 
-## Returns \(example NFT\)
+## Returns (example NFT)
 
 ```javascript
 [
@@ -99,7 +99,7 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
 
 
 
-## Returns \(example fungible-NFT\)
+## Returns (example fungible-NFT)
 
 ```javascript
 [
@@ -273,4 +273,3 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
     }
 ]
 ```
-

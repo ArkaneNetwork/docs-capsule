@@ -4,38 +4,22 @@ description: How to retrieve non-fungible tokens for a wallet.
 
 # Retrieve non-fungible tokens
 
-NFTs can be queried either by wallet ID or by wallet address, if required multiple NFT contract addresses can be passed as a query parameter to act as a filter. 
+NFTs can be queried either by wallet ID or by wallet address, if required multiple NFT contract addresses can be passed as a query parameter to act as a filter.&#x20;
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/wallets/<walletId>/nonfungibles" %}
-{% api-method-summary %}
-Get NFTs by wallet ID
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/<walletId>/nonfungibles" method="get" summary="Get NFTs by wallet ID" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="walletId" type="string" required=true %}
+{% swagger-parameter in="path" name="walletId" type="string" %}
 ID of the wallet
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="contract-addresses" type="string" required=false %}
+{% swagger-parameter in="query" name="contract-addresses" type="string" %}
 When set, the result will only contain tokens of these NFT contract addresses. Multiple values can be set.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -181,45 +165,27 @@ When set, the result will only contain tokens of these NFT contract addresses. M
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://api.arkane.network" path="/api/wallets/<SecretType>/<walletAddress>/nonfungibles" %}
-{% api-method-summary %}
-Get NFTs by wallet address
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/wallets/<SecretType>/<walletAddress>/nonfungibles" method="get" summary="Get NFTs by wallet address" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="secretType" type="string" %}
+Blockchain to query (MATIC/ BSC/ Ethereum)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="secretType" type="string" required=true %}
-Blockchain to query \(MATIC/ BSC/ Ethereum\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="walletAddress" type="string" required=true %}
+{% swagger-parameter in="path" name="walletAddress" type="string" %}
 Blockchain address of the wallet
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="contract-addresses" type="string" required=false %}
+{% swagger-parameter in="query" name="contract-addresses" type="string" %}
 When set, the result will only contain tokens of these NFT contract addresses. Multiple values can be set.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -365,18 +331,16 @@ When set, the result will only contain tokens of these NFT contract addresses. M
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
 #### Response
 
-Performing the api call for wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E , which has several nfts. 
+Performing the api call for wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E , which has several nfts.&#x20;
 
-![Visual representation of the NFT stored on wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E](../../.gitbook/assets/image%20%281%29.png)
+![Visual representation of the NFT stored on wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E](<../../.gitbook/assets/image (8).png>)
 
 ```javascript
 {
@@ -792,4 +756,3 @@ Performing the api call for wallet 0xd32f99F3cB2F22B375f07550c495B0aE1e5e8A0E , 
     ]
 }
 ```
-

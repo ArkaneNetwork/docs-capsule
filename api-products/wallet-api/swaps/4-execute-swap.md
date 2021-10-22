@@ -46,7 +46,7 @@ Don't forget to enrich the transactions with the correct pincode
 
 When you take the result from above, you can now execute it against our endpoints:
 
-#### Request 
+#### Request&#x20;
 
 ```javascript
 POST : https://api.arkane.network/api/transactions/execute
@@ -85,4 +85,3 @@ Enrich pincode with the correct pincode:
 {% hint style="warning" %}
 This needs to be done for each transaction that was returned from [step 3 - build swap tx](build-swap-tx.md)
 {% endhint %}
-

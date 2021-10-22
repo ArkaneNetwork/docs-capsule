@@ -4,30 +4,16 @@ description: Endpoint to fetch one specific offer
 
 # Retrieve an offer
 
-{% api-method method="get" host="https://api.arkane.market" path="/offers/:offerId" %}
-{% api-method-summary %}
-Get specific offer
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/offers/:offerId" method="get" summary="Get specific offer" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="offerId" type="string" required=true %}
+{% swagger-parameter in="path" name="offerId" type="string" %}
 ID of the offer to fetch
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -107,10 +93,8 @@ Returns the result of the call and the wallet
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -201,4 +185,3 @@ https://api.arkane.market/offers/ac7e55a3-31eb-4546-9a7f-36b2f8d4523d
     }
 }
 ```
-

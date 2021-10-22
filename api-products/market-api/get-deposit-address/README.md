@@ -4,24 +4,12 @@ description: Retrieve the USDC deposit address for topping up your account
 
 # Get deposit address
 
-{% api-method method="get" host="https://api.arkane.market" path="/user/deposit-addresses" %}
-{% api-method-summary %}
-Get deposit address
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/user/deposit-addresses" method="get" summary="Get deposit address" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
     "success": true,
@@ -34,10 +22,8 @@ Returns the result of the call and the wallet
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -65,4 +51,3 @@ https://api.arkane.market/user/deposit-addresses
 {% hint style="info" %}
 When the response is empty you can create a deposit address by using the [Create deposit address](create-deposit-address.md) endpoint.
 {% endhint %}
-

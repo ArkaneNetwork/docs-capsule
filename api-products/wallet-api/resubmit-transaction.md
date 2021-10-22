@@ -7,38 +7,24 @@ description: >-
 
 # Resubmit transaction
 
-{% api-method method="post" host="https://api.arkane.network" path="/api/transactions/resubmit" %}
-{% api-method-summary %}
-Resubmit
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.arkane.network" path="/api/transactions/resubmit" method="post" summary="Resubmit" %}
+{% swagger-description %}
 Safely resubmit a transaction. Executing this will overwrite the existing transaction.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="secretType" type="string" required=true %}
+{% swagger-parameter in="body" name="secretType" type="string" %}
 MATIC, BSC, ETHEREUM, ...
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="transactionHash" type="string" required=true %}
+{% swagger-parameter in="body" name="transactionHash" type="string" %}
 Hash of the transaction to resubmit
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pincode" type="string" required=true %}
+{% swagger-parameter in="body" name="pincode" type="string" %}
 PIN associated with the wallet of the transaction
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "success": true,
@@ -47,10 +33,8 @@ PIN associated with the wallet of the transaction
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -80,4 +64,3 @@ POST : https://api.arkane.network/api/transactions/resubmit
     }
 }
 ```
-

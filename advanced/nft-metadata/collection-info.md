@@ -6,7 +6,7 @@ description: Metadata on the level of the NFT contract
 
 Collection info is metadata about the collection, the brand, the company to which the NFT belongs. Unlike all other metadata, the collection info is not stored in the metadata of the NFT, but rather in the metadata of the NFT contract. It allows us to add information such as the name and description of a collection as well as certain forms of media such as a logo and a banner, social channels, even a YouTube video.
 
-![Information about the contract of a certain NFT](../../.gitbook/assets/image%20%288%29.png)
+![Information about the contract of a certain NFT](<../../.gitbook/assets/image (20).png>)
 
 ## Data Structure
 
@@ -48,4 +48,3 @@ Collection info is metadata about the collection, the brand, the company to whic
     ],
 }
 ```
-

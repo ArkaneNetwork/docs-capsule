@@ -4,42 +4,36 @@ description: Endpoint to fetch all offers created by you
 
 # List all your offers
 
-{% api-method method="get" host="https://api.arkane.market" path="/user/offers" %}
-{% api-method-summary %}
-Get offers
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.arkane.market" path="/user/offers" method="get" summary="Get offers" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="externalUserId" type="string" required=false %}
+{% swagger-parameter in="query" name="externalUserId" type="string" %}
 Filter by externalBuyerId and externalSellerId
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="type" type="string" required=false %}
-Filter all offers by type, '**SALE**' or '**AUCTION**'
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="type" type="string" %}
+Filter all offers by type, '
 
-{% api-method-parameter name="contractAddress" type="string" required=false %}
+**SALE**
+
+' or '
+
+**AUCTION**
+
+'
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="contractAddress" type="string" %}
 Filter all offers by contract address
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="status" type="array" required=false %}
+{% swagger-parameter in="query" name="status" type="array" %}
 Filter all offers by status
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the result of the call and the wallet 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the result of the call and the wallet " %}
 ```javascript
 {
 	"success": true,
@@ -265,10 +259,8 @@ Returns the result of the call and the wallet
 	]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 To get all your offers related to a certain user, you can use the **`externalUserId`** query parameter, assuming you've filled it incorrectly when creating and buying offers.
@@ -276,19 +268,21 @@ To get all your offers related to a certain user, you can use the **`externalUse
 
 ## Status
 
-| Description |  |
-| :--- | :--- |
-| READY | Offer is ready and is live on the market |
-| SOLD | Offer has been sold and is no longer active |
-| CLOSED | Offer has not been sold and is no longer active |
-| NEW | Newly created offer, waiting for Approve tx and signed data |
-| INITIATING\_OFFER | Taking an NFT into custody |
-| FINALIZING\_OFFER | Moving an NFT out of custody |
-| CLOSING\_OFFER | Item was not sold, is being sent back to the user |
-| ERROR | Something went wrong... |
-| REFUSED | Something went wrong while the item was being sent to the market |
+| Description       |                                                                  |
+| ----------------- | ---------------------------------------------------------------- |
+| READY             | Offer is ready and is live on the market                         |
+| SOLD              | Offer has been sold and is no longer active                      |
+| CLOSED            | Offer has not been sold and is no longer active                  |
+| NEW               | Newly created offer, waiting for Approve tx and signed data      |
+| INITIATING\_OFFER | Taking an NFT into custody                                       |
+| FINALIZING\_OFFER | Moving an NFT out of custody                                     |
+| CLOSING\_OFFER    | Item was not sold, is being sent back to the user                |
+| ERROR             | Something went wrong...                                          |
+| REFUSED           | Something went wrong while the item was being sent to the market |
 
-{% page-ref page="../../deep-dive-1/object-reference/status.md" %}
+{% content-ref url="../../deep-dive-1/object-reference/status.md" %}
+[status.md](../../deep-dive-1/object-reference/status.md)
+{% endcontent-ref %}
 
 ## Example
 
@@ -542,4 +536,3 @@ Respon
 	]
 }
 ```
-
