@@ -8,6 +8,7 @@ description: What's new under the hood?
 
 * Wallet API: Add support for <mark style="color:green;">Hedera Hashgraph</mark>
 * Wallet API: Add endpoint to [read a contract](api-products/wallet-api/read-contract.md)
+* NFT API: Add support for IPFS and other [metadata storage](advanced/nft-metadata/metadata-storage.md) providers
 * NFT API: Add `transactionHash` in the response of the [NFT API](api-products/nft-api/) endpoints
 * NFT API: Add documentation on [how to burn an NFT](advanced/guides/how-to-burn-an-nft.md)
 * NFT Analytics: Add support for base64 NFT contract and token metadata
