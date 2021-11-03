@@ -25,7 +25,7 @@ Address of the token contract
 {% endswagger-response %}
 {% endswagger %}
 
-## Example
+### Example
 
 #### Request
 
@@ -43,3 +43,7 @@ https://matic-azrael.arkane.network/contracts/0x7227e371540cf7b8e512544ba6871472
     "symbol": "NDITEM1"
 }
 ```
+
+{% hint style="info" %}
+This API also supports NFT contracts that host their metadata on **IPFS** or store it as a **base64** string in the contract itself.&#x20;
+{% endhint %}

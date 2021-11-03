@@ -61,6 +61,7 @@
     * [Get prepared Approve tx](api-products/market-api/update-offer-txapprove/get-prepared-transaction.md)
   * [Update offer: Signature](api-products/market-api/update-offer-signature.md)
   * [Buy an offer](api-products/market-api/buy-an-offer.md)
+  * [Update offer price](api-products/market-api/update-offer-price.md)
   * [Cancel an offer](api-products/market-api/cancel-an-offer.md)
   * [Get user balance](api-products/market-api/get-user-balance.md)
   * [Get user balance history](api-products/market-api/get-user-balance-history.md)
@@ -79,7 +80,7 @@
   * [Burnable](advanced/nft-metadata/wip-burnable.md)
 * [Environments & networks](advanced/environments-and-networks.md)
 
-## 🌊Deep dive <a id="deep-dive-1"></a>
+## 🌊Deep dive <a href="deep-dive-1" id="deep-dive-1"></a>
 
 * [Authentication Bridge](deep-dive-1/authentication-bridge.md)
 * [Object Reference](deep-dive-1/object-reference/README.md)
@@ -105,4 +106,3 @@
   * [Trait](deep-dive-1/object-reference/trait.md)
   * [WalletItems](deep-dive-1/object-reference/walletitems.md)
   * [Status](deep-dive-1/object-reference/status.md)
-
