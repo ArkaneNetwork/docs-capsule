@@ -17,15 +17,14 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts
 
 ```javascript
 {
-	"name": "Space Chickens",
-	"description":"Space Chickens in Space is an American-Australian-Mexican-British-Irish animated television series produced by Ánima Estudios in Mexico, Studio Moshi in Australia. A trio of chickens—Chuck, Starley and Finley—are taken from their home and mistakenly enrolled in an elite intergalactic former military academy. It would take all their strength, and teamwork, to survive every escapade they have.",
-	"chain" : "MATIC",
-	"symbol" : "SPACECHICKS",
-  "image" : "https://static.wikia.nocookie.net/logopedia/images/a/aa/Space_Chickens_in_Space.jpg",
-  "externalUrl": "https://en.wikipedia.org/wiki/Space_Chickens_in_Space",
-  "media" : [
-      {"type": "image", "value" : "https://dg31sz3gwrwan.cloudfront.net/fanart/355763/1357791-0-q80.jpg"}
-  ]
+    "name": "Space Chickens",
+    "description":"Space Chickens in Space is an American-Australian-Mexican-British-Irish animated television series produced by Ánima Estudios in Mexico, Studio Moshi in Australia. A trio of chickens—Chuck, Starley and Finley—are taken from their home and mistakenly enrolled in an elite intergalactic former military academy. It would take all their strength, and teamwork, to survive every escapade they have.",
+    "chain" : "MATIC",
+    "image" : "https://static.wikia.nocookie.net/logopedia/images/a/aa/Space_Chickens_in_Space.jpg",
+    "externalUrl": "https://en.wikipedia.org/wiki/Space_Chickens_in_Space",
+    "media" : [
+        {"type": "image", "value" : "https://dg31sz3gwrwan.cloudfront.net/fanart/355763/1357791-0-q80.jpg"}
+    ]
 }
 ```
 
@@ -38,7 +37,7 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts
     "confirmed": false,
     "id": 203,
     "secretType": "MATIC",
-    "symbol": "SPACECHICKS",
+    "symbol": "SPCH",
     "externalUrl": "https://en.wikipedia.org/wiki/Space_Chickens_in_Space",
     "image": "https://static.wikia.nocookie.net/logopedia/images/a/aa/Space_Chickens_in_Space.jpg",
     "media": [
