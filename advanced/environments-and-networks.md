@@ -33,7 +33,7 @@ Depending on which environment your application is connecting, your blockchain t
 | VeChain             | mainnet |
 | Litecoin            | mainnet |
 | GoChain             | mainnet |
-| Tron                | mainnet |
+| Hedera              | mainnet |
 | Aeternity           | mainnet |
 | NEO                 | mainnet |
 
@@ -60,6 +60,6 @@ Depending on which environment your application is connecting, your blockchain t
 | VeChain             | testnet                 |
 | Litecoin            | testnet                 |
 | GoChain             | testnet                 |
-| Tron                | testnet (shasta)        |
+| Hedera              | testnet                 |
 | Aeternity           | testnet                 |
 | NEO                 | testnet                 |

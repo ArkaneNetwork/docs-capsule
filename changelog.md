@@ -8,7 +8,8 @@ description: What's new under the hood?
 
 * Add support for base64 NFT contract and token metadata
 * Add `transactionHash` in the response of the [NFT API](api-products/nft-api/) endpoints.
-* Add endpoint to update the offer price (Market API)
+* Add endpoint to [update offer price](api-products/market-api/update-offer-price.md) (Market API)
+* Add support for Hedera Hashgraph in the [Wallet API](api-products/wallet-api/)
 
 ### 2.1.4 - 2021-08-06
 
