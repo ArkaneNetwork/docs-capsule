@@ -21,11 +21,12 @@ Collection info is metadata about the collection, the brand, the company to whic
    "image" : string // Logo of the collection,
    "externalUrl": string // CTA link,
    "media" : [
-      {"type": "image", "value" : string }, // Will be used as a hero/banner image
-      {"type": "youtube", "value" : string }, // Replaces the hero/banner image with an embeded video
+      {"type": "image", "value" : string }, // Will be used as a hero image for your nft
+      {"type": "banner", "value" : string }, // Will be used as a banner image for your nft
       {"type": "instagram", "value" : string }, // Adds Instagram social link
       {"type": "twitter", "value" : string } // Adds Twitter social link
    ],
+   "owner": Address //Wallet address the will be the owner of the NFT contract
 }
 
 ```
@@ -34,17 +35,31 @@ Collection info is metadata about the collection, the brand, the company to whic
 
 ```java
 {
+   "id": 1751, // Reference ID of the contract
    "name": "Space Chickens",
    "description":"Space Chickens in Space is an American-Australian-Mexican-British-Irish animated television series produced by Ánima Estudios in Mexico, Studio Moshi in Australia. A trio of chickens—Chuck, Starley and Finley—are taken from their home and mistakenly enrolled in an elite intergalactic former military academy. It would take all their strength, and teamwork, to survive every escapade they have.",
    "chain" : "MATIC",
+   "confirmed": true, // Boolean to indicate if the tx to create the contract has been minted yet.
    "symbol" : "SPACECHICKS",
    "image" : "https://static.wikia.nocookie.net/logopedia/images/a/aa/Space_Chickens_in_Space.jpg",
    "externalUrl": "https://en.wikipedia.org/wiki/Space_Chickens_in_Space",
    "media" : [
       {"type": "image", "value" : "https://dg31sz3gwrwan.cloudfront.net/fanart/355763/1357791-0-q80.jpg"},
-      {"type": "youtube", "value" : "https://www.youtube.com/embed/1dFgZwpeokk"},
       {"type": "instagram", "value" : "https://www.instagram.com/spacechickes"},
       {"type": "twitter", "value" : "https://twitter.com/spacechickes"}
     ],
+    "owner": "0xF4Cc6E6c585d23585d5F08BDaEE9b85aB658fa95",
+    "transactionHash": "0x5b6f718b41b138849f267c9c40b687e28dbe68fc6c50343469e6bd13c578535d" // Transaction that created the contract
 }
 ```
+
+#### **Social links that are supported by the Venly Market**
+
+* Facebook
+* Instagram
+* Twitter
+* Discord
+* Twitch
+* Medium
+* Telegram
+* YouTube

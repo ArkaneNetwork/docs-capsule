@@ -50,6 +50,8 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts
 }
 ```
 
+The `transactionHash` that is return is the transction that created the contract on-chain. The `confirmed` attribute is a boolean field that indicates if the transaction has been mined yet.
+
 ## Advanced
 
 {% hint style="info" %}
