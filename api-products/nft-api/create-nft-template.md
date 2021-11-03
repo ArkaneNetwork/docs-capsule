@@ -21,64 +21,21 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
     "image": "https://static.wikia.nocookie.net/parody/images/4/42/74915084_10162764640400387_6139958579186106368_o.jpg",
     "externalUrl": "https://en.wikipedia.org/wiki/Space_Chickens_in_Space",
     "backgroundColor": "#FFFFFF",
-    "fungible": false,
-    "maxSupply": "25",
-    "burnable": false,
-    "animationUrls": [
-        {
-            "type": "video",
-            "value": "http://img.arkane.network/chuck_trailer.mp4"
-        },
-        {
-            "type": "audio",
-            "value": "http://img.arkane.network/chuck_soundtrack.mp3"
-        }
-    ],
     "attributes": [
         {
             "type": "property",
             "name": "Talent",
             "value": "Leadership"
-        },
-        {
-            "type": "property",
-            "name": "Allergic",
-            "value": "Monstonuts"
-        },
-        {
-            "type": "property",
-            "name": "Hobby",
-            "value": "Scouts"
-        },
-        {
-            "type": "stat",
-            "name": "Hobby",
-            "value": "Scouts"
-        },
-        {
-            "type": "stat",
-            "name": "Age",
-            "value": "3"
-        },
-        {
-            "type": "stat",
-            "name": "Cool",
-            "value": "9",
-            "maxValue": "10"
-        },
-        {
-            "type": "boost",
-            "name": "Crafting",
-            "value": "+5"
-        },
-        {
-            "type": "boost",
-            "name": "Leadership",
-            "value": "+10"
         }
     ]
 }
 ```
+
+{% hint style="info" %}
+Venly offers more complex NFT configurations, such as setting a **max supply**, adding **mint numbers**, and **IPFS** storage.&#x20;
+
+For a full overview please check out [NFT Configuration](../../advanced/nft-metadata/).
+{% endhint %}
 
 ## Returns
 
@@ -112,50 +69,9 @@ https://api-business.arkane.network/api/apps/{{application_id}}/contracts/{{cont
             "type": "property",
             "name": "Talent",
             "value": "Leadership"
-        },
-        {
-            "type": "property",
-            "name": "Allergic",
-            "value": "Monstonuts"
-        },
-        {
-            "type": "property",
-            "name": "Hobby",
-            "value": "Scouts"
-        },
-        {
-            "type": "stat",
-            "name": "Hobby",
-            "value": "Scouts"
-        },
-        {
-            "type": "stat",
-            "name": "Age",
-            "value": "3"
-        },
-        {
-            "type": "stat",
-            "name": "Cool",
-            "value": "9",
-            "maxValue": "10"
-        },
-        {
-            "type": "boost",
-            "name": "Crafting",
-            "value": "+5"
-        },
-        {
-            "type": "boost",
-            "name": "Leadership",
-            "value": "+10"
         }
     ],
     "transactionHash": "0xec345e382121ff5372351257f1a48a0f550064f974bff01cf7557eb55700a79e"
 }
 ```
 
-## Advanced
-
-{% hint style="info" %}
-For more information on configuration options in the NFT template, such as **adding media**, defining a **max supply**, and **much more** please read [NFT Configuration](../../advanced/nft-metadata/).
-{% endhint %}
