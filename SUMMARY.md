@@ -81,10 +81,11 @@
   * [Max Supply](advanced/nft-metadata/max-supply.md)
   * [Mint number](advanced/nft-metadata/mint-number-burnable-max-supply.md)
   * [Burnable](advanced/nft-metadata/wip-burnable.md)
+  * [Metadata Storage](advanced/nft-metadata/metadata-storage.md)
 
 ## 🌊Deep dive <a href="deep-dive-1" id="deep-dive-1"></a>
 
-* [Environments & networks](deep-dive-1/environments-and-networks.md)
+* [Environments & networks](advanced/environments-and-networks.md)
 * [Authentication Bridge](deep-dive-1/authentication-bridge.md)
 * [Object Reference](deep-dive-1/object-reference/README.md)
   * [ExchangeTokenRequest](deep-dive-1/object-reference/exchangetokenrequest.md)

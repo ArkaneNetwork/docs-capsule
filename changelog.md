@@ -6,7 +6,6 @@ description: What's new under the hood?
 
 ### 3.0.0 - 2021-11-01
 
-*
 * Wallet API: Add support for <mark style="color:green;">Hedera Hashgraph</mark>
 * Wallet API: Add endpoint to [read a contract](api-products/wallet-api/read-contract.md)
 * NFT API: Add `transactionHash` in the response of the [NFT API](api-products/nft-api/) endpoints
