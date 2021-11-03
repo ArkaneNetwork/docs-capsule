@@ -6,10 +6,14 @@ description: What's new under the hood?
 
 ### 3.0.0 - 2021-11-01
 
-* Add support for base64 NFT contract and token metadata
-* Add `transactionHash` in the response of the [NFT API](api-products/nft-api/) endpoints.
-* Add endpoint to [update offer price](api-products/market-api/update-offer-price.md) (Market API)
-* Add support for Hedera Hashgraph in the [Wallet API](api-products/wallet-api/)
+*
+* Wallet API: Add support for <mark style="color:green;">Hedera Hashgraph</mark>
+* Wallet API: Add endpoint to [read a contract](api-products/wallet-api/read-contract.md)
+* NFT API: Add `transactionHash` in the response of the [NFT API](api-products/nft-api/) endpoints
+* NFT API: Add documentation on [how to burn an NFT](advanced/guides/how-to-burn-an-nft.md)
+* NFT Analytics: Add support for base64 NFT contract and token metadata
+* Market API: Add endpoint to [update offer price](api-products/market-api/update-offer-price.md)&#x20;
+* Discontinue support for <mark style="color:red;">TRON</mark>
 
 ### 2.1.4 - 2021-08-06
 

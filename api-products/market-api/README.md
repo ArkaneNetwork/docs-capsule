@@ -26,5 +26,5 @@ Using our Market API you can query all our existing sales and filter based on wh
 
 Your end-user can easily create new sale offers which you can offer on your custom peer-to-peer NFT market, and at the same time, it will be available in our general market, increasing the buy audience and therefore increasing the number of sales.&#x20;
 
-![](<../../.gitbook/assets/image (25).png>)
+![](<../../.gitbook/assets/image (25) (1).png>)
 

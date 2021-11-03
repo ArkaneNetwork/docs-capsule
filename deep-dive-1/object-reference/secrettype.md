@@ -15,7 +15,7 @@ description: Enum that identifies the blockchain (secret type)
     ETHEREUM = 'ETHEREUM',
     GOCHAIN = 'GOCHAIN',
     LITECOIN = 'LITECOIN',
-    TRON = 'TRON',
+    HEDERA = 'HEDERA',
     VECHAIN = 'VECHAIN',
     NEO = 'NEO',
     MATIC = 'MATIC',

@@ -28,6 +28,7 @@
     * [3 - Build swap tx](api-products/wallet-api/swaps/build-swap-tx.md)
     * [4 - Execute swap](api-products/wallet-api/swaps/4-execute-swap.md)
   * [Signatures](api-products/wallet-api/sign-a-message.md)
+  * [Read contract](api-products/wallet-api/read-contract.md)
   * [Execute contract call](api-products/wallet-api/execute-contract-call.md)
   * [Get Tx status](api-products/wallet-api/get-tx-status.md)
   * [Get fees](api-products/wallet-api/get-fees.md)
@@ -71,6 +72,8 @@
 
 ## ⚙️Advanced
 
+* [Guides](advanced/guides/README.md)
+  * [How to burn an NFT](advanced/guides/how-to-burn-an-nft.md)
 * [NFT Configuration](advanced/nft-metadata/README.md)
   * [Attributes](advanced/nft-metadata/nft-attributes.md)
   * [Animation & Media](advanced/nft-metadata/animation-and-media.md)
@@ -78,10 +81,10 @@
   * [Max Supply](advanced/nft-metadata/max-supply.md)
   * [Mint number](advanced/nft-metadata/mint-number-burnable-max-supply.md)
   * [Burnable](advanced/nft-metadata/wip-burnable.md)
-* [Environments & networks](advanced/environments-and-networks.md)
 
 ## 🌊Deep dive <a href="deep-dive-1" id="deep-dive-1"></a>
 
+* [Environments & networks](deep-dive-1/environments-and-networks.md)
 * [Authentication Bridge](deep-dive-1/authentication-bridge.md)
 * [Object Reference](deep-dive-1/object-reference/README.md)
   * [ExchangeTokenRequest](deep-dive-1/object-reference/exchangetokenrequest.md)

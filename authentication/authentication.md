@@ -6,7 +6,7 @@ description: How to access Venly API
 
 ## Client ID & Secret
 
-To connect to our [staging or production environment](../advanced/environments-and-networks.md) and the different networks, a private Client ID is required. By using a Client ID that is linked to your application, an extra level of security is added, as it allows transaction filtering based on origin.&#x20;
+To connect to our [staging or production environment](../deep-dive-1/environments-and-networks.md) and the different networks, a private Client ID is required. By using a Client ID that is linked to your application, an extra level of security is added, as it allows transaction filtering based on origin.&#x20;
 
 {% hint style="info" %}
 🧙 To connect to our systems, please request access using [this form](https://forms.venly.io/clientID).&#x20;
@@ -21,7 +21,7 @@ The best place to start is by downloading our [Postman Collection](https://docum
 ![](<../.gitbook/assets/image (22).png>)
 
 {% hint style="info" %}
-By default our postman collection points to our staging environment, which is connected to different testnets and is the perfect environment to start playing around. To learn more about our environments and the different blockchain networks please have a look at [Environments & networks](../advanced/environments-and-networks.md).
+By default our postman collection points to our staging environment, which is connected to different testnets and is the perfect environment to start playing around. To learn more about our environments and the different blockchain networks please have a look at [Environments & networks](../deep-dive-1/environments-and-networks.md).
 {% endhint %}
 
 ## Basic Authentication flow
