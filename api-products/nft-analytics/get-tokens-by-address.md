@@ -13,7 +13,7 @@ description: Retrieve all tokens that are stored on a wallet address
 The secret type (ex. HEDERA)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" name="walletAddress" required="true" %}
+{% swagger-parameter in="path" name="walletAddress" required="true" type="string" %}
 The address of the wallet
 {% endswagger-parameter %}
 
