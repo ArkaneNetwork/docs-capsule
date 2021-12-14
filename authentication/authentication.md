@@ -9,7 +9,7 @@ description: How to access Venly API
 To connect to our [staging or production environment](../advanced/environments-and-networks.md) and the different networks, a private Client ID is required. By using a Client ID that is linked to your application, an extra level of security is added, as it allows transaction filtering based on origin.&#x20;
 
 {% hint style="info" %}
-🧙 To connect to our systems, please request access using [this form](https://forms.venly.io/clientID).&#x20;
+🧙 To connect to our systems, please request access using [this form](https://forms.venly.io/demoID).&#x20;
 {% endhint %}
 
 ## Already have your Client ID & Secret?

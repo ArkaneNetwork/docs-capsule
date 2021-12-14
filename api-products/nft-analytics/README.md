@@ -11,8 +11,10 @@ The following blockchain are currently supported by our NFT Analytics
 * Polygon (Matic)
 * BSC (Binance Smart Chain)
 * Avalanche (C-Chain)
+* Ethereum
+* Hedera
 
 {% hint style="info" %}
-🧙 To connect to our systems, please request access using [this form](https://forms.venly.io/clientID).&#x20;
+🧙 To connect to our systems, please request access using [this form](https://forms.venly.io/demoID).&#x20;
 {% endhint %}
 
